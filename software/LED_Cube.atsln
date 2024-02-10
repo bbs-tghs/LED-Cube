@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "LED_Cube", "LED_Cube\LED_Cube.cproj", "{F12D9D97-16D3-4A06-B5F0-6D0057B706B7}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "MUX_Test", "MUX_Test\MUX_Test.cproj", "{E93CA82A-4E5A-4881-9774-7B61802D56BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F12D9D97-16D3-4A06-B5F0-6D0057B706B7}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F12D9D97-16D3-4A06-B5F0-6D0057B706B7}.Debug|AVR.Build.0 = Debug|AVR
+		{F12D9D97-16D3-4A06-B5F0-6D0057B706B7}.Release|AVR.ActiveCfg = Release|AVR
+		{F12D9D97-16D3-4A06-B5F0-6D0057B706B7}.Release|AVR.Build.0 = Release|AVR
+		{E93CA82A-4E5A-4881-9774-7B61802D56BC}.Debug|AVR.ActiveCfg = Debug|AVR
+		{E93CA82A-4E5A-4881-9774-7B61802D56BC}.Debug|AVR.Build.0 = Debug|AVR
+		{E93CA82A-4E5A-4881-9774-7B61802D56BC}.Release|AVR.ActiveCfg = Release|AVR
+		{E93CA82A-4E5A-4881-9774-7B61802D56BC}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

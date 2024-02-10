@@ -1,0 +1,3842 @@
+
+MUX_Test.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00001520  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         0000006a  00800060  00001520  000015b4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000093  008000ca  008000ca  0000161e  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000161e  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000002a8  00000000  00000000  0000164e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000027de  00000000  00000000  000018f6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000008f4  00000000  00000000  000040d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000c04  00000000  00000000  000049c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000006f0  00000000  00000000  000055cc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000779  00000000  00000000  00005cbc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00001d57  00000000  00000000  00006435  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000270  00000000  00000000  0000818c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 aa 00 	jmp	0x154	; 0x154 <__ctors_end>
+       4:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+       8:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+       c:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      10:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      14:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      18:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      1c:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      20:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      24:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      28:	0c 94 27 09 	jmp	0x124e	; 0x124e <__vector_10>
+      2c:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      30:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      34:	0c 94 d3 09 	jmp	0x13a6	; 0x13a6 <__vector_13>
+      38:	0c 94 ff 09 	jmp	0x13fe	; 0x13fe <__vector_14>
+      3c:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      40:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      44:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      48:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      4c:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      50:	0c 94 c7 00 	jmp	0x18e	; 0x18e <__bad_interrupt>
+      54:	6f 05       	cpc	r22, r15
+      56:	15 05       	cpc	r17, r5
+      58:	2f 06       	cpc	r2, r31
+      5a:	2f 06       	cpc	r2, r31
+      5c:	2f 06       	cpc	r2, r31
+      5e:	2f 06       	cpc	r2, r31
+      60:	2f 06       	cpc	r2, r31
+      62:	2f 06       	cpc	r2, r31
+      64:	2f 06       	cpc	r2, r31
+      66:	2f 06       	cpc	r2, r31
+      68:	2f 06       	cpc	r2, r31
+      6a:	2f 06       	cpc	r2, r31
+      6c:	2f 06       	cpc	r2, r31
+      6e:	2f 06       	cpc	r2, r31
+      70:	2f 06       	cpc	r2, r31
+      72:	2f 06       	cpc	r2, r31
+      74:	2f 06       	cpc	r2, r31
+      76:	2f 06       	cpc	r2, r31
+      78:	2f 06       	cpc	r2, r31
+      7a:	2f 06       	cpc	r2, r31
+      7c:	2f 06       	cpc	r2, r31
+      7e:	2f 06       	cpc	r2, r31
+      80:	2f 06       	cpc	r2, r31
+      82:	2f 06       	cpc	r2, r31
+      84:	2f 06       	cpc	r2, r31
+      86:	2f 06       	cpc	r2, r31
+      88:	2f 06       	cpc	r2, r31
+      8a:	2f 06       	cpc	r2, r31
+      8c:	2f 06       	cpc	r2, r31
+      8e:	2f 06       	cpc	r2, r31
+      90:	2f 06       	cpc	r2, r31
+      92:	2f 06       	cpc	r2, r31
+      94:	2f 06       	cpc	r2, r31
+      96:	2f 06       	cpc	r2, r31
+      98:	2f 06       	cpc	r2, r31
+      9a:	9d 05       	cpc	r25, r13
+      9c:	18 05       	cpc	r17, r8
+      9e:	1f 05       	cpc	r17, r15
+      a0:	41 05       	cpc	r20, r1
+      a2:	51 05       	cpc	r21, r1
+      a4:	2f 06       	cpc	r2, r31
+      a6:	a4 05       	cpc	r26, r4
+      a8:	2f 06       	cpc	r2, r31
+      aa:	2f 06       	cpc	r2, r31
+      ac:	2f 06       	cpc	r2, r31
+      ae:	2f 06       	cpc	r2, r31
+      b0:	d1 05       	cpc	r29, r1
+      b2:	2f 06       	cpc	r2, r31
+      b4:	2f 06       	cpc	r2, r31
+      b6:	2f 06       	cpc	r2, r31
+      b8:	2f 06       	cpc	r2, r31
+      ba:	06 06       	cpc	r0, r22
+      bc:	14 06       	cpc	r1, r20
+      be:	ea 05       	cpc	r30, r10
+      c0:	22 06       	cpc	r2, r18
+      c2:	89 06       	cpc	r8, r25
+      c4:	92 06       	cpc	r9, r18
+      c6:	70 06       	cpc	r7, r16
+      c8:	c6 06       	cpc	r12, r22
+      ca:	cf 06       	cpc	r12, r31
+      cc:	70 06       	cpc	r7, r16
+      ce:	70 06       	cpc	r7, r16
+      d0:	70 06       	cpc	r7, r16
+      d2:	70 06       	cpc	r7, r16
+      d4:	03 07       	cpc	r16, r19
+      d6:	0c 07       	cpc	r16, r28
+      d8:	70 06       	cpc	r7, r16
+      da:	70 06       	cpc	r7, r16
+      dc:	70 06       	cpc	r7, r16
+      de:	70 06       	cpc	r7, r16
+      e0:	42 07       	cpc	r20, r18
+      e2:	47 07       	cpc	r20, r23
+      e4:	60 07       	cpc	r22, r16
+      e6:	65 07       	cpc	r22, r21
+      e8:	7e 07       	cpc	r23, r30
+      ea:	83 07       	cpc	r24, r19
+      ec:	70 06       	cpc	r7, r16
+      ee:	70 06       	cpc	r7, r16
+      f0:	70 06       	cpc	r7, r16
+      f2:	70 06       	cpc	r7, r16
+      f4:	70 06       	cpc	r7, r16
+      f6:	70 06       	cpc	r7, r16
+      f8:	70 06       	cpc	r7, r16
+      fa:	70 06       	cpc	r7, r16
+      fc:	70 06       	cpc	r7, r16
+      fe:	70 06       	cpc	r7, r16
+     100:	9c 07       	cpc	r25, r28
+     102:	ad 07       	cpc	r26, r29
+     104:	bd 07       	cpc	r27, r29
+     106:	d4 07       	cpc	r29, r20
+     108:	03 08       	sbc	r0, r3
+     10a:	32 08       	sbc	r3, r2
+     10c:	61 08       	sbc	r6, r1
+     10e:	90 08       	sbc	r9, r0
+     110:	bf 08       	sbc	r11, r15
+     112:	ee 08       	sbc	r14, r14
+
+00000114 <__trampolines_end>:
+     114:	42 75       	andi	r20, 0x52	; 82
+     116:	66 66       	ori	r22, 0x66	; 102
+     118:	65 72       	andi	r22, 0x25	; 37
+     11a:	20 6f       	ori	r18, 0xF0	; 240
+     11c:	76 65       	ori	r23, 0x56	; 86
+     11e:	72 66       	ori	r23, 0x62	; 98
+     120:	6c 6f       	ori	r22, 0xFC	; 252
+     122:	77 20       	and	r7, r7
+     124:	65 72       	andi	r22, 0x25	; 37
+     126:	72 6f       	ori	r23, 0xF2	; 242
+     128:	72 3a       	cpi	r23, 0xA2	; 162
+     12a:	20 00       	.word	0x0020	; ????
+
+0000012c <__c.1951>:
+     12c:	55 41 52 54 20 4f 76 65 72 72 75 6e 20 45 72 72     UART Overrun Err
+     13c:	6f 72 3a 20 00                                      or: .
+
+00000141 <__c.1949>:
+     141:	55 41 52 54 20 46 72 61 6d 65 20 45 72 72 6f 72     UART Frame Error
+     151:	3a 20 00                                            : .
+
+00000154 <__ctors_end>:
+     154:	11 24       	eor	r1, r1
+     156:	1f be       	out	0x3f, r1	; 63
+     158:	cf e5       	ldi	r28, 0x5F	; 95
+     15a:	d8 e0       	ldi	r29, 0x08	; 8
+     15c:	de bf       	out	0x3e, r29	; 62
+     15e:	cd bf       	out	0x3d, r28	; 61
+
+00000160 <__do_copy_data>:
+     160:	10 e0       	ldi	r17, 0x00	; 0
+     162:	a0 e6       	ldi	r26, 0x60	; 96
+     164:	b0 e0       	ldi	r27, 0x00	; 0
+     166:	e0 e2       	ldi	r30, 0x20	; 32
+     168:	f5 e1       	ldi	r31, 0x15	; 21
+     16a:	02 c0       	rjmp	.+4      	; 0x170 <__do_copy_data+0x10>
+     16c:	05 90       	lpm	r0, Z+
+     16e:	0d 92       	st	X+, r0
+     170:	aa 3c       	cpi	r26, 0xCA	; 202
+     172:	b1 07       	cpc	r27, r17
+     174:	d9 f7       	brne	.-10     	; 0x16c <__do_copy_data+0xc>
+
+00000176 <__do_clear_bss>:
+     176:	21 e0       	ldi	r18, 0x01	; 1
+     178:	aa ec       	ldi	r26, 0xCA	; 202
+     17a:	b0 e0       	ldi	r27, 0x00	; 0
+     17c:	01 c0       	rjmp	.+2      	; 0x180 <.do_clear_bss_start>
+
+0000017e <.do_clear_bss_loop>:
+     17e:	1d 92       	st	X+, r1
+
+00000180 <.do_clear_bss_start>:
+     180:	ad 35       	cpi	r26, 0x5D	; 93
+     182:	b2 07       	cpc	r27, r18
+     184:	e1 f7       	brne	.-8      	; 0x17e <.do_clear_bss_loop>
+     186:	0e 94 34 06 	call	0xc68	; 0xc68 <main>
+     18a:	0c 94 8e 0a 	jmp	0x151c	; 0x151c <_exit>
+
+0000018e <__bad_interrupt>:
+     18e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000192 <sortAsc>:
+ @brief Interne Funktion
+		Sorgt dafür, das x1 stets kleiner, höchstens gleich x2 ist und vertauchst die Werte der Parameter ggf.
+*/
+void sortAsc( uint8_t *x1, uint8_t *x2 ) {
+	uint8_t tmp;
+	if ((*x1) > (*x2)) {
+     192:	fc 01       	movw	r30, r24
+     194:	20 81       	ld	r18, Z
+     196:	fb 01       	movw	r30, r22
+     198:	30 81       	ld	r19, Z
+     19a:	32 17       	cp	r19, r18
+     19c:	18 f4       	brcc	.+6      	; 0x1a4 <sortAsc+0x12>
+		tmp = *x1;
+		*x2 = *x1;
+     19e:	20 83       	st	Z, r18
+		*x1 = tmp;
+     1a0:	fc 01       	movw	r30, r24
+     1a2:	20 83       	st	Z, r18
+     1a4:	08 95       	ret
+
+000001a6 <cube_clear>:
+	}
+}
+
+
+//clear the entire LED map
+void cube_clear() {
+     1a6:	40 e0       	ldi	r20, 0x00	; 0
+     1a8:	50 e0       	ldi	r21, 0x00	; 0
+     1aa:	70 e0       	ldi	r23, 0x00	; 0
+     1ac:	60 e0       	ldi	r22, 0x00	; 0
+     1ae:	0f c0       	rjmp	.+30     	; 0x1ce <cube_clear+0x28>
+	uint8_t col, layer;
+	
+	for (layer=0; layer<CUBE_MAX_LAYERS; layer++) {
+		for(col=0; col<CUBE_MAX_COLS; col++) {
+			cube[layer][col] = 0;
+     1b0:	f9 01       	movw	r30, r18
+     1b2:	e8 0f       	add	r30, r24
+     1b4:	f9 1f       	adc	r31, r25
+     1b6:	e4 5e       	subi	r30, 0xE4	; 228
+     1b8:	fe 4f       	sbci	r31, 0xFE	; 254
+     1ba:	10 82       	st	Z, r1
+     1bc:	01 96       	adiw	r24, 0x01	; 1
+//clear the entire LED map
+void cube_clear() {
+	uint8_t col, layer;
+	
+	for (layer=0; layer<CUBE_MAX_LAYERS; layer++) {
+		for(col=0; col<CUBE_MAX_COLS; col++) {
+     1be:	88 30       	cpi	r24, 0x08	; 8
+     1c0:	91 05       	cpc	r25, r1
+     1c2:	b1 f7       	brne	.-20     	; 0x1b0 <cube_clear+0xa>
+     1c4:	4f 5f       	subi	r20, 0xFF	; 255
+     1c6:	5f 4f       	sbci	r21, 0xFF	; 255
+
+//clear the entire LED map
+void cube_clear() {
+	uint8_t col, layer;
+	
+	for (layer=0; layer<CUBE_MAX_LAYERS; layer++) {
+     1c8:	48 30       	cpi	r20, 0x08	; 8
+     1ca:	51 05       	cpc	r21, r1
+     1cc:	51 f0       	breq	.+20     	; 0x1e2 <cube_clear+0x3c>
+	}
+}
+
+
+//clear the entire LED map
+void cube_clear() {
+     1ce:	87 2f       	mov	r24, r23
+     1d0:	96 2f       	mov	r25, r22
+	uint8_t col, layer;
+	
+	for (layer=0; layer<CUBE_MAX_LAYERS; layer++) {
+		for(col=0; col<CUBE_MAX_COLS; col++) {
+			cube[layer][col] = 0;
+     1d2:	9a 01       	movw	r18, r20
+     1d4:	22 0f       	add	r18, r18
+     1d6:	33 1f       	adc	r19, r19
+     1d8:	22 0f       	add	r18, r18
+     1da:	33 1f       	adc	r19, r19
+     1dc:	22 0f       	add	r18, r18
+     1de:	33 1f       	adc	r19, r19
+     1e0:	e7 cf       	rjmp	.-50     	; 0x1b0 <cube_clear+0xa>
+     1e2:	08 95       	ret
+
+000001e4 <cube_setCol>:
+	cube[layer][7] = (value >> 56) & 0xFF;
+}
+
+
+void cube_setCol( uint8_t layer, uint8_t col, uint8_t value ) {
+	cube[layer][col] = value;
+     1e4:	28 e0       	ldi	r18, 0x08	; 8
+     1e6:	82 9f       	mul	r24, r18
+     1e8:	c0 01       	movw	r24, r0
+     1ea:	11 24       	eor	r1, r1
+     1ec:	fc 01       	movw	r30, r24
+     1ee:	e6 0f       	add	r30, r22
+     1f0:	f1 1d       	adc	r31, r1
+     1f2:	e4 5e       	subi	r30, 0xE4	; 228
+     1f4:	fe 4f       	sbci	r31, 0xFE	; 254
+     1f6:	40 83       	st	Z, r20
+     1f8:	08 95       	ret
+
+000001fa <cube_setRow>:
+}
+
+void cube_setRow( uint8_t layer, uint8_t row, uint8_t value ) {
+     1fa:	cf 93       	push	r28
+	uint8_t i;
+	for(i=0; i<8; i++) {
+		if ((value & (1<<i)) > 0) {	//Bit i in Value ist gesetzt
+			cube[layer][i] |= (1<<row); 
+     1fc:	21 e0       	ldi	r18, 0x01	; 1
+     1fe:	30 e0       	ldi	r19, 0x00	; 0
+     200:	f9 01       	movw	r30, r18
+     202:	02 c0       	rjmp	.+4      	; 0x208 <cube_setRow+0xe>
+     204:	ee 0f       	add	r30, r30
+     206:	ff 1f       	adc	r31, r31
+     208:	6a 95       	dec	r22
+     20a:	e2 f7       	brpl	.-8      	; 0x204 <cube_setRow+0xa>
+     20c:	bf 01       	movw	r22, r30
+     20e:	ce 2f       	mov	r28, r30
+		} else {					//Bit i in Value ist gelöscht
+			cube[layer][i] &= ~(1<<row);
+     210:	60 95       	com	r22
+     212:	20 e0       	ldi	r18, 0x00	; 0
+     214:	30 e0       	ldi	r19, 0x00	; 0
+}
+
+void cube_setRow( uint8_t layer, uint8_t row, uint8_t value ) {
+	uint8_t i;
+	for(i=0; i<8; i++) {
+		if ((value & (1<<i)) > 0) {	//Bit i in Value ist gesetzt
+     216:	a1 e0       	ldi	r26, 0x01	; 1
+     218:	b0 e0       	ldi	r27, 0x00	; 0
+     21a:	50 e0       	ldi	r21, 0x00	; 0
+			cube[layer][i] |= (1<<row); 
+		} else {					//Bit i in Value ist gelöscht
+			cube[layer][i] &= ~(1<<row);
+     21c:	f8 e0       	ldi	r31, 0x08	; 8
+     21e:	8f 9f       	mul	r24, r31
+     220:	c0 01       	movw	r24, r0
+     222:	11 24       	eor	r1, r1
+}
+
+void cube_setRow( uint8_t layer, uint8_t row, uint8_t value ) {
+	uint8_t i;
+	for(i=0; i<8; i++) {
+		if ((value & (1<<i)) > 0) {	//Bit i in Value ist gesetzt
+     224:	fd 01       	movw	r30, r26
+     226:	02 2e       	mov	r0, r18
+     228:	02 c0       	rjmp	.+4      	; 0x22e <cube_setRow+0x34>
+     22a:	ee 0f       	add	r30, r30
+     22c:	ff 1f       	adc	r31, r31
+     22e:	0a 94       	dec	r0
+     230:	e2 f7       	brpl	.-8      	; 0x22a <cube_setRow+0x30>
+     232:	e4 23       	and	r30, r20
+     234:	f5 23       	and	r31, r21
+     236:	1e 16       	cp	r1, r30
+     238:	1f 06       	cpc	r1, r31
+     23a:	4c f4       	brge	.+18     	; 0x24e <cube_setRow+0x54>
+			cube[layer][i] |= (1<<row); 
+     23c:	fc 01       	movw	r30, r24
+     23e:	e2 0f       	add	r30, r18
+     240:	f3 1f       	adc	r31, r19
+     242:	e4 5e       	subi	r30, 0xE4	; 228
+     244:	fe 4f       	sbci	r31, 0xFE	; 254
+     246:	70 81       	ld	r23, Z
+     248:	7c 2b       	or	r23, r28
+     24a:	70 83       	st	Z, r23
+     24c:	08 c0       	rjmp	.+16     	; 0x25e <cube_setRow+0x64>
+		} else {					//Bit i in Value ist gelöscht
+			cube[layer][i] &= ~(1<<row);
+     24e:	fc 01       	movw	r30, r24
+     250:	e2 0f       	add	r30, r18
+     252:	f3 1f       	adc	r31, r19
+     254:	e4 5e       	subi	r30, 0xE4	; 228
+     256:	fe 4f       	sbci	r31, 0xFE	; 254
+     258:	70 81       	ld	r23, Z
+     25a:	76 23       	and	r23, r22
+     25c:	70 83       	st	Z, r23
+     25e:	2f 5f       	subi	r18, 0xFF	; 255
+     260:	3f 4f       	sbci	r19, 0xFF	; 255
+	cube[layer][col] = value;
+}
+
+void cube_setRow( uint8_t layer, uint8_t row, uint8_t value ) {
+	uint8_t i;
+	for(i=0; i<8; i++) {
+     262:	28 30       	cpi	r18, 0x08	; 8
+     264:	31 05       	cpc	r19, r1
+     266:	f1 f6       	brne	.-68     	; 0x224 <cube_setRow+0x2a>
+			cube[layer][i] |= (1<<row); 
+		} else {					//Bit i in Value ist gelöscht
+			cube[layer][i] &= ~(1<<row);
+		}
+	}
+}
+     268:	cf 91       	pop	r28
+     26a:	08 95       	ret
+
+0000026c <cube_inRange>:
+ @result		= 1, wenn die Werte innerhalb der Feldgrenzen liegen, sonst 0
+				
+*/
+
+uint8_t cube_inRange( uint8_t x, uint8_t y, uint8_t z) {
+	if (x < CUBE_MAX_ROWS && 
+     26c:	88 30       	cpi	r24, 0x08	; 8
+     26e:	38 f4       	brcc	.+14     	; 0x27e <cube_inRange+0x12>
+     270:	68 30       	cpi	r22, 0x08	; 8
+     272:	38 f4       	brcc	.+14     	; 0x282 <cube_inRange+0x16>
+		y < CUBE_MAX_COLS && 
+     274:	81 e0       	ldi	r24, 0x01	; 1
+     276:	48 30       	cpi	r20, 0x08	; 8
+     278:	28 f0       	brcs	.+10     	; 0x284 <cube_inRange+0x18>
+     27a:	80 e0       	ldi	r24, 0x00	; 0
+     27c:	08 95       	ret
+		z < CUBE_MAX_LAYERS) {
+		return 1;
+	} else 	{	// Mind. eine Koordinate liegt außerhalb
+		return 0;
+     27e:	80 e0       	ldi	r24, 0x00	; 0
+     280:	08 95       	ret
+     282:	80 e0       	ldi	r24, 0x00	; 0
+	}
+}
+     284:	08 95       	ret
+
+00000286 <cube_setVoxel>:
+
+void cube_setVoxel( uint8_t x, uint8_t y, uint8_t z ) {
+     286:	1f 93       	push	r17
+     288:	cf 93       	push	r28
+     28a:	df 93       	push	r29
+     28c:	c8 2f       	mov	r28, r24
+     28e:	16 2f       	mov	r17, r22
+     290:	d4 2f       	mov	r29, r20
+	if (cube_inRange(x,y,z)) {
+     292:	0e 94 36 01 	call	0x26c	; 0x26c <cube_inRange>
+     296:	88 23       	and	r24, r24
+     298:	a1 f0       	breq	.+40     	; 0x2c2 <cube_setVoxel+0x3c>
+		cube[z][y] |= (1 << x);	
+     29a:	e1 2f       	mov	r30, r17
+     29c:	f0 e0       	ldi	r31, 0x00	; 0
+     29e:	88 e0       	ldi	r24, 0x08	; 8
+     2a0:	d8 9f       	mul	r29, r24
+     2a2:	e0 0d       	add	r30, r0
+     2a4:	f1 1d       	adc	r31, r1
+     2a6:	11 24       	eor	r1, r1
+     2a8:	e4 5e       	subi	r30, 0xE4	; 228
+     2aa:	fe 4f       	sbci	r31, 0xFE	; 254
+     2ac:	40 81       	ld	r20, Z
+     2ae:	21 e0       	ldi	r18, 0x01	; 1
+     2b0:	30 e0       	ldi	r19, 0x00	; 0
+     2b2:	c9 01       	movw	r24, r18
+     2b4:	02 c0       	rjmp	.+4      	; 0x2ba <cube_setVoxel+0x34>
+     2b6:	88 0f       	add	r24, r24
+     2b8:	99 1f       	adc	r25, r25
+     2ba:	ca 95       	dec	r28
+     2bc:	e2 f7       	brpl	.-8      	; 0x2b6 <cube_setVoxel+0x30>
+     2be:	84 2b       	or	r24, r20
+     2c0:	80 83       	st	Z, r24
+	}
+}
+     2c2:	df 91       	pop	r29
+     2c4:	cf 91       	pop	r28
+     2c6:	1f 91       	pop	r17
+     2c8:	08 95       	ret
+
+000002ca <cube_clearVoxel>:
+
+void cube_clearVoxel( uint8_t x, uint8_t y, uint8_t z ) {
+     2ca:	1f 93       	push	r17
+     2cc:	cf 93       	push	r28
+     2ce:	df 93       	push	r29
+     2d0:	c8 2f       	mov	r28, r24
+     2d2:	16 2f       	mov	r17, r22
+     2d4:	d4 2f       	mov	r29, r20
+	if (cube_inRange(x,y,z)) {
+     2d6:	0e 94 36 01 	call	0x26c	; 0x26c <cube_inRange>
+     2da:	88 23       	and	r24, r24
+     2dc:	a9 f0       	breq	.+42     	; 0x308 <cube_clearVoxel+0x3e>
+		cube[z][y] &= ~(1 << x);
+     2de:	e1 2f       	mov	r30, r17
+     2e0:	f0 e0       	ldi	r31, 0x00	; 0
+     2e2:	88 e0       	ldi	r24, 0x08	; 8
+     2e4:	d8 9f       	mul	r29, r24
+     2e6:	e0 0d       	add	r30, r0
+     2e8:	f1 1d       	adc	r31, r1
+     2ea:	11 24       	eor	r1, r1
+     2ec:	e4 5e       	subi	r30, 0xE4	; 228
+     2ee:	fe 4f       	sbci	r31, 0xFE	; 254
+     2f0:	40 81       	ld	r20, Z
+     2f2:	21 e0       	ldi	r18, 0x01	; 1
+     2f4:	30 e0       	ldi	r19, 0x00	; 0
+     2f6:	c9 01       	movw	r24, r18
+     2f8:	02 c0       	rjmp	.+4      	; 0x2fe <cube_clearVoxel+0x34>
+     2fa:	88 0f       	add	r24, r24
+     2fc:	99 1f       	adc	r25, r25
+     2fe:	ca 95       	dec	r28
+     300:	e2 f7       	brpl	.-8      	; 0x2fa <cube_clearVoxel+0x30>
+     302:	80 95       	com	r24
+     304:	84 23       	and	r24, r20
+     306:	80 83       	st	Z, r24
+	}
+}
+     308:	df 91       	pop	r29
+     30a:	cf 91       	pop	r28
+     30c:	1f 91       	pop	r17
+     30e:	08 95       	ret
+
+00000310 <cube_flipVoxel>:
+
+void cube_flipVoxel( uint8_t x, uint8_t y, uint8_t z ) {
+     310:	1f 93       	push	r17
+     312:	cf 93       	push	r28
+     314:	df 93       	push	r29
+     316:	c8 2f       	mov	r28, r24
+     318:	16 2f       	mov	r17, r22
+     31a:	d4 2f       	mov	r29, r20
+	if (cube_inRange(x,y,z)) {
+     31c:	0e 94 36 01 	call	0x26c	; 0x26c <cube_inRange>
+     320:	88 23       	and	r24, r24
+     322:	a1 f0       	breq	.+40     	; 0x34c <cube_flipVoxel+0x3c>
+		cube[z][y] ^= (1 << x);
+     324:	e1 2f       	mov	r30, r17
+     326:	f0 e0       	ldi	r31, 0x00	; 0
+     328:	88 e0       	ldi	r24, 0x08	; 8
+     32a:	d8 9f       	mul	r29, r24
+     32c:	e0 0d       	add	r30, r0
+     32e:	f1 1d       	adc	r31, r1
+     330:	11 24       	eor	r1, r1
+     332:	e4 5e       	subi	r30, 0xE4	; 228
+     334:	fe 4f       	sbci	r31, 0xFE	; 254
+     336:	40 81       	ld	r20, Z
+     338:	21 e0       	ldi	r18, 0x01	; 1
+     33a:	30 e0       	ldi	r19, 0x00	; 0
+     33c:	c9 01       	movw	r24, r18
+     33e:	02 c0       	rjmp	.+4      	; 0x344 <cube_flipVoxel+0x34>
+     340:	88 0f       	add	r24, r24
+     342:	99 1f       	adc	r25, r25
+     344:	ca 95       	dec	r28
+     346:	e2 f7       	brpl	.-8      	; 0x340 <cube_flipVoxel+0x30>
+     348:	84 27       	eor	r24, r20
+     34a:	80 83       	st	Z, r24
+	}
+}
+     34c:	df 91       	pop	r29
+     34e:	cf 91       	pop	r28
+     350:	1f 91       	pop	r17
+     352:	08 95       	ret
+
+00000354 <cube_setPlaneX>:
+	return (res);	
+}
+
+void cube_setPlaneX( uint8_t x ) {
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+     354:	88 30       	cpi	r24, 0x08	; 8
+     356:	28 f5       	brcc	.+74     	; 0x3a2 <cube_setPlaneX+0x4e>
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+				cube[z][y] |= (1 << x);
+     358:	71 e0       	ldi	r23, 0x01	; 1
+     35a:	01 c0       	rjmp	.+2      	; 0x35e <cube_setPlaneX+0xa>
+     35c:	77 0f       	add	r23, r23
+     35e:	8a 95       	dec	r24
+     360:	ea f7       	brpl	.-6      	; 0x35c <cube_setPlaneX+0x8>
+     362:	40 e0       	ldi	r20, 0x00	; 0
+     364:	50 e0       	ldi	r21, 0x00	; 0
+		}
+	}
+	return (res);	
+}
+
+void cube_setPlaneX( uint8_t x ) {
+     366:	b0 e0       	ldi	r27, 0x00	; 0
+     368:	a0 e0       	ldi	r26, 0x00	; 0
+     36a:	11 c0       	rjmp	.+34     	; 0x38e <cube_setPlaneX+0x3a>
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+				cube[z][y] |= (1 << x);
+     36c:	f9 01       	movw	r30, r18
+     36e:	e8 0f       	add	r30, r24
+     370:	f9 1f       	adc	r31, r25
+     372:	e4 5e       	subi	r30, 0xE4	; 228
+     374:	fe 4f       	sbci	r31, 0xFE	; 254
+     376:	60 81       	ld	r22, Z
+     378:	67 2b       	or	r22, r23
+     37a:	60 83       	st	Z, r22
+     37c:	01 96       	adiw	r24, 0x01	; 1
+
+void cube_setPlaneX( uint8_t x ) {
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+     37e:	88 30       	cpi	r24, 0x08	; 8
+     380:	91 05       	cpc	r25, r1
+     382:	a1 f7       	brne	.-24     	; 0x36c <cube_setPlaneX+0x18>
+     384:	4f 5f       	subi	r20, 0xFF	; 255
+     386:	5f 4f       	sbci	r21, 0xFF	; 255
+}
+
+void cube_setPlaneX( uint8_t x ) {
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+     388:	48 30       	cpi	r20, 0x08	; 8
+     38a:	51 05       	cpc	r21, r1
+     38c:	51 f0       	breq	.+20     	; 0x3a2 <cube_setPlaneX+0x4e>
+		}
+	}
+	return (res);	
+}
+
+void cube_setPlaneX( uint8_t x ) {
+     38e:	8b 2f       	mov	r24, r27
+     390:	9a 2f       	mov	r25, r26
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+				cube[z][y] |= (1 << x);
+     392:	9a 01       	movw	r18, r20
+     394:	22 0f       	add	r18, r18
+     396:	33 1f       	adc	r19, r19
+     398:	22 0f       	add	r18, r18
+     39a:	33 1f       	adc	r19, r19
+     39c:	22 0f       	add	r18, r18
+     39e:	33 1f       	adc	r19, r19
+     3a0:	e5 cf       	rjmp	.-54     	; 0x36c <cube_setPlaneX+0x18>
+     3a2:	08 95       	ret
+
+000003a4 <cube_clearPlaneX>:
+	}	
+}
+
+void cube_clearPlaneX( uint8_t x ) {
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+     3a4:	88 30       	cpi	r24, 0x08	; 8
+     3a6:	50 f5       	brcc	.+84     	; 0x3fc <cube_clearPlaneX+0x58>
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+				cube[z][y] &= ~(1 << x);
+     3a8:	21 e0       	ldi	r18, 0x01	; 1
+     3aa:	30 e0       	ldi	r19, 0x00	; 0
+     3ac:	a9 01       	movw	r20, r18
+     3ae:	02 c0       	rjmp	.+4      	; 0x3b4 <cube_clearPlaneX+0x10>
+     3b0:	44 0f       	add	r20, r20
+     3b2:	55 1f       	adc	r21, r21
+     3b4:	8a 95       	dec	r24
+     3b6:	e2 f7       	brpl	.-8      	; 0x3b0 <cube_clearPlaneX+0xc>
+     3b8:	74 2f       	mov	r23, r20
+     3ba:	70 95       	com	r23
+     3bc:	40 e0       	ldi	r20, 0x00	; 0
+     3be:	50 e0       	ldi	r21, 0x00	; 0
+			}
+		}
+	}	
+}
+
+void cube_clearPlaneX( uint8_t x ) {
+     3c0:	b0 e0       	ldi	r27, 0x00	; 0
+     3c2:	a0 e0       	ldi	r26, 0x00	; 0
+     3c4:	11 c0       	rjmp	.+34     	; 0x3e8 <cube_clearPlaneX+0x44>
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+				cube[z][y] &= ~(1 << x);
+     3c6:	f9 01       	movw	r30, r18
+     3c8:	e8 0f       	add	r30, r24
+     3ca:	f9 1f       	adc	r31, r25
+     3cc:	e4 5e       	subi	r30, 0xE4	; 228
+     3ce:	fe 4f       	sbci	r31, 0xFE	; 254
+     3d0:	60 81       	ld	r22, Z
+     3d2:	67 23       	and	r22, r23
+     3d4:	60 83       	st	Z, r22
+     3d6:	01 96       	adiw	r24, 0x01	; 1
+
+void cube_clearPlaneX( uint8_t x ) {
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+     3d8:	88 30       	cpi	r24, 0x08	; 8
+     3da:	91 05       	cpc	r25, r1
+     3dc:	a1 f7       	brne	.-24     	; 0x3c6 <cube_clearPlaneX+0x22>
+     3de:	4f 5f       	subi	r20, 0xFF	; 255
+     3e0:	5f 4f       	sbci	r21, 0xFF	; 255
+}
+
+void cube_clearPlaneX( uint8_t x ) {
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+     3e2:	48 30       	cpi	r20, 0x08	; 8
+     3e4:	51 05       	cpc	r21, r1
+     3e6:	51 f0       	breq	.+20     	; 0x3fc <cube_clearPlaneX+0x58>
+			}
+		}
+	}	
+}
+
+void cube_clearPlaneX( uint8_t x ) {
+     3e8:	8b 2f       	mov	r24, r27
+     3ea:	9a 2f       	mov	r25, r26
+	uint8_t y,z;
+	if (x < CUBE_MAX_ROWS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)		{
+			for (y=0; y < CUBE_MAX_COLS; y++)			{
+				cube[z][y] &= ~(1 << x);
+     3ec:	9a 01       	movw	r18, r20
+     3ee:	22 0f       	add	r18, r18
+     3f0:	33 1f       	adc	r19, r19
+     3f2:	22 0f       	add	r18, r18
+     3f4:	33 1f       	adc	r19, r19
+     3f6:	22 0f       	add	r18, r18
+     3f8:	33 1f       	adc	r19, r19
+     3fa:	e5 cf       	rjmp	.-54     	; 0x3c6 <cube_clearPlaneX+0x22>
+     3fc:	08 95       	ret
+
+000003fe <cube_setPlaneY>:
+	}
+}
+
+void cube_setPlaneY( uint8_t y ) {
+	uint8_t z;
+	if (y < CUBE_MAX_COLS)	{
+     3fe:	88 30       	cpi	r24, 0x08	; 8
+     400:	a8 f4       	brcc	.+42     	; 0x42c <cube_setPlaneY+0x2e>
+     402:	20 e0       	ldi	r18, 0x00	; 0
+     404:	30 e0       	ldi	r19, 0x00	; 0
+		for (z=0; z < CUBE_MAX_LAYERS; z++)	{
+			cube[z][y] = 0xff;
+     406:	90 e0       	ldi	r25, 0x00	; 0
+     408:	4f ef       	ldi	r20, 0xFF	; 255
+     40a:	f9 01       	movw	r30, r18
+     40c:	ee 0f       	add	r30, r30
+     40e:	ff 1f       	adc	r31, r31
+     410:	ee 0f       	add	r30, r30
+     412:	ff 1f       	adc	r31, r31
+     414:	ee 0f       	add	r30, r30
+     416:	ff 1f       	adc	r31, r31
+     418:	e8 0f       	add	r30, r24
+     41a:	f9 1f       	adc	r31, r25
+     41c:	e4 5e       	subi	r30, 0xE4	; 228
+     41e:	fe 4f       	sbci	r31, 0xFE	; 254
+     420:	40 83       	st	Z, r20
+     422:	2f 5f       	subi	r18, 0xFF	; 255
+     424:	3f 4f       	sbci	r19, 0xFF	; 255
+}
+
+void cube_setPlaneY( uint8_t y ) {
+	uint8_t z;
+	if (y < CUBE_MAX_COLS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)	{
+     426:	28 30       	cpi	r18, 0x08	; 8
+     428:	31 05       	cpc	r19, r1
+     42a:	79 f7       	brne	.-34     	; 0x40a <cube_setPlaneY+0xc>
+     42c:	08 95       	ret
+
+0000042e <cube_clearPlaneY>:
+	}
+}
+
+void cube_clearPlaneY( uint8_t y ) {
+	uint8_t z;
+	if (y < CUBE_MAX_COLS)	{
+     42e:	88 30       	cpi	r24, 0x08	; 8
+     430:	a0 f4       	brcc	.+40     	; 0x45a <cube_clearPlaneY+0x2c>
+     432:	20 e0       	ldi	r18, 0x00	; 0
+     434:	30 e0       	ldi	r19, 0x00	; 0
+		for (z=0; z < CUBE_MAX_LAYERS; z++)	{
+			cube[z][y] = 0x00;
+     436:	90 e0       	ldi	r25, 0x00	; 0
+     438:	f9 01       	movw	r30, r18
+     43a:	ee 0f       	add	r30, r30
+     43c:	ff 1f       	adc	r31, r31
+     43e:	ee 0f       	add	r30, r30
+     440:	ff 1f       	adc	r31, r31
+     442:	ee 0f       	add	r30, r30
+     444:	ff 1f       	adc	r31, r31
+     446:	e8 0f       	add	r30, r24
+     448:	f9 1f       	adc	r31, r25
+     44a:	e4 5e       	subi	r30, 0xE4	; 228
+     44c:	fe 4f       	sbci	r31, 0xFE	; 254
+     44e:	10 82       	st	Z, r1
+     450:	2f 5f       	subi	r18, 0xFF	; 255
+     452:	3f 4f       	sbci	r19, 0xFF	; 255
+}
+
+void cube_clearPlaneY( uint8_t y ) {
+	uint8_t z;
+	if (y < CUBE_MAX_COLS)	{
+		for (z=0; z < CUBE_MAX_LAYERS; z++)	{
+     454:	28 30       	cpi	r18, 0x08	; 8
+     456:	31 05       	cpc	r19, r1
+     458:	79 f7       	brne	.-34     	; 0x438 <cube_clearPlaneY+0xa>
+     45a:	08 95       	ret
+
+0000045c <cube_setPlaneZ>:
+	}
+}
+
+void cube_setPlaneZ( uint8_t z ) {
+	uint8_t y;
+	if (z < CUBE_MAX_LAYERS ) {
+     45c:	88 30       	cpi	r24, 0x08	; 8
+     45e:	a8 f4       	brcc	.+42     	; 0x48a <cube_setPlaneZ+0x2e>
+     460:	20 e0       	ldi	r18, 0x00	; 0
+     462:	30 e0       	ldi	r19, 0x00	; 0
+		for (y=0; y<CUBE_MAX_COLS; y++) {
+			cube[z][y] = 0xFF;	
+     464:	90 e0       	ldi	r25, 0x00	; 0
+     466:	88 0f       	add	r24, r24
+     468:	99 1f       	adc	r25, r25
+     46a:	88 0f       	add	r24, r24
+     46c:	99 1f       	adc	r25, r25
+     46e:	88 0f       	add	r24, r24
+     470:	99 1f       	adc	r25, r25
+     472:	4f ef       	ldi	r20, 0xFF	; 255
+     474:	fc 01       	movw	r30, r24
+     476:	e2 0f       	add	r30, r18
+     478:	f3 1f       	adc	r31, r19
+     47a:	e4 5e       	subi	r30, 0xE4	; 228
+     47c:	fe 4f       	sbci	r31, 0xFE	; 254
+     47e:	40 83       	st	Z, r20
+     480:	2f 5f       	subi	r18, 0xFF	; 255
+     482:	3f 4f       	sbci	r19, 0xFF	; 255
+}
+
+void cube_setPlaneZ( uint8_t z ) {
+	uint8_t y;
+	if (z < CUBE_MAX_LAYERS ) {
+		for (y=0; y<CUBE_MAX_COLS; y++) {
+     484:	28 30       	cpi	r18, 0x08	; 8
+     486:	31 05       	cpc	r19, r1
+     488:	a9 f7       	brne	.-22     	; 0x474 <cube_setPlaneZ+0x18>
+     48a:	08 95       	ret
+
+0000048c <cube_clearPlaneZ>:
+	}
+}
+
+void cube_clearPlaneZ( uint8_t z ) {
+	uint8_t y;
+	if (z < CUBE_MAX_LAYERS ) {
+     48c:	88 30       	cpi	r24, 0x08	; 8
+     48e:	a0 f4       	brcc	.+40     	; 0x4b8 <cube_clearPlaneZ+0x2c>
+     490:	20 e0       	ldi	r18, 0x00	; 0
+     492:	30 e0       	ldi	r19, 0x00	; 0
+		for (y=0; y<CUBE_MAX_COLS; y++) {
+			cube[z][y] = 0x00;
+     494:	90 e0       	ldi	r25, 0x00	; 0
+     496:	88 0f       	add	r24, r24
+     498:	99 1f       	adc	r25, r25
+     49a:	88 0f       	add	r24, r24
+     49c:	99 1f       	adc	r25, r25
+     49e:	88 0f       	add	r24, r24
+     4a0:	99 1f       	adc	r25, r25
+     4a2:	fc 01       	movw	r30, r24
+     4a4:	e2 0f       	add	r30, r18
+     4a6:	f3 1f       	adc	r31, r19
+     4a8:	e4 5e       	subi	r30, 0xE4	; 228
+     4aa:	fe 4f       	sbci	r31, 0xFE	; 254
+     4ac:	10 82       	st	Z, r1
+     4ae:	2f 5f       	subi	r18, 0xFF	; 255
+     4b0:	3f 4f       	sbci	r19, 0xFF	; 255
+}
+
+void cube_clearPlaneZ( uint8_t z ) {
+	uint8_t y;
+	if (z < CUBE_MAX_LAYERS ) {
+		for (y=0; y<CUBE_MAX_COLS; y++) {
+     4b2:	28 30       	cpi	r18, 0x08	; 8
+     4b4:	31 05       	cpc	r19, r1
+     4b6:	a9 f7       	brne	.-22     	; 0x4a2 <cube_clearPlaneZ+0x16>
+     4b8:	08 95       	ret
+
+000004ba <cube_bitLine>:
+ 
+ @result		Ein Byte, dessen Bits von start bis end gesetzt sind
+*/
+
+uint8_t cube_bitLine (uint8_t start, uint8_t end)  {
+	return ((0xFF << start) & ~(0xFF << (end+1)));
+     4ba:	6f 5f       	subi	r22, 0xFF	; 255
+     4bc:	2f ef       	ldi	r18, 0xFF	; 255
+     4be:	30 e0       	ldi	r19, 0x00	; 0
+     4c0:	a9 01       	movw	r20, r18
+     4c2:	02 c0       	rjmp	.+4      	; 0x4c8 <cube_bitLine+0xe>
+     4c4:	44 0f       	add	r20, r20
+     4c6:	55 1f       	adc	r21, r21
+     4c8:	6a 95       	dec	r22
+     4ca:	e2 f7       	brpl	.-8      	; 0x4c4 <cube_bitLine+0xa>
+     4cc:	ba 01       	movw	r22, r20
+     4ce:	60 95       	com	r22
+     4d0:	a9 01       	movw	r20, r18
+     4d2:	02 c0       	rjmp	.+4      	; 0x4d8 <cube_bitLine+0x1e>
+     4d4:	44 0f       	add	r20, r20
+     4d6:	55 1f       	adc	r21, r21
+     4d8:	8a 95       	dec	r24
+     4da:	e2 f7       	brpl	.-8      	; 0x4d4 <cube_bitLine+0x1a>
+     4dc:	ca 01       	movw	r24, r20
+}
+     4de:	86 23       	and	r24, r22
+     4e0:	08 95       	ret
+
+000004e2 <cube_Filled>:
+    x = ((x >> 4) & 0x0f) | ((x << 4) & 0xf0);
+    return x;	
+}
+
+//ausgefüllter Würfel
+void cube_Filled( uint8_t x1, uint8_t y1, uint8_t z1, uint8_t x2, uint8_t y2, uint8_t z2 ) {
+     4e2:	bf 92       	push	r11
+     4e4:	cf 92       	push	r12
+     4e6:	df 92       	push	r13
+     4e8:	ef 92       	push	r14
+     4ea:	ff 92       	push	r15
+     4ec:	0f 93       	push	r16
+     4ee:	1f 93       	push	r17
+     4f0:	cf 93       	push	r28
+     4f2:	df 93       	push	r29
+     4f4:	00 d0       	rcall	.+0      	; 0x4f6 <cube_Filled+0x14>
+     4f6:	00 d0       	rcall	.+0      	; 0x4f8 <cube_Filled+0x16>
+     4f8:	00 d0       	rcall	.+0      	; 0x4fa <cube_Filled+0x18>
+     4fa:	cd b7       	in	r28, 0x3d	; 61
+     4fc:	de b7       	in	r29, 0x3e	; 62
+     4fe:	89 83       	std	Y+1, r24	; 0x01
+     500:	6a 83       	std	Y+2, r22	; 0x02
+     502:	4b 83       	std	Y+3, r20	; 0x03
+     504:	2c 83       	std	Y+4, r18	; 0x04
+     506:	0d 83       	std	Y+5, r16	; 0x05
+     508:	ee 82       	std	Y+6, r14	; 0x06
+	uint8_t iy,iz;
+	
+	sortAsc( &x1, &x2 );
+     50a:	be 01       	movw	r22, r28
+     50c:	6c 5f       	subi	r22, 0xFC	; 252
+     50e:	7f 4f       	sbci	r23, 0xFF	; 255
+     510:	ce 01       	movw	r24, r28
+     512:	01 96       	adiw	r24, 0x01	; 1
+     514:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	sortAsc( &y1, &y2 );
+     518:	be 01       	movw	r22, r28
+     51a:	6b 5f       	subi	r22, 0xFB	; 251
+     51c:	7f 4f       	sbci	r23, 0xFF	; 255
+     51e:	ce 01       	movw	r24, r28
+     520:	02 96       	adiw	r24, 0x02	; 2
+     522:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	sortAsc( &z1, &z2 );
+     526:	be 01       	movw	r22, r28
+     528:	6a 5f       	subi	r22, 0xFA	; 250
+     52a:	7f 4f       	sbci	r23, 0xFF	; 255
+     52c:	ce 01       	movw	r24, r28
+     52e:	03 96       	adiw	r24, 0x03	; 3
+     530:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	
+	for (iz=z1; iz <= z2; iz++)	{
+     534:	0b 81       	ldd	r16, Y+3	; 0x03
+     536:	ee 80       	ldd	r14, Y+6	; 0x06
+     538:	e0 16       	cp	r14, r16
+     53a:	10 f1       	brcs	.+68     	; 0x580 <cube_Filled+0x9e>
+		for (iy=y1; iy <= y2; iy++) {
+     53c:	fa 80       	ldd	r15, Y+2	; 0x02
+     53e:	1d 81       	ldd	r17, Y+5	; 0x05
+			cube[iz][iy] |= cube_bitLine( x1, x2 );
+     540:	bc 80       	ldd	r11, Y+4	; 0x04
+     542:	c9 80       	ldd	r12, Y+1	; 0x01
+	sortAsc( &x1, &x2 );
+	sortAsc( &y1, &y2 );
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+		for (iy=y1; iy <= y2; iy++) {
+     544:	df 2c       	mov	r13, r15
+     546:	1f 15       	cp	r17, r15
+     548:	c0 f0       	brcs	.+48     	; 0x57a <cube_Filled+0x98>
+			cube[iz][iy] |= cube_bitLine( x1, x2 );
+     54a:	6b 2d       	mov	r22, r11
+     54c:	8c 2d       	mov	r24, r12
+     54e:	0e 94 5d 02 	call	0x4ba	; 0x4ba <cube_bitLine>
+	sortAsc( &x1, &x2 );
+	sortAsc( &y1, &y2 );
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+		for (iy=y1; iy <= y2; iy++) {
+     552:	9d 2d       	mov	r25, r13
+			cube[iz][iy] |= cube_bitLine( x1, x2 );
+     554:	20 2f       	mov	r18, r16
+     556:	30 e0       	ldi	r19, 0x00	; 0
+     558:	22 0f       	add	r18, r18
+     55a:	33 1f       	adc	r19, r19
+     55c:	22 0f       	add	r18, r18
+     55e:	33 1f       	adc	r19, r19
+     560:	22 0f       	add	r18, r18
+     562:	33 1f       	adc	r19, r19
+     564:	f9 01       	movw	r30, r18
+     566:	e9 0f       	add	r30, r25
+     568:	f1 1d       	adc	r31, r1
+     56a:	e4 5e       	subi	r30, 0xE4	; 228
+     56c:	fe 4f       	sbci	r31, 0xFE	; 254
+     56e:	40 81       	ld	r20, Z
+     570:	48 2b       	or	r20, r24
+     572:	40 83       	st	Z, r20
+	sortAsc( &x1, &x2 );
+	sortAsc( &y1, &y2 );
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+		for (iy=y1; iy <= y2; iy++) {
+     574:	9f 5f       	subi	r25, 0xFF	; 255
+     576:	19 17       	cp	r17, r25
+     578:	a8 f7       	brcc	.-22     	; 0x564 <cube_Filled+0x82>
+	
+	sortAsc( &x1, &x2 );
+	sortAsc( &y1, &y2 );
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+     57a:	0f 5f       	subi	r16, 0xFF	; 255
+     57c:	e0 16       	cp	r14, r16
+     57e:	18 f7       	brcc	.-58     	; 0x546 <cube_Filled+0x64>
+		for (iy=y1; iy <= y2; iy++) {
+			cube[iz][iy] |= cube_bitLine( x1, x2 );
+		}
+	}	
+}
+     580:	26 96       	adiw	r28, 0x06	; 6
+     582:	0f b6       	in	r0, 0x3f	; 63
+     584:	f8 94       	cli
+     586:	de bf       	out	0x3e, r29	; 62
+     588:	0f be       	out	0x3f, r0	; 63
+     58a:	cd bf       	out	0x3d, r28	; 61
+     58c:	df 91       	pop	r29
+     58e:	cf 91       	pop	r28
+     590:	1f 91       	pop	r17
+     592:	0f 91       	pop	r16
+     594:	ff 90       	pop	r15
+     596:	ef 90       	pop	r14
+     598:	df 90       	pop	r13
+     59a:	cf 90       	pop	r12
+     59c:	bf 90       	pop	r11
+     59e:	08 95       	ret
+
+000005a0 <cube_Walls>:
+
+
+//Seiten eines Würfel
+void cube_Walls( uint8_t x1, uint8_t y1, uint8_t z1, uint8_t x2, uint8_t y2, uint8_t z2 ) {
+     5a0:	4f 92       	push	r4
+     5a2:	5f 92       	push	r5
+     5a4:	6f 92       	push	r6
+     5a6:	7f 92       	push	r7
+     5a8:	8f 92       	push	r8
+     5aa:	9f 92       	push	r9
+     5ac:	af 92       	push	r10
+     5ae:	bf 92       	push	r11
+     5b0:	cf 92       	push	r12
+     5b2:	df 92       	push	r13
+     5b4:	ef 92       	push	r14
+     5b6:	ff 92       	push	r15
+     5b8:	0f 93       	push	r16
+     5ba:	1f 93       	push	r17
+     5bc:	cf 93       	push	r28
+     5be:	df 93       	push	r29
+     5c0:	00 d0       	rcall	.+0      	; 0x5c2 <cube_Walls+0x22>
+     5c2:	00 d0       	rcall	.+0      	; 0x5c4 <cube_Walls+0x24>
+     5c4:	00 d0       	rcall	.+0      	; 0x5c6 <cube_Walls+0x26>
+     5c6:	cd b7       	in	r28, 0x3d	; 61
+     5c8:	de b7       	in	r29, 0x3e	; 62
+     5ca:	89 83       	std	Y+1, r24	; 0x01
+     5cc:	6a 83       	std	Y+2, r22	; 0x02
+     5ce:	4b 83       	std	Y+3, r20	; 0x03
+     5d0:	2c 83       	std	Y+4, r18	; 0x04
+     5d2:	0d 83       	std	Y+5, r16	; 0x05
+     5d4:	ee 82       	std	Y+6, r14	; 0x06
+	uint8_t iy,iz;
+	
+	sortAsc( &x1, &x2 );
+     5d6:	be 01       	movw	r22, r28
+     5d8:	6c 5f       	subi	r22, 0xFC	; 252
+     5da:	7f 4f       	sbci	r23, 0xFF	; 255
+     5dc:	ce 01       	movw	r24, r28
+     5de:	01 96       	adiw	r24, 0x01	; 1
+     5e0:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	sortAsc( &y1, &y2 );
+     5e4:	be 01       	movw	r22, r28
+     5e6:	6b 5f       	subi	r22, 0xFB	; 251
+     5e8:	7f 4f       	sbci	r23, 0xFF	; 255
+     5ea:	ce 01       	movw	r24, r28
+     5ec:	02 96       	adiw	r24, 0x02	; 2
+     5ee:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	sortAsc( &z1, &z2 );
+     5f2:	be 01       	movw	r22, r28
+     5f4:	6a 5f       	subi	r22, 0xFA	; 250
+     5f6:	7f 4f       	sbci	r23, 0xFF	; 255
+     5f8:	ce 01       	movw	r24, r28
+     5fa:	03 96       	adiw	r24, 0x03	; 3
+     5fc:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	
+	for (iz=z1; iz <= z2; iz++)	{
+     600:	7b 80       	ldd	r7, Y+3	; 0x03
+     602:	6e 80       	ldd	r6, Y+6	; 0x06
+     604:	67 14       	cp	r6, r7
+     606:	08 f4       	brcc	.+2      	; 0x60a <cube_Walls+0x6a>
+     608:	45 c0       	rjmp	.+138    	; 0x694 <cube_Walls+0xf4>
+		for (iy=y1; iy <= y2; iy++) {
+     60a:	aa 80       	ldd	r10, Y+2	; 0x02
+     60c:	cd 80       	ldd	r12, Y+5	; 0x05
+			
+			if (iy == y1 || iy == y2 || iz == z1 || iz == z2) {
+				cube[iz][iy] = cube_bitLine(x1,x2);
+			} else	{
+				cube[iz][iy] |= ((0x01 << x1) | (0x01 << x2));
+     60e:	99 80       	ldd	r9, Y+1	; 0x01
+     610:	8c 80       	ldd	r8, Y+4	; 0x04
+     612:	81 e0       	ldi	r24, 0x01	; 1
+     614:	90 e0       	ldi	r25, 0x00	; 0
+     616:	9c 01       	movw	r18, r24
+     618:	08 2c       	mov	r0, r8
+     61a:	02 c0       	rjmp	.+4      	; 0x620 <cube_Walls+0x80>
+     61c:	22 0f       	add	r18, r18
+     61e:	33 1f       	adc	r19, r19
+     620:	0a 94       	dec	r0
+     622:	e2 f7       	brpl	.-8      	; 0x61c <cube_Walls+0x7c>
+     624:	09 2c       	mov	r0, r9
+     626:	02 c0       	rjmp	.+4      	; 0x62c <cube_Walls+0x8c>
+     628:	88 0f       	add	r24, r24
+     62a:	99 1f       	adc	r25, r25
+     62c:	0a 94       	dec	r0
+     62e:	e2 f7       	brpl	.-8      	; 0x628 <cube_Walls+0x88>
+     630:	52 2e       	mov	r5, r18
+     632:	58 2a       	or	r5, r24
+	
+	sortAsc( &x1, &x2 );
+	sortAsc( &y1, &y2 );
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+     634:	b7 2c       	mov	r11, r7
+		for (iy=y1; iy <= y2; iy++) {
+     636:	4a 2c       	mov	r4, r10
+     638:	ca 14       	cp	r12, r10
+     63a:	48 f1       	brcs	.+82     	; 0x68e <cube_Walls+0xee>
+     63c:	d4 2c       	mov	r13, r4
+			
+			if (iy == y1 || iy == y2 || iz == z1 || iz == z2) {
+				cube[iz][iy] = cube_bitLine(x1,x2);
+     63e:	eb 2c       	mov	r14, r11
+     640:	f1 2c       	mov	r15, r1
+     642:	ee 0c       	add	r14, r14
+     644:	ff 1c       	adc	r15, r15
+     646:	ee 0c       	add	r14, r14
+     648:	ff 1c       	adc	r15, r15
+     64a:	ee 0c       	add	r14, r14
+     64c:	ff 1c       	adc	r15, r15
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+		for (iy=y1; iy <= y2; iy++) {
+			
+			if (iy == y1 || iy == y2 || iz == z1 || iz == z2) {
+     64e:	da 14       	cp	r13, r10
+     650:	31 f0       	breq	.+12     	; 0x65e <cube_Walls+0xbe>
+     652:	cd 14       	cp	r12, r13
+     654:	21 f0       	breq	.+8      	; 0x65e <cube_Walls+0xbe>
+     656:	b7 14       	cp	r11, r7
+     658:	11 f0       	breq	.+4      	; 0x65e <cube_Walls+0xbe>
+     65a:	6b 10       	cpse	r6, r11
+     65c:	0d c0       	rjmp	.+26     	; 0x678 <cube_Walls+0xd8>
+				cube[iz][iy] = cube_bitLine(x1,x2);
+     65e:	0d 2d       	mov	r16, r13
+     660:	10 e0       	ldi	r17, 0x00	; 0
+     662:	68 2d       	mov	r22, r8
+     664:	89 2d       	mov	r24, r9
+     666:	0e 94 5d 02 	call	0x4ba	; 0x4ba <cube_bitLine>
+     66a:	f8 01       	movw	r30, r16
+     66c:	ee 0d       	add	r30, r14
+     66e:	ff 1d       	adc	r31, r15
+     670:	e4 5e       	subi	r30, 0xE4	; 228
+     672:	fe 4f       	sbci	r31, 0xFE	; 254
+     674:	80 83       	st	Z, r24
+     676:	08 c0       	rjmp	.+16     	; 0x688 <cube_Walls+0xe8>
+			} else	{
+				cube[iz][iy] |= ((0x01 << x1) | (0x01 << x2));
+     678:	f7 01       	movw	r30, r14
+     67a:	ed 0d       	add	r30, r13
+     67c:	f1 1d       	adc	r31, r1
+     67e:	e4 5e       	subi	r30, 0xE4	; 228
+     680:	fe 4f       	sbci	r31, 0xFE	; 254
+     682:	80 81       	ld	r24, Z
+     684:	85 29       	or	r24, r5
+     686:	80 83       	st	Z, r24
+	sortAsc( &x1, &x2 );
+	sortAsc( &y1, &y2 );
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+		for (iy=y1; iy <= y2; iy++) {
+     688:	d3 94       	inc	r13
+     68a:	cd 14       	cp	r12, r13
+     68c:	00 f7       	brcc	.-64     	; 0x64e <cube_Walls+0xae>
+	
+	sortAsc( &x1, &x2 );
+	sortAsc( &y1, &y2 );
+	sortAsc( &z1, &z2 );
+	
+	for (iz=z1; iz <= z2; iz++)	{
+     68e:	b3 94       	inc	r11
+     690:	6b 14       	cp	r6, r11
+     692:	90 f6       	brcc	.-92     	; 0x638 <cube_Walls+0x98>
+			} else	{
+				cube[iz][iy] |= ((0x01 << x1) | (0x01 << x2));
+			}
+		}
+	}
+}
+     694:	26 96       	adiw	r28, 0x06	; 6
+     696:	0f b6       	in	r0, 0x3f	; 63
+     698:	f8 94       	cli
+     69a:	de bf       	out	0x3e, r29	; 62
+     69c:	0f be       	out	0x3f, r0	; 63
+     69e:	cd bf       	out	0x3d, r28	; 61
+     6a0:	df 91       	pop	r29
+     6a2:	cf 91       	pop	r28
+     6a4:	1f 91       	pop	r17
+     6a6:	0f 91       	pop	r16
+     6a8:	ff 90       	pop	r15
+     6aa:	ef 90       	pop	r14
+     6ac:	df 90       	pop	r13
+     6ae:	cf 90       	pop	r12
+     6b0:	bf 90       	pop	r11
+     6b2:	af 90       	pop	r10
+     6b4:	9f 90       	pop	r9
+     6b6:	8f 90       	pop	r8
+     6b8:	7f 90       	pop	r7
+     6ba:	6f 90       	pop	r6
+     6bc:	5f 90       	pop	r5
+     6be:	4f 90       	pop	r4
+     6c0:	08 95       	ret
+
+000006c2 <cube_Edges>:
+
+//Kanten eines Würfel
+void cube_Edges( uint8_t x1, uint8_t y1, uint8_t z1, uint8_t x2, uint8_t y2, uint8_t z2 ) {
+     6c2:	df 92       	push	r13
+     6c4:	ef 92       	push	r14
+     6c6:	ff 92       	push	r15
+     6c8:	0f 93       	push	r16
+     6ca:	1f 93       	push	r17
+     6cc:	cf 93       	push	r28
+     6ce:	df 93       	push	r29
+     6d0:	00 d0       	rcall	.+0      	; 0x6d2 <cube_Edges+0x10>
+     6d2:	00 d0       	rcall	.+0      	; 0x6d4 <cube_Edges+0x12>
+     6d4:	00 d0       	rcall	.+0      	; 0x6d6 <cube_Edges+0x14>
+     6d6:	cd b7       	in	r28, 0x3d	; 61
+     6d8:	de b7       	in	r29, 0x3e	; 62
+     6da:	89 83       	std	Y+1, r24	; 0x01
+     6dc:	6a 83       	std	Y+2, r22	; 0x02
+     6de:	4b 83       	std	Y+3, r20	; 0x03
+     6e0:	2c 83       	std	Y+4, r18	; 0x04
+     6e2:	0d 83       	std	Y+5, r16	; 0x05
+     6e4:	ee 82       	std	Y+6, r14	; 0x06
+	uint8_t iy,iz;
+	
+	sortAsc( &x1, &x2 );
+     6e6:	be 01       	movw	r22, r28
+     6e8:	6c 5f       	subi	r22, 0xFC	; 252
+     6ea:	7f 4f       	sbci	r23, 0xFF	; 255
+     6ec:	ce 01       	movw	r24, r28
+     6ee:	01 96       	adiw	r24, 0x01	; 1
+     6f0:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	sortAsc( &y1, &y2 );
+     6f4:	be 01       	movw	r22, r28
+     6f6:	6b 5f       	subi	r22, 0xFB	; 251
+     6f8:	7f 4f       	sbci	r23, 0xFF	; 255
+     6fa:	ce 01       	movw	r24, r28
+     6fc:	02 96       	adiw	r24, 0x02	; 2
+     6fe:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	sortAsc( &z1, &z2 );
+     702:	be 01       	movw	r22, r28
+     704:	6a 5f       	subi	r22, 0xFA	; 250
+     706:	7f 4f       	sbci	r23, 0xFF	; 255
+     708:	ce 01       	movw	r24, r28
+     70a:	03 96       	adiw	r24, 0x03	; 3
+     70c:	0e 94 c9 00 	call	0x192	; 0x192 <sortAsc>
+	
+	// Linien entlang der X-Achse
+	cube[z1][y1] = cube_bitLine(x1,x2);
+     710:	eb 80       	ldd	r14, Y+3	; 0x03
+     712:	f1 2c       	mov	r15, r1
+     714:	da 80       	ldd	r13, Y+2	; 0x02
+     716:	0d 2d       	mov	r16, r13
+     718:	10 e0       	ldi	r17, 0x00	; 0
+     71a:	6c 81       	ldd	r22, Y+4	; 0x04
+     71c:	89 81       	ldd	r24, Y+1	; 0x01
+     71e:	0e 94 5d 02 	call	0x4ba	; 0x4ba <cube_bitLine>
+     722:	a7 01       	movw	r20, r14
+     724:	44 0f       	add	r20, r20
+     726:	55 1f       	adc	r21, r21
+     728:	44 0f       	add	r20, r20
+     72a:	55 1f       	adc	r21, r21
+     72c:	44 0f       	add	r20, r20
+     72e:	55 1f       	adc	r21, r21
+     730:	fa 01       	movw	r30, r20
+     732:	e0 0f       	add	r30, r16
+     734:	f1 1f       	adc	r31, r17
+     736:	e4 5e       	subi	r30, 0xE4	; 228
+     738:	fe 4f       	sbci	r31, 0xFE	; 254
+     73a:	80 83       	st	Z, r24
+	cube[z1][y2] = cube_bitLine(x1,x2);
+     73c:	9d 81       	ldd	r25, Y+5	; 0x05
+     73e:	29 2f       	mov	r18, r25
+     740:	30 e0       	ldi	r19, 0x00	; 0
+     742:	42 0f       	add	r20, r18
+     744:	53 1f       	adc	r21, r19
+     746:	fa 01       	movw	r30, r20
+     748:	e4 5e       	subi	r30, 0xE4	; 228
+     74a:	fe 4f       	sbci	r31, 0xFE	; 254
+     74c:	80 83       	st	Z, r24
+	cube[z2][y1] = cube_bitLine(x1,x2);
+     74e:	4e 81       	ldd	r20, Y+6	; 0x06
+     750:	50 e0       	ldi	r21, 0x00	; 0
+     752:	44 0f       	add	r20, r20
+     754:	55 1f       	adc	r21, r21
+     756:	44 0f       	add	r20, r20
+     758:	55 1f       	adc	r21, r21
+     75a:	44 0f       	add	r20, r20
+     75c:	55 1f       	adc	r21, r21
+     75e:	04 0f       	add	r16, r20
+     760:	15 1f       	adc	r17, r21
+     762:	f8 01       	movw	r30, r16
+     764:	e4 5e       	subi	r30, 0xE4	; 228
+     766:	fe 4f       	sbci	r31, 0xFE	; 254
+     768:	80 83       	st	Z, r24
+	cube[z2][y2] = cube_bitLine(x1,x2);
+     76a:	24 0f       	add	r18, r20
+     76c:	35 1f       	adc	r19, r21
+     76e:	f9 01       	movw	r30, r18
+     770:	e4 5e       	subi	r30, 0xE4	; 228
+     772:	fe 4f       	sbci	r31, 0xFE	; 254
+     774:	80 83       	st	Z, r24
+
+	// Linien entlang der Y-Achse
+	for (iy=y1; iy <= y2; iy++)	{
+     776:	9d 15       	cp	r25, r13
+     778:	c0 f0       	brcs	.+48     	; 0x7aa <cube_Edges+0xe8>
+		cube_setVoxel(x1,iy,z1);
+     77a:	4b 81       	ldd	r20, Y+3	; 0x03
+     77c:	6d 2d       	mov	r22, r13
+     77e:	89 81       	ldd	r24, Y+1	; 0x01
+     780:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+		cube_setVoxel(x1,iy,z2);
+     784:	4e 81       	ldd	r20, Y+6	; 0x06
+     786:	6d 2d       	mov	r22, r13
+     788:	89 81       	ldd	r24, Y+1	; 0x01
+     78a:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+		cube_setVoxel(x2,iy,z1);
+     78e:	4b 81       	ldd	r20, Y+3	; 0x03
+     790:	6d 2d       	mov	r22, r13
+     792:	8c 81       	ldd	r24, Y+4	; 0x04
+     794:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+		cube_setVoxel(x2,iy,z2);
+     798:	4e 81       	ldd	r20, Y+6	; 0x06
+     79a:	6d 2d       	mov	r22, r13
+     79c:	8c 81       	ldd	r24, Y+4	; 0x04
+     79e:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+	cube[z1][y2] = cube_bitLine(x1,x2);
+	cube[z2][y1] = cube_bitLine(x1,x2);
+	cube[z2][y2] = cube_bitLine(x1,x2);
+
+	// Linien entlang der Y-Achse
+	for (iy=y1; iy <= y2; iy++)	{
+     7a2:	d3 94       	inc	r13
+     7a4:	8d 81       	ldd	r24, Y+5	; 0x05
+     7a6:	8d 15       	cp	r24, r13
+     7a8:	40 f7       	brcc	.-48     	; 0x77a <cube_Edges+0xb8>
+		cube_setVoxel(x2,iy,z1);
+		cube_setVoxel(x2,iy,z2);
+	}
+
+	// Linien entlang der Z-Achse
+	for (iz=z1; iz <= z2; iz++) {
+     7aa:	1b 81       	ldd	r17, Y+3	; 0x03
+     7ac:	8e 81       	ldd	r24, Y+6	; 0x06
+     7ae:	81 17       	cp	r24, r17
+     7b0:	c0 f0       	brcs	.+48     	; 0x7e2 <cube_Edges+0x120>
+		cube_setVoxel(x1,y1,iz);
+     7b2:	41 2f       	mov	r20, r17
+     7b4:	6a 81       	ldd	r22, Y+2	; 0x02
+     7b6:	89 81       	ldd	r24, Y+1	; 0x01
+     7b8:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+		cube_setVoxel(x1,y2,iz);
+     7bc:	41 2f       	mov	r20, r17
+     7be:	6d 81       	ldd	r22, Y+5	; 0x05
+     7c0:	89 81       	ldd	r24, Y+1	; 0x01
+     7c2:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+		cube_setVoxel(x2,y1,iz);
+     7c6:	41 2f       	mov	r20, r17
+     7c8:	6a 81       	ldd	r22, Y+2	; 0x02
+     7ca:	8c 81       	ldd	r24, Y+4	; 0x04
+     7cc:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+		cube_setVoxel(x2,y2,iz);
+     7d0:	41 2f       	mov	r20, r17
+     7d2:	6d 81       	ldd	r22, Y+5	; 0x05
+     7d4:	8c 81       	ldd	r24, Y+4	; 0x04
+     7d6:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+		cube_setVoxel(x2,iy,z1);
+		cube_setVoxel(x2,iy,z2);
+	}
+
+	// Linien entlang der Z-Achse
+	for (iz=z1; iz <= z2; iz++) {
+     7da:	1f 5f       	subi	r17, 0xFF	; 255
+     7dc:	8e 81       	ldd	r24, Y+6	; 0x06
+     7de:	81 17       	cp	r24, r17
+     7e0:	40 f7       	brcc	.-48     	; 0x7b2 <cube_Edges+0xf0>
+		cube_setVoxel(x1,y1,iz);
+		cube_setVoxel(x1,y2,iz);
+		cube_setVoxel(x2,y1,iz);
+		cube_setVoxel(x2,y2,iz);
+	}	
+}
+     7e2:	26 96       	adiw	r28, 0x06	; 6
+     7e4:	0f b6       	in	r0, 0x3f	; 63
+     7e6:	f8 94       	cli
+     7e8:	de bf       	out	0x3e, r29	; 62
+     7ea:	0f be       	out	0x3f, r0	; 63
+     7ec:	cd bf       	out	0x3d, r28	; 61
+     7ee:	df 91       	pop	r29
+     7f0:	cf 91       	pop	r28
+     7f2:	1f 91       	pop	r17
+     7f4:	0f 91       	pop	r16
+     7f6:	ff 90       	pop	r15
+     7f8:	ef 90       	pop	r14
+     7fa:	df 90       	pop	r13
+     7fc:	08 95       	ret
+
+000007fe <cube_getData>:
+
+
+
+
+uint8_t	cube_getData( uint8_t layer, uint8_t col ) {
+	return( cube[layer][col] );
+     7fe:	28 e0       	ldi	r18, 0x08	; 8
+     800:	82 9f       	mul	r24, r18
+     802:	c0 01       	movw	r24, r0
+     804:	11 24       	eor	r1, r1
+     806:	fc 01       	movw	r30, r24
+     808:	e6 0f       	add	r30, r22
+     80a:	f1 1d       	adc	r31, r1
+     80c:	e4 5e       	subi	r30, 0xE4	; 228
+     80e:	fe 4f       	sbci	r31, 0xFE	; 254
+     810:	80 81       	ld	r24, Z
+}
+     812:	08 95       	ret
+
+00000814 <cube_setData>:
+
+void	cube_setData( uint8_t layer, uint8_t col, uint8_t data ) {
+	cube[layer][col] = data;
+     814:	28 e0       	ldi	r18, 0x08	; 8
+     816:	82 9f       	mul	r24, r18
+     818:	c0 01       	movw	r24, r0
+     81a:	11 24       	eor	r1, r1
+     81c:	fc 01       	movw	r30, r24
+     81e:	e6 0f       	add	r30, r22
+     820:	f1 1d       	adc	r31, r1
+     822:	e4 5e       	subi	r30, 0xE4	; 228
+     824:	fe 4f       	sbci	r31, 0xFE	; 254
+     826:	40 83       	st	Z, r20
+     828:	08 95       	ret
+
+0000082a <drv_clockToLatch>:
+}
+
+//interne Funktion, nicht ins H-File aufnehmen
+void drv_clockToLatch( uint8_t latch, uint8_t value ) {
+
+	D573_Data_Port = value;			//Datenwort an Eingänge der D-Latches anlegen
+     82a:	68 bb       	out	0x18, r22	; 24
+	asm volatile ("nop");
+     82c:	00 00       	nop
+	D573_Clock_PORT = (1<<latch);	//Clock-Leitung des betreffenden Latches aktivieren
+     82e:	21 e0       	ldi	r18, 0x01	; 1
+     830:	30 e0       	ldi	r19, 0x00	; 0
+     832:	a9 01       	movw	r20, r18
+     834:	02 c0       	rjmp	.+4      	; 0x83a <drv_clockToLatch+0x10>
+     836:	44 0f       	add	r20, r20
+     838:	55 1f       	adc	r21, r21
+     83a:	8a 95       	dec	r24
+     83c:	e2 f7       	brpl	.-8      	; 0x836 <drv_clockToLatch+0xc>
+     83e:	45 bb       	out	0x15, r20	; 21
+
+	asm volatile ("nop");			//
+     840:	00 00       	nop
+//	_delay_us(1);					//
+
+	D573_Clock_PORT = 0;			//Clock-Leitung wieder auf Low setzen
+     842:	15 ba       	out	0x15, r1	; 21
+
+	asm volatile ("nop");			//warte, bis Signal Low-Pegel erreicht hat
+     844:	00 00       	nop
+     846:	08 95       	ret
+
+00000848 <drv_drive>:
+//	_delay_us(20);					//
+	//Das Datenwort an den Eingangen der D-Latches stehen lassen
+}
+
+//Methode treibt alle 8 Ebenen an
+void drv_drive() {		//call every 1 ms
+     848:	0f 93       	push	r16
+     84a:	1f 93       	push	r17
+     84c:	cf 93       	push	r28
+     84e:	df 93       	push	r29
+	uint8_t i;
+
+	if (d573_CB_Handler != NULL) { d573_CB_Handler(CB_DRIVE_ENTER); }		//Callback to status report
+     850:	e0 91 ca 00 	lds	r30, 0x00CA
+     854:	f0 91 cb 00 	lds	r31, 0x00CB
+     858:	30 97       	sbiw	r30, 0x00	; 0
+     85a:	11 f0       	breq	.+4      	; 0x860 <__stack+0x1>
+     85c:	81 e0       	ldi	r24, 0x01	; 1
+     85e:	09 95       	icall
+		
+	D573_LAYER_OFF;			//Enable-Pin für Ebenenmultiplexer auf 0 -> alle Ebeben ausschalten
+     860:	97 98       	cbi	0x12, 7	; 18
+	D573_LATCH_OUT_DIS;		//Latches OE ausschalten, damit Low an Low-Side-Treiber
+     862:	93 9a       	sbi	0x12, 3	; 18
+	D573_LAYER_ADR_CLEAR;	//Adressbits E0..E2 auf 0 setzen
+     864:	82 b3       	in	r24, 0x12	; 18
+     866:	8f 78       	andi	r24, 0x8F	; 143
+     868:	82 bb       	out	0x12, r24	; 18
+	
+	d573_layer = ((d573_layer+1) % CUBE_MAX_LAYERS);		//Dieser Layer soll jetzt als nächstes angezeigt werden  (0..7)
+     86a:	80 91 cc 00 	lds	r24, 0x00CC
+     86e:	90 e0       	ldi	r25, 0x00	; 0
+     870:	01 96       	adiw	r24, 0x01	; 1
+     872:	87 70       	andi	r24, 0x07	; 7
+     874:	90 78       	andi	r25, 0x80	; 128
+     876:	80 93 cc 00 	sts	0x00CC, r24
+
+	if ((d573_layer == 0) && (d573_CB_Handler != NULL)) {	//Sync anzeigen, wenn es eine Callback-Funktion gibt
+     87a:	80 91 cc 00 	lds	r24, 0x00CC
+     87e:	81 11       	cpse	r24, r1
+     880:	50 c0       	rjmp	.+160    	; 0x922 <__stack+0xc3>
+     882:	e0 91 ca 00 	lds	r30, 0x00CA
+     886:	f0 91 cb 00 	lds	r31, 0x00CB
+     88a:	30 97       	sbiw	r30, 0x00	; 0
+     88c:	09 f4       	brne	.+2      	; 0x890 <__stack+0x31>
+     88e:	49 c0       	rjmp	.+146    	; 0x922 <__stack+0xc3>
+		d573_CB_Handler(CB_SYNC);							//Wird nur bei Layer 0 ausgelöst
+     890:	09 95       	icall
+     892:	47 c0       	rjmp	.+142    	; 0x922 <__stack+0xc3>
+	}
+		
+	//transfer the content of d573data array to the latches
+	for (i=0; i<CUBE_MAX_COLS; i++) {
+		if ( (D573_MIRRORMASK & (1<<i) ) > 0 ) {
+     894:	c8 01       	movw	r24, r16
+     896:	0c 2e       	mov	r0, r28
+     898:	02 c0       	rjmp	.+4      	; 0x89e <__stack+0x3f>
+     89a:	88 0f       	add	r24, r24
+     89c:	99 1f       	adc	r25, r25
+     89e:	0a 94       	dec	r0
+     8a0:	e2 f7       	brpl	.-8      	; 0x89a <__stack+0x3b>
+     8a2:	80 7f       	andi	r24, 0xF0	; 240
+     8a4:	99 27       	eor	r25, r25
+     8a6:	18 16       	cp	r1, r24
+     8a8:	19 06       	cpc	r1, r25
+     8aa:	a4 f4       	brge	.+40     	; 0x8d4 <__stack+0x75>
+			drv_clockToLatch( i, mirror( cube[d573_layer][i] )  );		//Byte an die Eingänge der Latches anlegen; Bitfolge spiegeln wg. falscher Verdrahtung
+     8ac:	80 91 cc 00 	lds	r24, 0x00CC
+     8b0:	fe 01       	movw	r30, r28
+     8b2:	38 e0       	ldi	r19, 0x08	; 8
+     8b4:	83 9f       	mul	r24, r19
+     8b6:	e0 0d       	add	r30, r0
+     8b8:	f1 1d       	adc	r31, r1
+     8ba:	11 24       	eor	r1, r1
+     8bc:	e4 5e       	subi	r30, 0xE4	; 228
+     8be:	fe 4f       	sbci	r31, 0xFE	; 254
+     8c0:	80 81       	ld	r24, Z
+*/
+
+static inline uint8_t mirror( uint8_t b ) {
+	uint8_t res;
+
+	asm volatile(   "ldi r25, 8" "\n"
+     8c2:	98 e0       	ldi	r25, 0x08	; 8
+     8c4:	87 95       	ror	r24
+     8c6:	66 1f       	adc	r22, r22
+     8c8:	9a 95       	dec	r25
+     8ca:	e1 f7       	brne	.-8      	; 0x8c4 <__stack+0x65>
+	}
+		
+	//transfer the content of d573data array to the latches
+	for (i=0; i<CUBE_MAX_COLS; i++) {
+		if ( (D573_MIRRORMASK & (1<<i) ) > 0 ) {
+			drv_clockToLatch( i, mirror( cube[d573_layer][i] )  );		//Byte an die Eingänge der Latches anlegen; Bitfolge spiegeln wg. falscher Verdrahtung
+     8cc:	8c 2f       	mov	r24, r28
+     8ce:	0e 94 15 04 	call	0x82a	; 0x82a <drv_clockToLatch>
+     8d2:	0e c0       	rjmp	.+28     	; 0x8f0 <__stack+0x91>
+		} else {
+			drv_clockToLatch( i, cube[d573_layer][i]  );				//Byte an die Eingänge der Latches anlegen
+     8d4:	80 91 cc 00 	lds	r24, 0x00CC
+     8d8:	fe 01       	movw	r30, r28
+     8da:	98 e0       	ldi	r25, 0x08	; 8
+     8dc:	89 9f       	mul	r24, r25
+     8de:	e0 0d       	add	r30, r0
+     8e0:	f1 1d       	adc	r31, r1
+     8e2:	11 24       	eor	r1, r1
+     8e4:	e4 5e       	subi	r30, 0xE4	; 228
+     8e6:	fe 4f       	sbci	r31, 0xFE	; 254
+     8e8:	60 81       	ld	r22, Z
+     8ea:	8c 2f       	mov	r24, r28
+     8ec:	0e 94 15 04 	call	0x82a	; 0x82a <drv_clockToLatch>
+     8f0:	21 96       	adiw	r28, 0x01	; 1
+	if ((d573_layer == 0) && (d573_CB_Handler != NULL)) {	//Sync anzeigen, wenn es eine Callback-Funktion gibt
+		d573_CB_Handler(CB_SYNC);							//Wird nur bei Layer 0 ausgelöst
+	}
+		
+	//transfer the content of d573data array to the latches
+	for (i=0; i<CUBE_MAX_COLS; i++) {
+     8f2:	c8 30       	cpi	r28, 0x08	; 8
+     8f4:	d1 05       	cpc	r29, r1
+     8f6:	71 f6       	brne	.-100    	; 0x894 <__stack+0x35>
+			drv_clockToLatch( i, mirror( cube[d573_layer][i] )  );		//Byte an die Eingänge der Latches anlegen; Bitfolge spiegeln wg. falscher Verdrahtung
+		} else {
+			drv_clockToLatch( i, cube[d573_layer][i]  );				//Byte an die Eingänge der Latches anlegen
+		}
+	}
+	D573_Data_Port = 0;				//Eingänge der D-Latches auf 0 legen  (obsolete)
+     8f8:	18 ba       	out	0x18, r1	; 24
+	
+	D573_LAYER_PORT = (D573_LAYER_PORT  | (d573_layer << D573_LAYER_E0) );		//Adresse am Ebenenmultiplexer einstellen
+     8fa:	22 b3       	in	r18, 0x12	; 18
+     8fc:	80 91 cc 00 	lds	r24, 0x00CC
+     900:	30 e1       	ldi	r19, 0x10	; 16
+     902:	83 9f       	mul	r24, r19
+     904:	c0 01       	movw	r24, r0
+     906:	11 24       	eor	r1, r1
+     908:	82 2b       	or	r24, r18
+     90a:	82 bb       	out	0x12, r24	; 18
+	D573_LATCH_OUT_EN;	//Latches aktivieren, Low-side-Treiber ein
+     90c:	93 98       	cbi	0x12, 3	; 18
+	D573_LAYER_ON;		//High-Side-Treiber ein
+     90e:	97 9a       	sbi	0x12, 7	; 18
+	
+	if (d573_CB_Handler != NULL) { d573_CB_Handler(CB_DRIVE_LEAVE); }
+     910:	e0 91 ca 00 	lds	r30, 0x00CA
+     914:	f0 91 cb 00 	lds	r31, 0x00CB
+     918:	30 97       	sbiw	r30, 0x00	; 0
+     91a:	41 f0       	breq	.+16     	; 0x92c <__stack+0xcd>
+     91c:	82 e0       	ldi	r24, 0x02	; 2
+     91e:	09 95       	icall
+     920:	05 c0       	rjmp	.+10     	; 0x92c <__stack+0xcd>
+//	_delay_us(20);					//
+	//Das Datenwort an den Eingangen der D-Latches stehen lassen
+}
+
+//Methode treibt alle 8 Ebenen an
+void drv_drive() {		//call every 1 ms
+     922:	c0 e0       	ldi	r28, 0x00	; 0
+     924:	d0 e0       	ldi	r29, 0x00	; 0
+		d573_CB_Handler(CB_SYNC);							//Wird nur bei Layer 0 ausgelöst
+	}
+		
+	//transfer the content of d573data array to the latches
+	for (i=0; i<CUBE_MAX_COLS; i++) {
+		if ( (D573_MIRRORMASK & (1<<i) ) > 0 ) {
+     926:	01 e0       	ldi	r16, 0x01	; 1
+     928:	10 e0       	ldi	r17, 0x00	; 0
+     92a:	b4 cf       	rjmp	.-152    	; 0x894 <__stack+0x35>
+	D573_LAYER_PORT = (D573_LAYER_PORT  | (d573_layer << D573_LAYER_E0) );		//Adresse am Ebenenmultiplexer einstellen
+	D573_LATCH_OUT_EN;	//Latches aktivieren, Low-side-Treiber ein
+	D573_LAYER_ON;		//High-Side-Treiber ein
+	
+	if (d573_CB_Handler != NULL) { d573_CB_Handler(CB_DRIVE_LEAVE); }
+}
+     92c:	df 91       	pop	r29
+     92e:	cf 91       	pop	r28
+     930:	1f 91       	pop	r17
+     932:	0f 91       	pop	r16
+     934:	08 95       	ret
+
+00000936 <drv_test_setLatch>:
+
+
+//Value in das Latch 0..7 schreiben;   entspricht for-Schleife in d573_drive()
+void drv_test_setLatch( uint8_t latch, uint8_t value) {
+	latch = latch % 8;
+	drv_clockToLatch( latch, value );
+     936:	87 70       	andi	r24, 0x07	; 7
+     938:	0e 94 15 04 	call	0x82a	; 0x82a <drv_clockToLatch>
+	D573_Data_Port = 0;				//Eingänge der D-Latches auf 0 legen  (obsolete)
+     93c:	18 ba       	out	0x18, r1	; 24
+     93e:	08 95       	ret
+
+00000940 <drv_clearAllLatches>:
+}
+
+
+void drv_clearAllLatches() {
+	D573_Data_Port = 0;
+     940:	18 ba       	out	0x18, r1	; 24
+	asm volatile ("nop");						//
+     942:	00 00       	nop
+	D573_Clock_PORT = 0xFF;
+     944:	8f ef       	ldi	r24, 0xFF	; 255
+     946:	85 bb       	out	0x15, r24	; 21
+	asm volatile ("nop");						//
+     948:	00 00       	nop
+	asm volatile ("nop");						//
+     94a:	00 00       	nop
+	D573_Clock_PORT = 0;
+     94c:	15 ba       	out	0x15, r1	; 21
+	asm volatile ("nop");						//
+     94e:	00 00       	nop
+	D573_Data_Port = 0;
+     950:	18 ba       	out	0x18, r1	; 24
+     952:	08 95       	ret
+
+00000954 <drv_init>:
+	d573_CB_Handler = cbf;
+}
+
+void drv_init() {
+
+	D573_Data_DDR	= 0xFF;						//output
+     954:	8f ef       	ldi	r24, 0xFF	; 255
+     956:	87 bb       	out	0x17, r24	; 23
+	D573_Data_Port	= 0;						//all off
+     958:	18 ba       	out	0x18, r1	; 24
+
+	D573_Clock_DDR  = 0xFF;						//output
+     95a:	84 bb       	out	0x14, r24	; 20
+	D573_Clock_PORT = 0;						//all off
+     95c:	15 ba       	out	0x15, r1	; 21
+
+	D573_LAYER_DDR  |= (D573_LAYER_MASK);		//PD3..PD7 as output
+     95e:	81 b3       	in	r24, 0x11	; 17
+     960:	88 6f       	ori	r24, 0xF8	; 248
+     962:	81 bb       	out	0x11, r24	; 17
+	D573_LAYER_OFF;								//D573_LAYER_ENABLE	= 0
+     964:	97 98       	cbi	0x12, 7	; 18
+	D573_LATCH_OUT_DIS;							//D573_LATCH_OE = 1
+     966:	93 9a       	sbi	0x12, 3	; 18
+	D573_LAYER_ADR_CLEAR;						//D573_LAYER_E0 = 0,	D573_LAYER_E1 = 0,	D573_LAYER_E2 = 0
+     968:	82 b3       	in	r24, 0x12	; 18
+     96a:	8f 78       	andi	r24, 0x8F	; 143
+     96c:	82 bb       	out	0x12, r24	; 18
+	
+	drv_clearAllLatches();						//Latches löschen
+     96e:	0e 94 a0 04 	call	0x940	; 0x940 <drv_clearAllLatches>
+     972:	08 95       	ret
+
+00000974 <drv_test_setLayer>:
+	D573_Data_Port = 0;
+}
+
+
+void drv_test_setLayer( uint8_t layer, uint8_t onOff ) {
+	D573_LAYER_OFF;								//1-aus-8-Dekoder abschalten
+     974:	97 98       	cbi	0x12, 7	; 18
+	if (onOff == _ON) {
+     976:	61 30       	cpi	r22, 0x01	; 1
+     978:	69 f4       	brne	.+26     	; 0x994 <drv_test_setLayer+0x20>
+		layer = layer % CUBE_MAX_LAYERS;
+		D573_LAYER_ADR_CLEAR;												//Adressbits E0..E2 auf 0 setzen
+     97a:	92 b3       	in	r25, 0x12	; 18
+     97c:	9f 78       	andi	r25, 0x8F	; 143
+     97e:	92 bb       	out	0x12, r25	; 18
+		D573_LAYER_PORT = (D573_LAYER_PORT  | (layer << D573_LAYER_E0) );	//Adresse am Ebenenmultiplexer einstellen
+     980:	22 b3       	in	r18, 0x12	; 18
+
+
+void drv_test_setLayer( uint8_t layer, uint8_t onOff ) {
+	D573_LAYER_OFF;								//1-aus-8-Dekoder abschalten
+	if (onOff == _ON) {
+		layer = layer % CUBE_MAX_LAYERS;
+     982:	87 70       	andi	r24, 0x07	; 7
+		D573_LAYER_ADR_CLEAR;												//Adressbits E0..E2 auf 0 setzen
+		D573_LAYER_PORT = (D573_LAYER_PORT  | (layer << D573_LAYER_E0) );	//Adresse am Ebenenmultiplexer einstellen
+     984:	30 e1       	ldi	r19, 0x10	; 16
+     986:	83 9f       	mul	r24, r19
+     988:	c0 01       	movw	r24, r0
+     98a:	11 24       	eor	r1, r1
+     98c:	82 2b       	or	r24, r18
+     98e:	82 bb       	out	0x12, r24	; 18
+		D573_LAYER_ON;														//1-aus-8-Dekoder einschalten
+     990:	97 9a       	sbi	0x12, 7	; 18
+     992:	08 95       	ret
+	} else {
+		D573_LAYER_OFF;
+     994:	97 98       	cbi	0x12, 7	; 18
+		D573_LAYER_ADR_CLEAR;												//Adressbits E0..E2 auf 0 setzen
+     996:	82 b3       	in	r24, 0x12	; 18
+     998:	8f 78       	andi	r24, 0x8F	; 143
+     99a:	82 bb       	out	0x12, r24	; 18
+     99c:	08 95       	ret
+
+0000099e <asHex>:
+uint8_t	multiplexing = 0;	
+
+uint8_t pattern = 0;
+
+char asHex( uint8_t x ) {
+	x = x & 0x0F;
+     99e:	8f 70       	andi	r24, 0x0F	; 15
+	if ( x > 9 ) {
+     9a0:	8a 30       	cpi	r24, 0x0A	; 10
+     9a2:	10 f0       	brcs	.+4      	; 0x9a8 <asHex+0xa>
+		return( (x-10) + 'A' );
+     9a4:	89 5c       	subi	r24, 0xC9	; 201
+     9a6:	08 95       	ret
+	} else {
+		return( x + '0' );
+     9a8:	80 5d       	subi	r24, 0xD0	; 208
+	}
+}
+     9aa:	08 95       	ret
+
+000009ac <cmd_getByte>:
+	}
+}
+
+
+//all functions, dealing with the commands via serial port
+uint8_t cmd_getByte() {
+     9ac:	cf 93       	push	r28
+     9ae:	df 93       	push	r29
+	uint16_t c;
+	c = uart_getc();
+     9b0:	0e 94 38 0a 	call	0x1470	; 0x1470 <uart_getc>
+     9b4:	ec 01       	movw	r28, r24
+	if ((c & 0xFF00) == 0) {	//Byte received
+     9b6:	88 27       	eor	r24, r24
+     9b8:	89 2b       	or	r24, r25
+     9ba:	11 f4       	brne	.+4      	; 0x9c0 <cmd_getByte+0x14>
+		return( (uint8_t)c );
+     9bc:	8c 2f       	mov	r24, r28
+     9be:	19 c0       	rjmp	.+50     	; 0x9f2 <cmd_getByte+0x46>
+	} else {					//some error occured
+		if ( c & UART_NO_DATA ) {		//no data available
+     9c0:	d0 fd       	sbrc	r29, 0
+     9c2:	14 c0       	rjmp	.+40     	; 0x9ec <cmd_getByte+0x40>
+			//not really an error...
+		} else {
+			//Report the errors
+			if ( c & UART_FRAME_ERROR )  {		// Framing Error detected, i.e no stop bit detected
+     9c4:	d4 ff       	sbrs	r29, 4
+     9c6:	04 c0       	rjmp	.+8      	; 0x9d0 <cmd_getByte+0x24>
+				uart_puts_P("UART Frame Error: ");
+     9c8:	81 e4       	ldi	r24, 0x41	; 65
+     9ca:	91 e0       	ldi	r25, 0x01	; 1
+     9cc:	0e 94 76 0a 	call	0x14ec	; 0x14ec <uart_puts_p>
+			}
+			if ( c & UART_OVERRUN_ERROR ) {		// Overrun error
+     9d0:	d3 ff       	sbrs	r29, 3
+     9d2:	04 c0       	rjmp	.+8      	; 0x9dc <cmd_getByte+0x30>
+				uart_puts_P("UART Overrun Error: ");
+     9d4:	8c e2       	ldi	r24, 0x2C	; 44
+     9d6:	91 e0       	ldi	r25, 0x01	; 1
+     9d8:	0e 94 76 0a 	call	0x14ec	; 0x14ec <uart_puts_p>
+			}
+			if ( c & UART_BUFFER_OVERFLOW ) {	//Buffer overflow
+     9dc:	d1 ff       	sbrs	r29, 1
+     9de:	08 c0       	rjmp	.+16     	; 0x9f0 <cmd_getByte+0x44>
+				uart_puts_P("Buffer overflow error: ");
+     9e0:	84 e1       	ldi	r24, 0x14	; 20
+     9e2:	91 e0       	ldi	r25, 0x01	; 1
+     9e4:	0e 94 76 0a 	call	0x14ec	; 0x14ec <uart_puts_p>
+			}
+		}
+		return( 0 );	//Ok, because we do not use value 0 here
+     9e8:	80 e0       	ldi	r24, 0x00	; 0
+     9ea:	03 c0       	rjmp	.+6      	; 0x9f2 <cmd_getByte+0x46>
+     9ec:	80 e0       	ldi	r24, 0x00	; 0
+     9ee:	01 c0       	rjmp	.+2      	; 0x9f2 <cmd_getByte+0x46>
+     9f0:	80 e0       	ldi	r24, 0x00	; 0
+	}
+}
+     9f2:	df 91       	pop	r29
+     9f4:	cf 91       	pop	r28
+     9f6:	08 95       	ret
+
+000009f8 <cmd_getNextByte>:
+
+uint8_t cmd_getNextByte(){
+	uint16_t	c;
+	do {									//wait for the next byte to receive
+		c = uart_getc();					//blocking call
+     9f8:	0e 94 38 0a 	call	0x1470	; 0x1470 <uart_getc>
+	} while ((c & 0xFF00) == UART_NO_DATA);	//returns after the next character is received
+     9fc:	9c 01       	movw	r18, r24
+     9fe:	22 27       	eor	r18, r18
+     a00:	21 15       	cp	r18, r1
+     a02:	31 40       	sbci	r19, 0x01	; 1
+     a04:	c9 f3       	breq	.-14     	; 0x9f8 <cmd_getNextByte>
+	return( (uint8_t)c );					//actually without any timeout
+}
+     a06:	08 95       	ret
+
+00000a08 <cmd_Command>:
+
+void cmd_Command() {		//Use hex-Mode in hterm for testing
+     a08:	0f 93       	push	r16
+     a0a:	1f 93       	push	r17
+     a0c:	cf 93       	push	r28
+     a0e:	df 93       	push	r29
+	uint8_t	c, b, a, x,y,z;
+
+	c = cmd_getByte();
+     a10:	0e 94 d6 04 	call	0x9ac	; 0x9ac <cmd_getByte>
+	switch (c) {
+     a14:	90 e0       	ldi	r25, 0x00	; 0
+     a16:	fc 01       	movw	r30, r24
+     a18:	ff 97       	sbiw	r30, 0x3f	; 63
+     a1a:	e7 33       	cpi	r30, 0x37	; 55
+     a1c:	f1 05       	cpc	r31, r1
+     a1e:	08 f0       	brcs	.+2      	; 0xa22 <cmd_Command+0x1a>
+     a20:	1e c1       	rjmp	.+572    	; 0xc5e <cmd_Command+0x256>
+     a22:	e6 5d       	subi	r30, 0xD6	; 214
+     a24:	ff 4f       	sbci	r31, 0xFF	; 255
+     a26:	0c 94 88 0a 	jmp	0x1510	; 0x1510 <__tablejump2__>
+     a2a:	10 e0       	ldi	r17, 0x00	; 0
+		c = uart_getc();					//blocking call
+	} while ((c & 0xFF00) == UART_NO_DATA);	//returns after the next character is received
+	return( (uint8_t)c );					//actually without any timeout
+}
+
+void cmd_Command() {		//Use hex-Mode in hterm for testing
+     a2c:	00 e0       	ldi	r16, 0x00	; 0
+     a2e:	7f c0       	rjmp	.+254    	; 0xb2e <cmd_Command+0x126>
+
+	c = cmd_getByte();
+	switch (c) {
+		//- Kommanods für den Test der D-FF
+		case 0x63:	//'c'	Clear = Alle Latches mit 0 beschreiben
+					drv_clearAllLatches();
+     a30:	0e 94 a0 04 	call	0x940	; 0x940 <drv_clearAllLatches>
+					uart_puts( "cleared\n\0" );
+     a34:	87 e6       	ldi	r24, 0x67	; 103
+     a36:	90 e0       	ldi	r25, 0x00	; 0
+     a38:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+					break;			
+     a3c:	10 c1       	rjmp	.+544    	; 0xc5e <cmd_Command+0x256>
+					
+		case 0x64:	//'d'	set Value to D-Latch
+					a = cmd_getNextByte();		//welches Latch?
+     a3e:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     a42:	c8 2f       	mov	r28, r24
+					b = cmd_getNextByte();		//welcher Wert?
+     a44:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     a48:	68 2f       	mov	r22, r24
+					latch = a % 8;
+     a4a:	8c 2f       	mov	r24, r28
+     a4c:	87 70       	andi	r24, 0x07	; 7
+     a4e:	80 93 d2 00 	sts	0x00D2, r24
+					data  = b;
+     a52:	60 93 cf 00 	sts	0x00CF, r22
+					drv_test_setLatch( latch, data );
+     a56:	0e 94 9b 04 	call	0x936	; 0x936 <drv_test_setLatch>
+					uart_puts( "dff=" );  uart_putc( latch );  uart_puts( " set to " ); uart_putc( data ); uart_putc( '\n' );
+     a5a:	83 e9       	ldi	r24, 0x93	; 147
+     a5c:	90 e0       	ldi	r25, 0x00	; 0
+     a5e:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     a62:	80 91 d2 00 	lds	r24, 0x00D2
+     a66:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     a6a:	88 e9       	ldi	r24, 0x98	; 152
+     a6c:	90 e0       	ldi	r25, 0x00	; 0
+     a6e:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     a72:	80 91 cf 00 	lds	r24, 0x00CF
+     a76:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     a7a:	8a e0       	ldi	r24, 0x0A	; 10
+     a7c:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+					break;
+     a80:	ee c0       	rjmp	.+476    	; 0xc5e <cmd_Command+0x256>
+		
+		case 0x65:	a = cmd_getNextByte();
+     a82:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+					if (a == 0) {
+     a86:	81 11       	cpse	r24, r1
+     a88:	06 c0       	rjmp	.+12     	; 0xa96 <cmd_Command+0x8e>
+						D573_LATCH_OUT_DIS;  	uart_puts( "OC=1\n" );
+     a8a:	93 9a       	sbi	0x12, 3	; 18
+     a8c:	81 ea       	ldi	r24, 0xA1	; 161
+     a8e:	90 e0       	ldi	r25, 0x00	; 0
+     a90:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     a94:	e4 c0       	rjmp	.+456    	; 0xc5e <cmd_Command+0x256>
+					} else {
+						D573_LATCH_OUT_EN;		uart_puts( "OC=0\n" );
+     a96:	93 98       	cbi	0x12, 3	; 18
+     a98:	87 ea       	ldi	r24, 0xA7	; 167
+     a9a:	90 e0       	ldi	r25, 0x00	; 0
+     a9c:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     aa0:	de c0       	rjmp	.+444    	; 0xc5e <cmd_Command+0x256>
+					}
+					break;		
+		
+		case 0x66 :	// High-Nibble = 0..7 (Layer)		Low Nibble = On/Off (0|1)
+					a =  cmd_getNextByte();		//welcher Layer? 
+     aa2:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+					b = a & 1;					//Bitweises UND  -On/Off
+					layer = (a >> 4) & 0x0F;	//Nr des Layers
+     aa6:	98 2f       	mov	r25, r24
+     aa8:	92 95       	swap	r25
+     aaa:	9f 70       	andi	r25, 0x0F	; 15
+     aac:	90 93 d3 00 	sts	0x00D3, r25
+					if (b > 0) {
+     ab0:	80 ff       	sbrs	r24, 0
+     ab2:	05 c0       	rjmp	.+10     	; 0xabe <cmd_Command+0xb6>
+						drv_test_setLayer( layer, _ON );
+     ab4:	61 e0       	ldi	r22, 0x01	; 1
+     ab6:	89 2f       	mov	r24, r25
+     ab8:	0e 94 ba 04 	call	0x974	; 0x974 <drv_test_setLayer>
+     abc:	04 c0       	rjmp	.+8      	; 0xac6 <cmd_Command+0xbe>
+					} else {
+						drv_test_setLayer( layer, _OFF );
+     abe:	60 e0       	ldi	r22, 0x00	; 0
+     ac0:	89 2f       	mov	r24, r25
+     ac2:	0e 94 ba 04 	call	0x974	; 0x974 <drv_test_setLayer>
+					}
+					uart_puts( "layer=\0" );  uart_putc( layer );	uart_putc( '\n' );
+     ac6:	81 e7       	ldi	r24, 0x71	; 113
+     ac8:	90 e0       	ldi	r25, 0x00	; 0
+     aca:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     ace:	80 91 d3 00 	lds	r24, 0x00D3
+     ad2:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     ad6:	8a e0       	ldi	r24, 0x0A	; 10
+     ad8:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+					break;		
+     adc:	c0 c0       	rjmp	.+384    	; 0xc5e <cmd_Command+0x256>
+		
+
+		//- Das Array kommt ins Spiel...
+		case 0x3F:	// '?'	Die akt. Testfall-Nr ausgeben
+					uart_puts( "tc=\0" );  uart_putc( test );	uart_putc( '\n' );
+     ade:	89 e7       	ldi	r24, 0x79	; 121
+     ae0:	90 e0       	ldi	r25, 0x00	; 0
+     ae2:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     ae6:	80 91 d4 00 	lds	r24, 0x00D4
+     aea:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     aee:	8a e0       	ldi	r24, 0x0A	; 10
+     af0:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+					break;
+     af4:	b4 c0       	rjmp	.+360    	; 0xc5e <cmd_Command+0x256>
+					
+		case 0x40:  // '@'
+					for (int lay=0; lay<CUBE_MAX_LAYERS; lay++) {
+						for (int col=0; col<CUBE_MAX_COLS; col++) {
+							a = cube_getData( lay, col );	
+     af6:	6c 2f       	mov	r22, r28
+     af8:	81 2f       	mov	r24, r17
+     afa:	0e 94 ff 03 	call	0x7fe	; 0x7fe <cube_getData>
+     afe:	d8 2f       	mov	r29, r24
+							uart_putc( asHex(a>>4) );	uart_putc( asHex(a) ); uart_putc( ' ' );
+     b00:	82 95       	swap	r24
+     b02:	8f 70       	andi	r24, 0x0F	; 15
+     b04:	0e 94 cf 04 	call	0x99e	; 0x99e <asHex>
+     b08:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b0c:	8d 2f       	mov	r24, r29
+     b0e:	0e 94 cf 04 	call	0x99e	; 0x99e <asHex>
+     b12:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b16:	80 e2       	ldi	r24, 0x20	; 32
+     b18:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b1c:	cf 5f       	subi	r28, 0xFF	; 255
+					uart_puts( "tc=\0" );  uart_putc( test );	uart_putc( '\n' );
+					break;
+					
+		case 0x40:  // '@'
+					for (int lay=0; lay<CUBE_MAX_LAYERS; lay++) {
+						for (int col=0; col<CUBE_MAX_COLS; col++) {
+     b1e:	c8 30       	cpi	r28, 0x08	; 8
+     b20:	51 f7       	brne	.-44     	; 0xaf6 <cmd_Command+0xee>
+							a = cube_getData( lay, col );	
+							uart_putc( asHex(a>>4) );	uart_putc( asHex(a) ); uart_putc( ' ' );
+						}
+						uart_putc( '\n' );
+     b22:	8a e0       	ldi	r24, 0x0A	; 10
+     b24:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b28:	1f 5f       	subi	r17, 0xFF	; 255
+		case 0x3F:	// '?'	Die akt. Testfall-Nr ausgeben
+					uart_puts( "tc=\0" );  uart_putc( test );	uart_putc( '\n' );
+					break;
+					
+		case 0x40:  // '@'
+					for (int lay=0; lay<CUBE_MAX_LAYERS; lay++) {
+     b2a:	18 30       	cpi	r17, 0x08	; 8
+     b2c:	11 f0       	breq	.+4      	; 0xb32 <cmd_Command+0x12a>
+		c = uart_getc();					//blocking call
+	} while ((c & 0xFF00) == UART_NO_DATA);	//returns after the next character is received
+	return( (uint8_t)c );					//actually without any timeout
+}
+
+void cmd_Command() {		//Use hex-Mode in hterm for testing
+     b2e:	c0 2f       	mov	r28, r16
+     b30:	e2 cf       	rjmp	.-60     	; 0xaf6 <cmd_Command+0xee>
+							a = cube_getData( lay, col );	
+							uart_putc( asHex(a>>4) );	uart_putc( asHex(a) ); uart_putc( ' ' );
+						}
+						uart_putc( '\n' );
+					}
+					uart_putc( '\n' );
+     b32:	8a e0       	ldi	r24, 0x0A	; 10
+     b34:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+					break;
+     b38:	92 c0       	rjmp	.+292    	; 0xc5e <cmd_Command+0x256>
+
+		case 0x62:	//'c'	Clear Array
+					cube_clear();
+     b3a:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+					uart_puts( "LED-Array cleared\n" );
+     b3e:	8d ea       	ldi	r24, 0xAD	; 173
+     b40:	90 e0       	ldi	r25, 0x00	; 0
+     b42:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+					break;
+     b46:	8b c0       	rjmp	.+278    	; 0xc5e <cmd_Command+0x256>
+
+		case 0x68:	//'h'	set Value to LED-Bitarray
+					a = cmd_getNextByte();		//welches Layer  und Col
+     b48:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     b4c:	c8 2f       	mov	r28, r24
+					b = cmd_getNextByte();		//welcher Wert?
+     b4e:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     b52:	48 2f       	mov	r20, r24
+					layer = (a >> 4) & 0x0F;
+     b54:	8c 2f       	mov	r24, r28
+     b56:	82 95       	swap	r24
+     b58:	8f 70       	andi	r24, 0x0F	; 15
+     b5a:	80 93 d3 00 	sts	0x00D3, r24
+					col   = a & 0x0F;
+     b5e:	6c 2f       	mov	r22, r28
+     b60:	6f 70       	andi	r22, 0x0F	; 15
+     b62:	60 93 d1 00 	sts	0x00D1, r22
+					data  = b;
+     b66:	40 93 cf 00 	sts	0x00CF, r20
+					cube_setData( layer, col, data );
+     b6a:	0e 94 0a 04 	call	0x814	; 0x814 <cube_setData>
+					uart_puts( "set " ); uart_putc( layer );uart_putc( ':' );uart_putc( col );uart_putc( ':' );uart_putc( data );uart_putc( '\n' );
+     b6e:	80 ec       	ldi	r24, 0xC0	; 192
+     b70:	90 e0       	ldi	r25, 0x00	; 0
+     b72:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     b76:	80 91 d3 00 	lds	r24, 0x00D3
+     b7a:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b7e:	8a e3       	ldi	r24, 0x3A	; 58
+     b80:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b84:	80 91 d1 00 	lds	r24, 0x00D1
+     b88:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b8c:	8a e3       	ldi	r24, 0x3A	; 58
+     b8e:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b92:	80 91 cf 00 	lds	r24, 0x00CF
+     b96:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     b9a:	8a e0       	ldi	r24, 0x0A	; 10
+     b9c:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+					break;		
+     ba0:	5e c0       	rjmp	.+188    	; 0xc5e <cmd_Command+0x256>
+
+		case 0x6d:	//'m'	Multiplexing ein oder ausschalten
+					a = cmd_getNextByte();
+     ba2:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+					switch (a) {
+     ba6:	88 23       	and	r24, r24
+     ba8:	19 f0       	breq	.+6      	; 0xbb0 <cmd_Command+0x1a8>
+     baa:	81 30       	cpi	r24, 0x01	; 1
+     bac:	21 f0       	breq	.+8      	; 0xbb6 <cmd_Command+0x1ae>
+     bae:	06 c0       	rjmp	.+12     	; 0xbbc <cmd_Command+0x1b4>
+						case 0:	multiplexing = 0;	break;
+     bb0:	10 92 ce 00 	sts	0x00CE, r1
+     bb4:	03 c0       	rjmp	.+6      	; 0xbbc <cmd_Command+0x1b4>
+						case 1: multiplexing = 1;	break;
+     bb6:	81 e0       	ldi	r24, 0x01	; 1
+     bb8:	80 93 ce 00 	sts	0x00CE, r24
+						default: ;
+					}
+					uart_puts( "mux=" );  uart_putc( multiplexing ); uart_putc( '\n' );
+     bbc:	85 ec       	ldi	r24, 0xC5	; 197
+     bbe:	90 e0       	ldi	r25, 0x00	; 0
+     bc0:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     bc4:	80 91 ce 00 	lds	r24, 0x00CE
+     bc8:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     bcc:	8a e0       	ldi	r24, 0x0A	; 10
+     bce:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+					break;
+     bd2:	45 c0       	rjmp	.+138    	; 0xc5e <cmd_Command+0x256>
+
+					
+		case 0x74:	//'t' Select test case
+					test = cmd_getNextByte();		//welcher Testfall?
+     bd4:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     bd8:	80 93 d4 00 	sts	0x00D4, r24
+					if (test == 0) { cube_clear(); }
+     bdc:	81 11       	cpse	r24, r1
+     bde:	02 c0       	rjmp	.+4      	; 0xbe4 <cmd_Command+0x1dc>
+     be0:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+					if (test == 0x20 ) { pattern = cmd_getNextByte(); } 	
+     be4:	80 91 d4 00 	lds	r24, 0x00D4
+     be8:	80 32       	cpi	r24, 0x20	; 32
+     bea:	21 f4       	brne	.+8      	; 0xbf4 <cmd_Command+0x1ec>
+     bec:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     bf0:	80 93 cd 00 	sts	0x00CD, r24
+					uart_puts( "tc=\0" );  uart_putc( test );	uart_putc( '\n' );
+     bf4:	89 e7       	ldi	r24, 0x79	; 121
+     bf6:	90 e0       	ldi	r25, 0x00	; 0
+     bf8:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+     bfc:	80 91 d4 00 	lds	r24, 0x00D4
+     c00:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+     c04:	8a e0       	ldi	r24, 0x0A	; 10
+     c06:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+					break;
+     c0a:	29 c0       	rjmp	.+82     	; 0xc5e <cmd_Command+0x256>
+
+					
+		case 0x72:	//'r'	Clear voxel
+					x = cmd_getNextByte();
+     c0c:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     c10:	c8 2f       	mov	r28, r24
+					y = cmd_getNextByte();
+     c12:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     c16:	d8 2f       	mov	r29, r24
+					z = cmd_getNextByte();
+     c18:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+					cube_clearVoxel( x, y, z );	
+     c1c:	48 2f       	mov	r20, r24
+     c1e:	6d 2f       	mov	r22, r29
+     c20:	8c 2f       	mov	r24, r28
+     c22:	0e 94 65 01 	call	0x2ca	; 0x2ca <cube_clearVoxel>
+					break;
+     c26:	1b c0       	rjmp	.+54     	; 0xc5e <cmd_Command+0x256>
+		case 0x73:	//'s'	Set voxel
+					x = cmd_getNextByte();
+     c28:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     c2c:	c8 2f       	mov	r28, r24
+					y = cmd_getNextByte();
+     c2e:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     c32:	d8 2f       	mov	r29, r24
+					z = cmd_getNextByte();
+     c34:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+					cube_setVoxel( x, y, z );
+     c38:	48 2f       	mov	r20, r24
+     c3a:	6d 2f       	mov	r22, r29
+     c3c:	8c 2f       	mov	r24, r28
+     c3e:	0e 94 43 01 	call	0x286	; 0x286 <cube_setVoxel>
+					break;					
+     c42:	0d c0       	rjmp	.+26     	; 0xc5e <cmd_Command+0x256>
+		case 0x75:	//'u'	flip voxel
+					x = cmd_getNextByte();
+     c44:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     c48:	c8 2f       	mov	r28, r24
+					y = cmd_getNextByte();
+     c4a:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+     c4e:	d8 2f       	mov	r29, r24
+					z = cmd_getNextByte();
+     c50:	0e 94 fc 04 	call	0x9f8	; 0x9f8 <cmd_getNextByte>
+					cube_flipVoxel( x, y, z );
+     c54:	48 2f       	mov	r20, r24
+     c56:	6d 2f       	mov	r22, r29
+     c58:	8c 2f       	mov	r24, r28
+     c5a:	0e 94 88 01 	call	0x310	; 0x310 <cube_flipVoxel>
+					break;
+					
+					
+		default: ;	//including no command
+	}
+}
+     c5e:	df 91       	pop	r29
+     c60:	cf 91       	pop	r28
+     c62:	1f 91       	pop	r17
+     c64:	0f 91       	pop	r16
+     c66:	08 95       	ret
+
+00000c68 <main>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     c68:	2f ef       	ldi	r18, 0xFF	; 255
+     c6a:	82 e5       	ldi	r24, 0x52	; 82
+     c6c:	97 e0       	ldi	r25, 0x07	; 7
+     c6e:	21 50       	subi	r18, 0x01	; 1
+     c70:	80 40       	sbci	r24, 0x00	; 0
+     c72:	90 40       	sbci	r25, 0x00	; 0
+     c74:	e1 f7       	brne	.-8      	; 0xc6e <main+0x6>
+     c76:	00 c0       	rjmp	.+0      	; 0xc78 <main+0x10>
+     c78:	00 00       	nop
+
+int main(void)
+{	uint8_t x1=0,x2=0,y1=0,y2=0,z1=0,z2=0;
+		
+	_delay_ms(150);
+	drv_init();	
+     c7a:	0e 94 aa 04 	call	0x954	; 0x954 <drv_init>
+	
+	
+	drv_test_setLayer( 0, _OFF );
+     c7e:	60 e0       	ldi	r22, 0x00	; 0
+     c80:	80 e0       	ldi	r24, 0x00	; 0
+     c82:	0e 94 ba 04 	call	0x974	; 0x974 <drv_test_setLayer>
+	
+	timerInit();				//den Hardware-Timer initialisieren und starten
+     c86:	0e 94 16 09 	call	0x122c	; 0x122c <timerInit>
+	uart_init( UART_BAUD_SELECT_DOUBLE_SPEED(UART_BAUD_RATE,F_CPU) );
+     c8a:	87 e6       	ldi	r24, 0x67	; 103
+     c8c:	90 e8       	ldi	r25, 0x80	; 128
+     c8e:	0e 94 24 0a 	call	0x1448	; 0x1448 <uart_init>
+
+	sei();
+     c92:	78 94       	sei
+	uart_puts( "Test LED-Cube V.01\n\0" );
+     c94:	8e e7       	ldi	r24, 0x7E	; 126
+     c96:	90 e0       	ldi	r25, 0x00	; 0
+     c98:	0e 94 67 0a 	call	0x14ce	; 0x14ce <uart_puts>
+}
+
+
+
+int main(void)
+{	uint8_t x1=0,x2=0,y1=0,y2=0,z1=0,z2=0;
+     c9c:	41 2c       	mov	r4, r1
+     c9e:	51 2c       	mov	r5, r1
+     ca0:	61 2c       	mov	r6, r1
+     ca2:	71 2c       	mov	r7, r1
+     ca4:	81 2c       	mov	r8, r1
+     ca6:	91 2c       	mov	r9, r1
+					test++;
+					break;
+			case 33:if (timerFlags.flags.bDezi) {
+						switch (data) {
+							case 0:	cube_clear();
+									x1=3; x2=4; 	y1=3; y2=4;		z1=3;	z2=4;
+     ca8:	68 94       	set
+     caa:	22 24       	eor	r2, r2
+     cac:	22 f8       	bld	r2, 2
+					}
+					break;
+					
+			case 32://0x32
+					data=0; 
+					pattern %= 3;
+     cae:	0f 2e       	mov	r0, r31
+     cb0:	fb ea       	ldi	r31, 0xAB	; 171
+     cb2:	af 2e       	mov	r10, r31
+     cb4:	f0 2d       	mov	r31, r0
+					test++;
+     cb6:	0f 2e       	mov	r0, r31
+     cb8:	f1 e2       	ldi	r31, 0x21	; 33
+     cba:	bf 2e       	mov	r11, r31
+     cbc:	f0 2d       	mov	r31, r0
+					}
+					break;
+
+			case 20://0x14
+					data = 0;
+					test++;
+     cbe:	0f 2e       	mov	r0, r31
+     cc0:	f5 e1       	ldi	r31, 0x15	; 21
+     cc2:	cf 2e       	mov	r12, r31
+     cc4:	f0 2d       	mov	r31, r0
+					}
+					break;
+					
+			case 18://0x12
+					data = 0;
+					test++;
+     cc6:	0f 2e       	mov	r0, r31
+     cc8:	f3 e1       	ldi	r31, 0x13	; 19
+     cca:	df 2e       	mov	r13, r31
+     ccc:	f0 2d       	mov	r31, r0
+					}
+					break;
+					
+			case 16://0x10
+					data = 0;
+					test++;
+     cce:	0f 2e       	mov	r0, r31
+     cd0:	f1 e1       	ldi	r31, 0x11	; 17
+     cd2:	ff 2e       	mov	r15, r31
+     cd4:	f0 2d       	mov	r31, r0
+					 test=11;
+					 break;
+			case 11:	//test case 0A, main step:
+					if (timerFlags.flags.bDezi) {
+						if (data == 0) {
+							data = 1;
+     cd6:	33 24       	eor	r3, r3
+     cd8:	33 94       	inc	r3
+
+
+
+			case 10: layer = 0;							//test case 0A, first step: running a single bit throuh the cube
+ 					 col = 0;	data=0;
+					 test=11;
+     cda:	1b e0       	ldi	r17, 0x0B	; 11
+					
+
+			case 4: layer = 0;							//test case 4, first step
+					row = 0;	
+					data=0;
+					test++;
+     cdc:	d5 e0       	ldi	r29, 0x05	; 5
+			case 0:	break;								//no test case
+
+			case 1: layer = 0;							//test case 1, first step
+					col = 0;	
+					data=0;					
+					test++;
+     cde:	c2 e0       	ldi	r28, 0x02	; 2
+	uart_puts( "Test LED-Cube V.01\n\0" );
+    while(1)
+    {
+		
+		//Eingabe:
+		cmd_Command();		//handle commands received via serial port
+     ce0:	0e 94 04 05 	call	0xa08	; 0xa08 <cmd_Command>
+
+		if (timerFlags.flags.bMilli) {
+     ce4:	80 91 5c 01 	lds	r24, 0x015C
+     ce8:	80 ff       	sbrs	r24, 0
+     cea:	07 c0       	rjmp	.+14     	; 0xcfa <main+0x92>
+			if (multiplexing > 0) {
+     cec:	80 91 ce 00 	lds	r24, 0x00CE
+     cf0:	81 11       	cpse	r24, r1
+				drv_drive();					//Multiplexing der Layer erzeugen und Daten eines Layers in die Latches schreiben
+     cf2:	0e 94 24 04 	call	0x848	; 0x848 <drv_drive>
+			}
+			timerClearMilli();
+     cf6:	0e 94 c7 09 	call	0x138e	; 0x138e <timerClearMilli>
+		}
+		
+		
+		switch (test) {
+     cfa:	80 91 d4 00 	lds	r24, 0x00D4
+     cfe:	90 e0       	ldi	r25, 0x00	; 0
+     d00:	fc 01       	movw	r30, r24
+     d02:	31 97       	sbiw	r30, 0x01	; 1
+     d04:	e1 32       	cpi	r30, 0x21	; 33
+     d06:	f1 05       	cpc	r31, r1
+     d08:	58 f7       	brcc	.-42     	; 0xce0 <main+0x78>
+     d0a:	ef 59       	subi	r30, 0x9F	; 159
+     d0c:	ff 4f       	sbci	r31, 0xFF	; 255
+     d0e:	0c 94 88 0a 	jmp	0x1510	; 0x1510 <__tablejump2__>
+			case 0:	break;								//no test case
+
+			case 1: layer = 0;							//test case 1, first step
+     d12:	10 92 d3 00 	sts	0x00D3, r1
+					col = 0;	
+     d16:	10 92 d1 00 	sts	0x00D1, r1
+					data=0;					
+     d1a:	10 92 cf 00 	sts	0x00CF, r1
+					test++;
+     d1e:	c0 93 d4 00 	sts	0x00D4, r28
+					break;
+     d22:	de cf       	rjmp	.-68     	; 0xce0 <main+0x78>
+
+			case 2: if (timerFlags.flags.bDezi) {		//test case 1, main step
+     d24:	80 91 5c 01 	lds	r24, 0x015C
+     d28:	84 ff       	sbrs	r24, 4
+     d2a:	da cf       	rjmp	.-76     	; 0xce0 <main+0x78>
+						if (data == 0xFF) { 
+     d2c:	80 91 cf 00 	lds	r24, 0x00CF
+     d30:	8f 3f       	cpi	r24, 0xFF	; 255
+     d32:	e9 f4       	brne	.+58     	; 0xd6e <main+0x106>
+							data = 0;
+     d34:	10 92 cf 00 	sts	0x00CF, r1
+							cube_setCol( layer, col, data ); 
+     d38:	40 e0       	ldi	r20, 0x00	; 0
+     d3a:	60 91 d1 00 	lds	r22, 0x00D1
+     d3e:	80 91 d3 00 	lds	r24, 0x00D3
+     d42:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <cube_setCol>
+							col++;
+     d46:	80 91 d1 00 	lds	r24, 0x00D1
+     d4a:	8f 5f       	subi	r24, 0xFF	; 255
+							if (col >= CUBE_MAX_COLS) {
+     d4c:	88 30       	cpi	r24, 0x08	; 8
+     d4e:	18 f4       	brcc	.+6      	; 0xd56 <main+0xee>
+
+			case 2: if (timerFlags.flags.bDezi) {		//test case 1, main step
+						if (data == 0xFF) { 
+							data = 0;
+							cube_setCol( layer, col, data ); 
+							col++;
+     d50:	80 93 d1 00 	sts	0x00D1, r24
+     d54:	0c c0       	rjmp	.+24     	; 0xd6e <main+0x106>
+							if (col >= CUBE_MAX_COLS) {
+								col = 0;
+     d56:	10 92 d1 00 	sts	0x00D1, r1
+								layer++;
+     d5a:	80 91 d3 00 	lds	r24, 0x00D3
+     d5e:	8f 5f       	subi	r24, 0xFF	; 255
+								if (layer >= CUBE_MAX_LAYERS) { layer = 0; }
+     d60:	88 30       	cpi	r24, 0x08	; 8
+     d62:	18 f4       	brcc	.+6      	; 0xd6a <main+0x102>
+							data = 0;
+							cube_setCol( layer, col, data ); 
+							col++;
+							if (col >= CUBE_MAX_COLS) {
+								col = 0;
+								layer++;
+     d64:	80 93 d3 00 	sts	0x00D3, r24
+     d68:	02 c0       	rjmp	.+4      	; 0xd6e <main+0x106>
+								if (layer >= CUBE_MAX_LAYERS) { layer = 0; }
+     d6a:	10 92 d3 00 	sts	0x00D3, r1
+							}
+						}							
+						data = (data << 1) | 1;
+     d6e:	40 91 cf 00 	lds	r20, 0x00CF
+     d72:	44 0f       	add	r20, r20
+     d74:	41 60       	ori	r20, 0x01	; 1
+     d76:	40 93 cf 00 	sts	0x00CF, r20
+						cube_setCol( layer, col, data );
+     d7a:	60 91 d1 00 	lds	r22, 0x00D1
+     d7e:	80 91 d3 00 	lds	r24, 0x00D3
+     d82:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <cube_setCol>
+						timerClearDezi();
+     d86:	0e 94 cd 09 	call	0x139a	; 0x139a <timerClearDezi>
+     d8a:	aa cf       	rjmp	.-172    	; 0xce0 <main+0x78>
+					}
+					break;
+					
+
+			case 4: layer = 0;							//test case 4, first step
+     d8c:	10 92 d3 00 	sts	0x00D3, r1
+					row = 0;	
+     d90:	10 92 d0 00 	sts	0x00D0, r1
+					data=0;
+     d94:	10 92 cf 00 	sts	0x00CF, r1
+					test++;
+     d98:	d0 93 d4 00 	sts	0x00D4, r29
+					break;
+     d9c:	a1 cf       	rjmp	.-190    	; 0xce0 <main+0x78>
+					
+			case 5: if (timerFlags.flags.bDezi) {		//test case 4, main step
+     d9e:	80 91 5c 01 	lds	r24, 0x015C
+     da2:	84 ff       	sbrs	r24, 4
+     da4:	9d cf       	rjmp	.-198    	; 0xce0 <main+0x78>
+						if (data == 0xFF) {
+     da6:	80 91 cf 00 	lds	r24, 0x00CF
+     daa:	8f 3f       	cpi	r24, 0xFF	; 255
+     dac:	e9 f4       	brne	.+58     	; 0xde8 <main+0x180>
+							data = 0;
+     dae:	10 92 cf 00 	sts	0x00CF, r1
+							cube_setRow( layer, row, data );
+     db2:	40 e0       	ldi	r20, 0x00	; 0
+     db4:	60 91 d0 00 	lds	r22, 0x00D0
+     db8:	80 91 d3 00 	lds	r24, 0x00D3
+     dbc:	0e 94 fd 00 	call	0x1fa	; 0x1fa <cube_setRow>
+							row++;
+     dc0:	80 91 d0 00 	lds	r24, 0x00D0
+     dc4:	8f 5f       	subi	r24, 0xFF	; 255
+							if (row >= CUBE_MAX_ROWS) {
+     dc6:	88 30       	cpi	r24, 0x08	; 8
+     dc8:	18 f4       	brcc	.+6      	; 0xdd0 <main+0x168>
+					
+			case 5: if (timerFlags.flags.bDezi) {		//test case 4, main step
+						if (data == 0xFF) {
+							data = 0;
+							cube_setRow( layer, row, data );
+							row++;
+     dca:	80 93 d0 00 	sts	0x00D0, r24
+     dce:	0c c0       	rjmp	.+24     	; 0xde8 <main+0x180>
+							if (row >= CUBE_MAX_ROWS) {
+								row = 0;
+     dd0:	10 92 d0 00 	sts	0x00D0, r1
+								layer++;
+     dd4:	80 91 d3 00 	lds	r24, 0x00D3
+     dd8:	8f 5f       	subi	r24, 0xFF	; 255
+								if (layer >= CUBE_MAX_LAYERS) { layer = 0; }
+     dda:	88 30       	cpi	r24, 0x08	; 8
+     ddc:	18 f4       	brcc	.+6      	; 0xde4 <main+0x17c>
+							data = 0;
+							cube_setRow( layer, row, data );
+							row++;
+							if (row >= CUBE_MAX_ROWS) {
+								row = 0;
+								layer++;
+     dde:	80 93 d3 00 	sts	0x00D3, r24
+     de2:	02 c0       	rjmp	.+4      	; 0xde8 <main+0x180>
+								if (layer >= CUBE_MAX_LAYERS) { layer = 0; }
+     de4:	10 92 d3 00 	sts	0x00D3, r1
+							}
+						}
+						data = (data << 1) | 1;
+     de8:	40 91 cf 00 	lds	r20, 0x00CF
+     dec:	44 0f       	add	r20, r20
+     dee:	41 60       	ori	r20, 0x01	; 1
+     df0:	40 93 cf 00 	sts	0x00CF, r20
+						cube_setRow( layer, row, data );
+     df4:	60 91 d0 00 	lds	r22, 0x00D0
+     df8:	80 91 d3 00 	lds	r24, 0x00D3
+     dfc:	0e 94 fd 00 	call	0x1fa	; 0x1fa <cube_setRow>
+						timerClearDezi();
+     e00:	0e 94 cd 09 	call	0x139a	; 0x139a <timerClearDezi>
+     e04:	6d cf       	rjmp	.-294    	; 0xce0 <main+0x78>
+					}
+					break;
+
+
+
+			case 10: layer = 0;							//test case 0A, first step: running a single bit throuh the cube
+     e06:	10 92 d3 00 	sts	0x00D3, r1
+ 					 col = 0;	data=0;
+     e0a:	10 92 d1 00 	sts	0x00D1, r1
+     e0e:	10 92 cf 00 	sts	0x00CF, r1
+					 test=11;
+     e12:	10 93 d4 00 	sts	0x00D4, r17
+					 break;
+     e16:	64 cf       	rjmp	.-312    	; 0xce0 <main+0x78>
+			case 11:	//test case 0A, main step:
+					if (timerFlags.flags.bDezi) {
+     e18:	80 91 5c 01 	lds	r24, 0x015C
+     e1c:	84 ff       	sbrs	r24, 4
+     e1e:	60 cf       	rjmp	.-320    	; 0xce0 <main+0x78>
+						if (data == 0) {
+     e20:	40 91 cf 00 	lds	r20, 0x00CF
+     e24:	41 11       	cpse	r20, r1
+     e26:	0a c0       	rjmp	.+20     	; 0xe3c <main+0x1d4>
+							data = 1;
+     e28:	30 92 cf 00 	sts	0x00CF, r3
+							cube_setData( layer, col, data );
+     e2c:	43 2d       	mov	r20, r3
+     e2e:	60 91 d1 00 	lds	r22, 0x00D1
+     e32:	80 91 d3 00 	lds	r24, 0x00D3
+     e36:	0e 94 0a 04 	call	0x814	; 0x814 <cube_setData>
+     e3a:	21 c0       	rjmp	.+66     	; 0xe7e <main+0x216>
+						} else {
+							data = data << 1;
+     e3c:	44 0f       	add	r20, r20
+     e3e:	40 93 cf 00 	sts	0x00CF, r20
+							cube_setData( layer, col, data );
+     e42:	60 91 d1 00 	lds	r22, 0x00D1
+     e46:	80 91 d3 00 	lds	r24, 0x00D3
+     e4a:	0e 94 0a 04 	call	0x814	; 0x814 <cube_setData>
+
+							if (data == 0) {
+     e4e:	80 91 cf 00 	lds	r24, 0x00CF
+     e52:	81 11       	cpse	r24, r1
+     e54:	14 c0       	rjmp	.+40     	; 0xe7e <main+0x216>
+								col++;
+     e56:	80 91 d1 00 	lds	r24, 0x00D1
+     e5a:	8f 5f       	subi	r24, 0xFF	; 255
+								if (col > 7) {
+     e5c:	88 30       	cpi	r24, 0x08	; 8
+     e5e:	18 f4       	brcc	.+6      	; 0xe66 <main+0x1fe>
+						} else {
+							data = data << 1;
+							cube_setData( layer, col, data );
+
+							if (data == 0) {
+								col++;
+     e60:	80 93 d1 00 	sts	0x00D1, r24
+     e64:	0c c0       	rjmp	.+24     	; 0xe7e <main+0x216>
+								if (col > 7) {
+									col = 0;
+     e66:	10 92 d1 00 	sts	0x00D1, r1
+									layer++;
+     e6a:	80 91 d3 00 	lds	r24, 0x00D3
+     e6e:	8f 5f       	subi	r24, 0xFF	; 255
+									if (layer > 7) { layer = 0; }
+     e70:	88 30       	cpi	r24, 0x08	; 8
+     e72:	18 f4       	brcc	.+6      	; 0xe7a <main+0x212>
+
+							if (data == 0) {
+								col++;
+								if (col > 7) {
+									col = 0;
+									layer++;
+     e74:	80 93 d3 00 	sts	0x00D3, r24
+     e78:	02 c0       	rjmp	.+4      	; 0xe7e <main+0x216>
+									if (layer > 7) { layer = 0; }
+     e7a:	10 92 d3 00 	sts	0x00D3, r1
+								}
+							}
+						}
+						timerClearDezi();
+     e7e:	0e 94 cd 09 	call	0x139a	; 0x139a <timerClearDezi>
+     e82:	2e cf       	rjmp	.-420    	; 0xce0 <main+0x78>
+					}
+					break;
+					
+			case 16://0x10
+					data = 0;
+     e84:	10 92 cf 00 	sts	0x00CF, r1
+					test++;
+     e88:	f0 92 d4 00 	sts	0x00D4, r15
+					break;
+     e8c:	29 cf       	rjmp	.-430    	; 0xce0 <main+0x78>
+			case 17:if (timerFlags.flags.bDezi) {
+     e8e:	80 91 5c 01 	lds	r24, 0x015C
+     e92:	84 ff       	sbrs	r24, 4
+     e94:	25 cf       	rjmp	.-438    	; 0xce0 <main+0x78>
+						cube_clearPlaneX( data );
+     e96:	80 91 cf 00 	lds	r24, 0x00CF
+     e9a:	0e 94 d2 01 	call	0x3a4	; 0x3a4 <cube_clearPlaneX>
+						data++;
+     e9e:	80 91 cf 00 	lds	r24, 0x00CF
+     ea2:	8f 5f       	subi	r24, 0xFF	; 255
+						if (data >= CUBE_MAX_X) { data = 0; }
+     ea4:	88 30       	cpi	r24, 0x08	; 8
+     ea6:	18 f4       	brcc	.+6      	; 0xeae <main+0x246>
+					data = 0;
+					test++;
+					break;
+			case 17:if (timerFlags.flags.bDezi) {
+						cube_clearPlaneX( data );
+						data++;
+     ea8:	80 93 cf 00 	sts	0x00CF, r24
+     eac:	02 c0       	rjmp	.+4      	; 0xeb2 <main+0x24a>
+						if (data >= CUBE_MAX_X) { data = 0; }
+     eae:	10 92 cf 00 	sts	0x00CF, r1
+						cube_setPlaneX( data );						
+     eb2:	80 91 cf 00 	lds	r24, 0x00CF
+     eb6:	0e 94 aa 01 	call	0x354	; 0x354 <cube_setPlaneX>
+						timerClearDezi();
+     eba:	0e 94 cd 09 	call	0x139a	; 0x139a <timerClearDezi>
+     ebe:	10 cf       	rjmp	.-480    	; 0xce0 <main+0x78>
+					}
+					break;
+					
+			case 18://0x12
+					data = 0;
+     ec0:	10 92 cf 00 	sts	0x00CF, r1
+					test++;
+     ec4:	d0 92 d4 00 	sts	0x00D4, r13
+					break;
+     ec8:	0b cf       	rjmp	.-490    	; 0xce0 <main+0x78>
+			case 19:if (timerFlags.flags.bDezi) {
+     eca:	80 91 5c 01 	lds	r24, 0x015C
+     ece:	84 ff       	sbrs	r24, 4
+     ed0:	07 cf       	rjmp	.-498    	; 0xce0 <main+0x78>
+						cube_clearPlaneY( data );
+     ed2:	80 91 cf 00 	lds	r24, 0x00CF
+     ed6:	0e 94 17 02 	call	0x42e	; 0x42e <cube_clearPlaneY>
+						data++;
+     eda:	80 91 cf 00 	lds	r24, 0x00CF
+     ede:	8f 5f       	subi	r24, 0xFF	; 255
+						if (data >= CUBE_MAX_Y) { data = 0; }
+     ee0:	88 30       	cpi	r24, 0x08	; 8
+     ee2:	18 f4       	brcc	.+6      	; 0xeea <main+0x282>
+					data = 0;
+					test++;
+					break;
+			case 19:if (timerFlags.flags.bDezi) {
+						cube_clearPlaneY( data );
+						data++;
+     ee4:	80 93 cf 00 	sts	0x00CF, r24
+     ee8:	02 c0       	rjmp	.+4      	; 0xeee <main+0x286>
+						if (data >= CUBE_MAX_Y) { data = 0; }
+     eea:	10 92 cf 00 	sts	0x00CF, r1
+						cube_setPlaneY( data );
+     eee:	80 91 cf 00 	lds	r24, 0x00CF
+     ef2:	0e 94 ff 01 	call	0x3fe	; 0x3fe <cube_setPlaneY>
+						timerClearDezi();
+     ef6:	0e 94 cd 09 	call	0x139a	; 0x139a <timerClearDezi>
+     efa:	f2 ce       	rjmp	.-540    	; 0xce0 <main+0x78>
+					}
+					break;
+
+			case 20://0x14
+					data = 0;
+     efc:	10 92 cf 00 	sts	0x00CF, r1
+					test++;
+     f00:	c0 92 d4 00 	sts	0x00D4, r12
+					break;
+     f04:	ed ce       	rjmp	.-550    	; 0xce0 <main+0x78>
+					
+			case 21:if (timerFlags.flags.bDezi) {
+     f06:	80 91 5c 01 	lds	r24, 0x015C
+     f0a:	84 ff       	sbrs	r24, 4
+     f0c:	e9 ce       	rjmp	.-558    	; 0xce0 <main+0x78>
+						cube_clearPlaneZ( data );
+     f0e:	80 91 cf 00 	lds	r24, 0x00CF
+     f12:	0e 94 46 02 	call	0x48c	; 0x48c <cube_clearPlaneZ>
+						data++;
+     f16:	80 91 cf 00 	lds	r24, 0x00CF
+     f1a:	8f 5f       	subi	r24, 0xFF	; 255
+						if (data >= CUBE_MAX_Z) { data = 0; }
+     f1c:	88 30       	cpi	r24, 0x08	; 8
+     f1e:	18 f4       	brcc	.+6      	; 0xf26 <main+0x2be>
+					test++;
+					break;
+					
+			case 21:if (timerFlags.flags.bDezi) {
+						cube_clearPlaneZ( data );
+						data++;
+     f20:	80 93 cf 00 	sts	0x00CF, r24
+     f24:	02 c0       	rjmp	.+4      	; 0xf2a <main+0x2c2>
+						if (data >= CUBE_MAX_Z) { data = 0; }
+     f26:	10 92 cf 00 	sts	0x00CF, r1
+						cube_setPlaneZ( data );
+     f2a:	80 91 cf 00 	lds	r24, 0x00CF
+     f2e:	0e 94 2e 02 	call	0x45c	; 0x45c <cube_setPlaneZ>
+						timerClearDezi();
+     f32:	0e 94 cd 09 	call	0x139a	; 0x139a <timerClearDezi>
+     f36:	d4 ce       	rjmp	.-600    	; 0xce0 <main+0x78>
+					}
+					break;
+					
+			case 32://0x32
+					data=0; 
+     f38:	10 92 cf 00 	sts	0x00CF, r1
+					pattern %= 3;
+     f3c:	80 91 cd 00 	lds	r24, 0x00CD
+     f40:	8a 9d       	mul	r24, r10
+     f42:	91 2d       	mov	r25, r1
+     f44:	11 24       	eor	r1, r1
+     f46:	96 95       	lsr	r25
+     f48:	29 2f       	mov	r18, r25
+     f4a:	22 0f       	add	r18, r18
+     f4c:	92 0f       	add	r25, r18
+     f4e:	89 1b       	sub	r24, r25
+     f50:	80 93 cd 00 	sts	0x00CD, r24
+					test++;
+     f54:	b0 92 d4 00 	sts	0x00D4, r11
+					break;
+     f58:	c3 ce       	rjmp	.-634    	; 0xce0 <main+0x78>
+			case 33:if (timerFlags.flags.bDezi) {
+     f5a:	80 91 5c 01 	lds	r24, 0x015C
+     f5e:	84 ff       	sbrs	r24, 4
+     f60:	bf ce       	rjmp	.-642    	; 0xce0 <main+0x78>
+						switch (data) {
+     f62:	80 91 cf 00 	lds	r24, 0x00CF
+     f66:	90 e0       	ldi	r25, 0x00	; 0
+     f68:	88 30       	cpi	r24, 0x08	; 8
+     f6a:	91 05       	cpc	r25, r1
+     f6c:	08 f0       	brcs	.+2      	; 0xf70 <main+0x308>
+     f6e:	5b c1       	rjmp	.+694    	; 0x1226 <main+0x5be>
+     f70:	fc 01       	movw	r30, r24
+     f72:	ee 57       	subi	r30, 0x7E	; 126
+     f74:	ff 4f       	sbci	r31, 0xFF	; 255
+     f76:	0c 94 88 0a 	jmp	0x1510	; 0x1510 <__tablejump2__>
+							case 0:	cube_clear();
+     f7a:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									x1=3; x2=4; 	y1=3; y2=4;		z1=3;	z2=4;
+									data++;
+     f7e:	80 91 cf 00 	lds	r24, 0x00CF
+     f82:	8f 5f       	subi	r24, 0xFF	; 255
+     f84:	80 93 cf 00 	sts	0x00CF, r24
+					test++;
+					break;
+			case 33:if (timerFlags.flags.bDezi) {
+						switch (data) {
+							case 0:	cube_clear();
+									x1=3; x2=4; 	y1=3; y2=4;		z1=3;	z2=4;
+     f88:	42 2c       	mov	r4, r2
+     f8a:	0f 2e       	mov	r0, r31
+     f8c:	f3 e0       	ldi	r31, 0x03	; 3
+     f8e:	5f 2e       	mov	r5, r31
+     f90:	f0 2d       	mov	r31, r0
+     f92:	62 2c       	mov	r6, r2
+     f94:	0f 2e       	mov	r0, r31
+     f96:	f3 e0       	ldi	r31, 0x03	; 3
+     f98:	7f 2e       	mov	r7, r31
+     f9a:	f0 2d       	mov	r31, r0
+     f9c:	82 2c       	mov	r8, r2
+     f9e:	0f 2e       	mov	r0, r31
+     fa0:	f3 e0       	ldi	r31, 0x03	; 3
+     fa2:	9f 2e       	mov	r9, r31
+     fa4:	f0 2d       	mov	r31, r0
+									data++;
+									break; 
+     fa6:	3f c1       	rjmp	.+638    	; 0x1226 <main+0x5be>
+							case 1: cube_clear();
+     fa8:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									switch(pattern) {						//3-4
+     fac:	80 91 cd 00 	lds	r24, 0x00CD
+     fb0:	88 23       	and	r24, r24
+     fb2:	19 f0       	breq	.+6      	; 0xfba <main+0x352>
+     fb4:	81 30       	cpi	r24, 0x01	; 1
+     fb6:	51 f0       	breq	.+20     	; 0xfcc <main+0x364>
+     fb8:	12 c0       	rjmp	.+36     	; 0xfde <main+0x376>
+										case 0:	cube_Filled( x1, y1, z1, x2, y2, z2 );	break;
+     fba:	e4 2c       	mov	r14, r4
+     fbc:	06 2d       	mov	r16, r6
+     fbe:	28 2d       	mov	r18, r8
+     fc0:	45 2d       	mov	r20, r5
+     fc2:	67 2d       	mov	r22, r7
+     fc4:	89 2d       	mov	r24, r9
+     fc6:	0e 94 71 02 	call	0x4e2	; 0x4e2 <cube_Filled>
+     fca:	11 c0       	rjmp	.+34     	; 0xfee <main+0x386>
+										case 1:	 cube_Walls( x1, y1, z1, x2, y2, z2 );	break;
+     fcc:	e4 2c       	mov	r14, r4
+     fce:	06 2d       	mov	r16, r6
+     fd0:	28 2d       	mov	r18, r8
+     fd2:	45 2d       	mov	r20, r5
+     fd4:	67 2d       	mov	r22, r7
+     fd6:	89 2d       	mov	r24, r9
+     fd8:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <cube_Walls>
+     fdc:	08 c0       	rjmp	.+16     	; 0xfee <main+0x386>
+										default: cube_Edges( x1, y1, z1, x2, y2, z2 );	break;
+     fde:	e4 2c       	mov	r14, r4
+     fe0:	06 2d       	mov	r16, r6
+     fe2:	28 2d       	mov	r18, r8
+     fe4:	45 2d       	mov	r20, r5
+     fe6:	67 2d       	mov	r22, r7
+     fe8:	89 2d       	mov	r24, r9
+     fea:	0e 94 61 03 	call	0x6c2	; 0x6c2 <cube_Edges>
+									}
+									x1--;	y1--;	z1--;
+     fee:	9a 94       	dec	r9
+     ff0:	7a 94       	dec	r7
+     ff2:	5a 94       	dec	r5
+									x2++;	y2++;	z2++;
+     ff4:	83 94       	inc	r8
+     ff6:	63 94       	inc	r6
+     ff8:	43 94       	inc	r4
+									data++;
+     ffa:	80 91 cf 00 	lds	r24, 0x00CF
+     ffe:	8f 5f       	subi	r24, 0xFF	; 255
+    1000:	80 93 cf 00 	sts	0x00CF, r24
+									break;
+    1004:	10 c1       	rjmp	.+544    	; 0x1226 <main+0x5be>
+							case 2: cube_clear();
+    1006:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									switch(pattern) {						//2-5
+    100a:	80 91 cd 00 	lds	r24, 0x00CD
+    100e:	88 23       	and	r24, r24
+    1010:	19 f0       	breq	.+6      	; 0x1018 <main+0x3b0>
+    1012:	81 30       	cpi	r24, 0x01	; 1
+    1014:	51 f0       	breq	.+20     	; 0x102a <main+0x3c2>
+    1016:	12 c0       	rjmp	.+36     	; 0x103c <main+0x3d4>
+										case 0:	cube_Filled( x1, y1, z1, x2, y2, z2 );	break;
+    1018:	e4 2c       	mov	r14, r4
+    101a:	06 2d       	mov	r16, r6
+    101c:	28 2d       	mov	r18, r8
+    101e:	45 2d       	mov	r20, r5
+    1020:	67 2d       	mov	r22, r7
+    1022:	89 2d       	mov	r24, r9
+    1024:	0e 94 71 02 	call	0x4e2	; 0x4e2 <cube_Filled>
+    1028:	11 c0       	rjmp	.+34     	; 0x104c <main+0x3e4>
+										case 1:	 cube_Walls( x1, y1, z1, x2, y2, z2 );	break;
+    102a:	e4 2c       	mov	r14, r4
+    102c:	06 2d       	mov	r16, r6
+    102e:	28 2d       	mov	r18, r8
+    1030:	45 2d       	mov	r20, r5
+    1032:	67 2d       	mov	r22, r7
+    1034:	89 2d       	mov	r24, r9
+    1036:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <cube_Walls>
+    103a:	08 c0       	rjmp	.+16     	; 0x104c <main+0x3e4>
+										default: cube_Edges( x1, y1, z1, x2, y2, z2 );	break;
+    103c:	e4 2c       	mov	r14, r4
+    103e:	06 2d       	mov	r16, r6
+    1040:	28 2d       	mov	r18, r8
+    1042:	45 2d       	mov	r20, r5
+    1044:	67 2d       	mov	r22, r7
+    1046:	89 2d       	mov	r24, r9
+    1048:	0e 94 61 03 	call	0x6c2	; 0x6c2 <cube_Edges>
+									}
+									x1--;	y1--;	z1--;
+    104c:	9a 94       	dec	r9
+    104e:	7a 94       	dec	r7
+    1050:	5a 94       	dec	r5
+									x2++;	y2++;	z2++;
+    1052:	83 94       	inc	r8
+    1054:	63 94       	inc	r6
+    1056:	43 94       	inc	r4
+									data++;
+    1058:	80 91 cf 00 	lds	r24, 0x00CF
+    105c:	8f 5f       	subi	r24, 0xFF	; 255
+    105e:	80 93 cf 00 	sts	0x00CF, r24
+									break;
+    1062:	e1 c0       	rjmp	.+450    	; 0x1226 <main+0x5be>
+							case 3: cube_clear();
+    1064:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									switch(pattern) {						//1-6
+    1068:	80 91 cd 00 	lds	r24, 0x00CD
+    106c:	88 23       	and	r24, r24
+    106e:	19 f0       	breq	.+6      	; 0x1076 <main+0x40e>
+    1070:	81 30       	cpi	r24, 0x01	; 1
+    1072:	51 f0       	breq	.+20     	; 0x1088 <main+0x420>
+    1074:	12 c0       	rjmp	.+36     	; 0x109a <main+0x432>
+										case 0:	cube_Filled( x1, y1, z1, x2, y2, z2 );	break;
+    1076:	e4 2c       	mov	r14, r4
+    1078:	06 2d       	mov	r16, r6
+    107a:	28 2d       	mov	r18, r8
+    107c:	45 2d       	mov	r20, r5
+    107e:	67 2d       	mov	r22, r7
+    1080:	89 2d       	mov	r24, r9
+    1082:	0e 94 71 02 	call	0x4e2	; 0x4e2 <cube_Filled>
+    1086:	11 c0       	rjmp	.+34     	; 0x10aa <main+0x442>
+										case 1:	 cube_Walls( x1, y1, z1, x2, y2, z2 );	break;
+    1088:	e4 2c       	mov	r14, r4
+    108a:	06 2d       	mov	r16, r6
+    108c:	28 2d       	mov	r18, r8
+    108e:	45 2d       	mov	r20, r5
+    1090:	67 2d       	mov	r22, r7
+    1092:	89 2d       	mov	r24, r9
+    1094:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <cube_Walls>
+    1098:	08 c0       	rjmp	.+16     	; 0x10aa <main+0x442>
+										default: cube_Edges( x1, y1, z1, x2, y2, z2 );	break;
+    109a:	e4 2c       	mov	r14, r4
+    109c:	06 2d       	mov	r16, r6
+    109e:	28 2d       	mov	r18, r8
+    10a0:	45 2d       	mov	r20, r5
+    10a2:	67 2d       	mov	r22, r7
+    10a4:	89 2d       	mov	r24, r9
+    10a6:	0e 94 61 03 	call	0x6c2	; 0x6c2 <cube_Edges>
+									}
+									x1--;	y1--;	z1--;
+    10aa:	9a 94       	dec	r9
+    10ac:	7a 94       	dec	r7
+    10ae:	5a 94       	dec	r5
+									x2++;	y2++;	z2++;
+    10b0:	83 94       	inc	r8
+    10b2:	63 94       	inc	r6
+    10b4:	43 94       	inc	r4
+									data++;
+    10b6:	80 91 cf 00 	lds	r24, 0x00CF
+    10ba:	8f 5f       	subi	r24, 0xFF	; 255
+    10bc:	80 93 cf 00 	sts	0x00CF, r24
+									break;
+    10c0:	b2 c0       	rjmp	.+356    	; 0x1226 <main+0x5be>
+							case 4: cube_clear();
+    10c2:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									switch(pattern) {						//0-7
+    10c6:	80 91 cd 00 	lds	r24, 0x00CD
+    10ca:	88 23       	and	r24, r24
+    10cc:	19 f0       	breq	.+6      	; 0x10d4 <main+0x46c>
+    10ce:	81 30       	cpi	r24, 0x01	; 1
+    10d0:	51 f0       	breq	.+20     	; 0x10e6 <main+0x47e>
+    10d2:	12 c0       	rjmp	.+36     	; 0x10f8 <main+0x490>
+										case 0:	cube_Filled( x1, y1, z1, x2, y2, z2 );	break;
+    10d4:	e4 2c       	mov	r14, r4
+    10d6:	06 2d       	mov	r16, r6
+    10d8:	28 2d       	mov	r18, r8
+    10da:	45 2d       	mov	r20, r5
+    10dc:	67 2d       	mov	r22, r7
+    10de:	89 2d       	mov	r24, r9
+    10e0:	0e 94 71 02 	call	0x4e2	; 0x4e2 <cube_Filled>
+    10e4:	11 c0       	rjmp	.+34     	; 0x1108 <main+0x4a0>
+										case 1:	 cube_Walls( x1, y1, z1, x2, y2, z2 );	break;
+    10e6:	e4 2c       	mov	r14, r4
+    10e8:	06 2d       	mov	r16, r6
+    10ea:	28 2d       	mov	r18, r8
+    10ec:	45 2d       	mov	r20, r5
+    10ee:	67 2d       	mov	r22, r7
+    10f0:	89 2d       	mov	r24, r9
+    10f2:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <cube_Walls>
+    10f6:	08 c0       	rjmp	.+16     	; 0x1108 <main+0x4a0>
+										default: cube_Edges( x1, y1, z1, x2, y2, z2 );	break;
+    10f8:	e4 2c       	mov	r14, r4
+    10fa:	06 2d       	mov	r16, r6
+    10fc:	28 2d       	mov	r18, r8
+    10fe:	45 2d       	mov	r20, r5
+    1100:	67 2d       	mov	r22, r7
+    1102:	89 2d       	mov	r24, r9
+    1104:	0e 94 61 03 	call	0x6c2	; 0x6c2 <cube_Edges>
+									}
+									x1++;	y1++;	z1++;
+    1108:	93 94       	inc	r9
+    110a:	73 94       	inc	r7
+    110c:	53 94       	inc	r5
+									x2--;	y2--;	z2--;
+    110e:	8a 94       	dec	r8
+    1110:	6a 94       	dec	r6
+    1112:	4a 94       	dec	r4
+									data++;
+    1114:	80 91 cf 00 	lds	r24, 0x00CF
+    1118:	8f 5f       	subi	r24, 0xFF	; 255
+    111a:	80 93 cf 00 	sts	0x00CF, r24
+									break;
+    111e:	83 c0       	rjmp	.+262    	; 0x1226 <main+0x5be>
+									
+							case 5: cube_clear();
+    1120:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									switch(pattern) {						//1-6
+    1124:	80 91 cd 00 	lds	r24, 0x00CD
+    1128:	88 23       	and	r24, r24
+    112a:	19 f0       	breq	.+6      	; 0x1132 <main+0x4ca>
+    112c:	81 30       	cpi	r24, 0x01	; 1
+    112e:	51 f0       	breq	.+20     	; 0x1144 <main+0x4dc>
+    1130:	12 c0       	rjmp	.+36     	; 0x1156 <main+0x4ee>
+										case 0:	cube_Filled( x1, y1, z1, x2, y2, z2 );	break;
+    1132:	e4 2c       	mov	r14, r4
+    1134:	06 2d       	mov	r16, r6
+    1136:	28 2d       	mov	r18, r8
+    1138:	45 2d       	mov	r20, r5
+    113a:	67 2d       	mov	r22, r7
+    113c:	89 2d       	mov	r24, r9
+    113e:	0e 94 71 02 	call	0x4e2	; 0x4e2 <cube_Filled>
+    1142:	11 c0       	rjmp	.+34     	; 0x1166 <main+0x4fe>
+										case 1:	 cube_Walls( x1, y1, z1, x2, y2, z2 );	break;
+    1144:	e4 2c       	mov	r14, r4
+    1146:	06 2d       	mov	r16, r6
+    1148:	28 2d       	mov	r18, r8
+    114a:	45 2d       	mov	r20, r5
+    114c:	67 2d       	mov	r22, r7
+    114e:	89 2d       	mov	r24, r9
+    1150:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <cube_Walls>
+    1154:	08 c0       	rjmp	.+16     	; 0x1166 <main+0x4fe>
+										default: cube_Edges( x1, y1, z1, x2, y2, z2 );	break;
+    1156:	e4 2c       	mov	r14, r4
+    1158:	06 2d       	mov	r16, r6
+    115a:	28 2d       	mov	r18, r8
+    115c:	45 2d       	mov	r20, r5
+    115e:	67 2d       	mov	r22, r7
+    1160:	89 2d       	mov	r24, r9
+    1162:	0e 94 61 03 	call	0x6c2	; 0x6c2 <cube_Edges>
+									}
+									x1++;	y1++;	z1++;
+    1166:	93 94       	inc	r9
+    1168:	73 94       	inc	r7
+    116a:	53 94       	inc	r5
+									x2--;	y2--;	z2--;
+    116c:	8a 94       	dec	r8
+    116e:	6a 94       	dec	r6
+    1170:	4a 94       	dec	r4
+									data++;
+    1172:	80 91 cf 00 	lds	r24, 0x00CF
+    1176:	8f 5f       	subi	r24, 0xFF	; 255
+    1178:	80 93 cf 00 	sts	0x00CF, r24
+									break;
+    117c:	54 c0       	rjmp	.+168    	; 0x1226 <main+0x5be>
+							case 6: cube_clear();
+    117e:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									switch(pattern) {						//2-5
+    1182:	80 91 cd 00 	lds	r24, 0x00CD
+    1186:	88 23       	and	r24, r24
+    1188:	19 f0       	breq	.+6      	; 0x1190 <main+0x528>
+    118a:	81 30       	cpi	r24, 0x01	; 1
+    118c:	51 f0       	breq	.+20     	; 0x11a2 <main+0x53a>
+    118e:	12 c0       	rjmp	.+36     	; 0x11b4 <main+0x54c>
+										case 0:	cube_Filled( x1, y1, z1, x2, y2, z2 );	break;
+    1190:	e4 2c       	mov	r14, r4
+    1192:	06 2d       	mov	r16, r6
+    1194:	28 2d       	mov	r18, r8
+    1196:	45 2d       	mov	r20, r5
+    1198:	67 2d       	mov	r22, r7
+    119a:	89 2d       	mov	r24, r9
+    119c:	0e 94 71 02 	call	0x4e2	; 0x4e2 <cube_Filled>
+    11a0:	11 c0       	rjmp	.+34     	; 0x11c4 <main+0x55c>
+										case 1:	 cube_Walls( x1, y1, z1, x2, y2, z2 );	break;
+    11a2:	e4 2c       	mov	r14, r4
+    11a4:	06 2d       	mov	r16, r6
+    11a6:	28 2d       	mov	r18, r8
+    11a8:	45 2d       	mov	r20, r5
+    11aa:	67 2d       	mov	r22, r7
+    11ac:	89 2d       	mov	r24, r9
+    11ae:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <cube_Walls>
+    11b2:	08 c0       	rjmp	.+16     	; 0x11c4 <main+0x55c>
+										default: cube_Edges( x1, y1, z1, x2, y2, z2 );	break;
+    11b4:	e4 2c       	mov	r14, r4
+    11b6:	06 2d       	mov	r16, r6
+    11b8:	28 2d       	mov	r18, r8
+    11ba:	45 2d       	mov	r20, r5
+    11bc:	67 2d       	mov	r22, r7
+    11be:	89 2d       	mov	r24, r9
+    11c0:	0e 94 61 03 	call	0x6c2	; 0x6c2 <cube_Edges>
+									}
+									x1++;	y1++;	z1++;
+    11c4:	93 94       	inc	r9
+    11c6:	73 94       	inc	r7
+    11c8:	53 94       	inc	r5
+									x2--;	y2--;	z2--;
+    11ca:	8a 94       	dec	r8
+    11cc:	6a 94       	dec	r6
+    11ce:	4a 94       	dec	r4
+									data++;
+    11d0:	80 91 cf 00 	lds	r24, 0x00CF
+    11d4:	8f 5f       	subi	r24, 0xFF	; 255
+    11d6:	80 93 cf 00 	sts	0x00CF, r24
+									break;
+    11da:	25 c0       	rjmp	.+74     	; 0x1226 <main+0x5be>
+							case 7: cube_clear();
+    11dc:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <cube_clear>
+									switch(pattern) {						//3-4
+    11e0:	80 91 cd 00 	lds	r24, 0x00CD
+    11e4:	88 23       	and	r24, r24
+    11e6:	19 f0       	breq	.+6      	; 0x11ee <main+0x586>
+    11e8:	81 30       	cpi	r24, 0x01	; 1
+    11ea:	51 f0       	breq	.+20     	; 0x1200 <main+0x598>
+    11ec:	12 c0       	rjmp	.+36     	; 0x1212 <main+0x5aa>
+										case 0:	cube_Filled( x1, y1, z1, x2, y2, z2 );	break;
+    11ee:	e4 2c       	mov	r14, r4
+    11f0:	06 2d       	mov	r16, r6
+    11f2:	28 2d       	mov	r18, r8
+    11f4:	45 2d       	mov	r20, r5
+    11f6:	67 2d       	mov	r22, r7
+    11f8:	89 2d       	mov	r24, r9
+    11fa:	0e 94 71 02 	call	0x4e2	; 0x4e2 <cube_Filled>
+    11fe:	11 c0       	rjmp	.+34     	; 0x1222 <main+0x5ba>
+										case 1:	 cube_Walls( x1, y1, z1, x2, y2, z2 );	break;
+    1200:	e4 2c       	mov	r14, r4
+    1202:	06 2d       	mov	r16, r6
+    1204:	28 2d       	mov	r18, r8
+    1206:	45 2d       	mov	r20, r5
+    1208:	67 2d       	mov	r22, r7
+    120a:	89 2d       	mov	r24, r9
+    120c:	0e 94 d0 02 	call	0x5a0	; 0x5a0 <cube_Walls>
+    1210:	08 c0       	rjmp	.+16     	; 0x1222 <main+0x5ba>
+										default: cube_Edges( x1, y1, z1, x2, y2, z2 );	break;
+    1212:	e4 2c       	mov	r14, r4
+    1214:	06 2d       	mov	r16, r6
+    1216:	28 2d       	mov	r18, r8
+    1218:	45 2d       	mov	r20, r5
+    121a:	67 2d       	mov	r22, r7
+    121c:	89 2d       	mov	r24, r9
+    121e:	0e 94 61 03 	call	0x6c2	; 0x6c2 <cube_Edges>
+									}
+									data = 0;
+    1222:	10 92 cf 00 	sts	0x00CF, r1
+									break;
+									
+						}
+
+			
+						timerClearDezi();
+    1226:	0e 94 cd 09 	call	0x139a	; 0x139a <timerClearDezi>
+    122a:	5a cd       	rjmp	.-1356   	; 0xce0 <main+0x78>
+
+0000122c <timerInit>:
+		Die Bestimmung des Wertes für das Register OCR0 wird jetzt mit Hilfe des 
+		Symbols F_CPU ausgeführt, anstelle eines festen Wertes von 16MHz. \n
+		Die Funktion muss zum Programmstart einmal aufgerufen werden.
+*/
+void timerInit( void ) {
+  timerFlags.all = 0;                       			// Alle Flags auf einmal zurücksetzen  
+    122c:	10 92 5c 01 	sts	0x015C, r1
+
+  TCCR0 = (1<<WGM01) | (1 << CS01) | (1 << CS00);		// CTC-Modus aktivieren, Vorteiler=64
+    1230:	8b e0       	ldi	r24, 0x0B	; 11
+    1232:	83 bf       	out	0x33, r24	; 51
+  //OCR0  = (249);                     					// Ergibt eine Aufruffrequenz des IRQ-Handlers von 1000Hz bzw. 1ms
+  OCR0 = ((uint32_t)(F_CPU) / (64UL * TIMER_FREQ)) - 1;
+    1234:	89 ef       	ldi	r24, 0xF9	; 249
+    1236:	8c bf       	out	0x3c, r24	; 60
+  TIMSK = (1 << OCIE0) | (1<<TOIE0);					// Interrupt aktivieren bei Timer0-Compare
+    1238:	83 e0       	ldi	r24, 0x03	; 3
+    123a:	89 bf       	out	0x39, r24	; 57
+    123c:	08 95       	ret
+
+0000123e <doMilli>:
+}
+//-------------------------------------------------------------------------
+// alle 1 ms
+//-------------------------------------------------------------------------
+void doMilli( void ) {
+	if (CB_Event_1MS != NULL) { CB_Event_1MS(); }
+    123e:	e0 91 d5 00 	lds	r30, 0x00D5
+    1242:	f0 91 d6 00 	lds	r31, 0x00D6
+    1246:	30 97       	sbiw	r30, 0x00	; 0
+    1248:	09 f0       	breq	.+2      	; 0x124c <doMilli+0xe>
+    124a:	09 95       	icall
+    124c:	08 95       	ret
+
+0000124e <__vector_10>:
+/** 
+ @brief Interrupt-Service-Routine des Timers
+		 Wird alle 1 ms aufgerufen. 
+		 Aus dieser Routine leiten sich die anderen Takte ab.
+*/
+ISR(TIMER0_COMP_vect) {                               //  wird alle 1ms aufgerufen 
+    124e:	1f 92       	push	r1
+    1250:	0f 92       	push	r0
+    1252:	0f b6       	in	r0, 0x3f	; 63
+    1254:	0f 92       	push	r0
+    1256:	11 24       	eor	r1, r1
+    1258:	2f 93       	push	r18
+    125a:	3f 93       	push	r19
+    125c:	4f 93       	push	r20
+    125e:	5f 93       	push	r21
+    1260:	6f 93       	push	r22
+    1262:	7f 93       	push	r23
+    1264:	8f 93       	push	r24
+    1266:	9f 93       	push	r25
+    1268:	af 93       	push	r26
+    126a:	bf 93       	push	r27
+    126c:	ef 93       	push	r30
+    126e:	ff 93       	push	r31
+
+  timerFlags.flags.bMilli = 1;
+    1270:	80 91 5c 01 	lds	r24, 0x015C
+    1274:	81 60       	ori	r24, 0x01	; 1
+    1276:	80 93 5c 01 	sts	0x015C, r24
+  doMilli();
+    127a:	0e 94 1f 09 	call	0x123e	; 0x123e <doMilli>
+  
+  cnt2Milli--;
+    127e:	80 91 66 00 	lds	r24, 0x0066
+    1282:	81 50       	subi	r24, 0x01	; 1
+    1284:	80 93 66 00 	sts	0x0066, r24
+  if (cnt2Milli == 0) {
+    1288:	80 91 66 00 	lds	r24, 0x0066
+    128c:	81 11       	cpse	r24, r1
+    128e:	08 c0       	rjmp	.+16     	; 0x12a0 <__vector_10+0x52>
+	  timerFlags.flags.b2Milli = 1;
+    1290:	80 91 5c 01 	lds	r24, 0x015C
+    1294:	82 60       	ori	r24, 0x02	; 2
+    1296:	80 93 5c 01 	sts	0x015C, r24
+	  cnt2Milli = 2;
+    129a:	82 e0       	ldi	r24, 0x02	; 2
+    129c:	80 93 66 00 	sts	0x0066, r24
+	  do2Milli();
+  }
+  
+  cnt5Milli--;
+    12a0:	80 91 65 00 	lds	r24, 0x0065
+    12a4:	81 50       	subi	r24, 0x01	; 1
+    12a6:	80 93 65 00 	sts	0x0065, r24
+  if (cnt5Milli == 0) {
+    12aa:	80 91 65 00 	lds	r24, 0x0065
+    12ae:	81 11       	cpse	r24, r1
+    12b0:	08 c0       	rjmp	.+16     	; 0x12c2 <__vector_10+0x74>
+	timerFlags.flags.b5Milli = 1;	  
+    12b2:	80 91 5c 01 	lds	r24, 0x015C
+    12b6:	84 60       	ori	r24, 0x04	; 4
+    12b8:	80 93 5c 01 	sts	0x015C, r24
+	cnt5Milli = 5;
+    12bc:	85 e0       	ldi	r24, 0x05	; 5
+    12be:	80 93 65 00 	sts	0x0065, r24
+	do5Milli();
+  }
+  
+  cntcenti--;
+    12c2:	80 91 64 00 	lds	r24, 0x0064
+    12c6:	81 50       	subi	r24, 0x01	; 1
+    12c8:	80 93 64 00 	sts	0x0064, r24
+  if (cntcenti == 0) { 
+    12cc:	80 91 64 00 	lds	r24, 0x0064
+    12d0:	81 11       	cpse	r24, r1
+    12d2:	4c c0       	rjmp	.+152    	; 0x136c <__vector_10+0x11e>
+	timerFlags.flags.bCenti = 1;
+    12d4:	80 91 5c 01 	lds	r24, 0x015C
+    12d8:	88 60       	ori	r24, 0x08	; 8
+    12da:	80 93 5c 01 	sts	0x015C, r24
+  	cntcenti = 10; 
+    12de:	8a e0       	ldi	r24, 0x0A	; 10
+    12e0:	80 93 64 00 	sts	0x0064, r24
+	doCenti();
+	
+	cntdezi--;
+    12e4:	80 91 63 00 	lds	r24, 0x0063
+    12e8:	81 50       	subi	r24, 0x01	; 1
+    12ea:	80 93 63 00 	sts	0x0063, r24
+	if (cntdezi == 0) {
+    12ee:	80 91 63 00 	lds	r24, 0x0063
+    12f2:	81 11       	cpse	r24, r1
+    12f4:	3b c0       	rjmp	.+118    	; 0x136c <__vector_10+0x11e>
+	  timerFlags.flags.bDezi = 1;
+    12f6:	80 91 5c 01 	lds	r24, 0x015C
+    12fa:	80 61       	ori	r24, 0x10	; 16
+    12fc:	80 93 5c 01 	sts	0x015C, r24
+	  cntdezi = 10;
+    1300:	8a e0       	ldi	r24, 0x0A	; 10
+    1302:	80 93 63 00 	sts	0x0063, r24
+	  doDezi();
+
+	  cntsek--;
+    1306:	80 91 62 00 	lds	r24, 0x0062
+    130a:	81 50       	subi	r24, 0x01	; 1
+    130c:	80 93 62 00 	sts	0x0062, r24
+	  if (cntsek == 0) {
+    1310:	80 91 62 00 	lds	r24, 0x0062
+    1314:	81 11       	cpse	r24, r1
+    1316:	2a c0       	rjmp	.+84     	; 0x136c <__vector_10+0x11e>
+		timerFlags.flags.bSek = 1;
+    1318:	80 91 5c 01 	lds	r24, 0x015C
+    131c:	80 62       	ori	r24, 0x20	; 32
+    131e:	80 93 5c 01 	sts	0x015C, r24
+		cntsek = 10;
+    1322:	8a e0       	ldi	r24, 0x0A	; 10
+    1324:	80 93 62 00 	sts	0x0062, r24
+		doSek();
+
+		cnt10sek--;
+    1328:	80 91 61 00 	lds	r24, 0x0061
+    132c:	81 50       	subi	r24, 0x01	; 1
+    132e:	80 93 61 00 	sts	0x0061, r24
+        if ( cnt10sek == 0) {
+    1332:	80 91 61 00 	lds	r24, 0x0061
+    1336:	81 11       	cpse	r24, r1
+    1338:	19 c0       	rjmp	.+50     	; 0x136c <__vector_10+0x11e>
+  		  timerFlags.flags.b10Sek = 1;
+    133a:	80 91 5c 01 	lds	r24, 0x015C
+    133e:	80 64       	ori	r24, 0x40	; 64
+    1340:	80 93 5c 01 	sts	0x015C, r24
+		  cnt10sek = 10;
+    1344:	8a e0       	ldi	r24, 0x0A	; 10
+    1346:	80 93 61 00 	sts	0x0061, r24
+		  do10Sek();
+
+		  cntMin--;
+    134a:	80 91 60 00 	lds	r24, 0x0060
+    134e:	81 50       	subi	r24, 0x01	; 1
+    1350:	80 93 60 00 	sts	0x0060, r24
+		  if ( cntMin == 0) {
+    1354:	80 91 60 00 	lds	r24, 0x0060
+    1358:	81 11       	cpse	r24, r1
+    135a:	08 c0       	rjmp	.+16     	; 0x136c <__vector_10+0x11e>
+  		    timerFlags.flags.bMin = 1;
+    135c:	80 91 5c 01 	lds	r24, 0x015C
+    1360:	80 68       	ori	r24, 0x80	; 128
+    1362:	80 93 5c 01 	sts	0x015C, r24
+		    cntMin = 6;
+    1366:	86 e0       	ldi	r24, 0x06	; 6
+    1368:	80 93 60 00 	sts	0x0060, r24
+		  }
+		}
+	  }
+	}
+  }
+}
+    136c:	ff 91       	pop	r31
+    136e:	ef 91       	pop	r30
+    1370:	bf 91       	pop	r27
+    1372:	af 91       	pop	r26
+    1374:	9f 91       	pop	r25
+    1376:	8f 91       	pop	r24
+    1378:	7f 91       	pop	r23
+    137a:	6f 91       	pop	r22
+    137c:	5f 91       	pop	r21
+    137e:	4f 91       	pop	r20
+    1380:	3f 91       	pop	r19
+    1382:	2f 91       	pop	r18
+    1384:	0f 90       	pop	r0
+    1386:	0f be       	out	0x3f, r0	; 63
+    1388:	0f 90       	pop	r0
+    138a:	1f 90       	pop	r1
+    138c:	18 95       	reti
+
+0000138e <timerClearMilli>:
+  cnt10sek  = 10;				
+  cntMin    = 6;		
+}
+//------------------------------------------------------------------------- 
+void timerClearMilli( void ) {
+  timerFlags.flags.bMilli = 0;
+    138e:	80 91 5c 01 	lds	r24, 0x015C
+    1392:	8e 7f       	andi	r24, 0xFE	; 254
+    1394:	80 93 5c 01 	sts	0x015C, r24
+    1398:	08 95       	ret
+
+0000139a <timerClearDezi>:
+void timerClearCenti( void ) {
+  timerFlags.flags.bCenti = 0;
+}
+//------------------------------------------------------------------------- 
+void timerClearDezi( void ) {
+  timerFlags.flags.bDezi = 0;
+    139a:	80 91 5c 01 	lds	r24, 0x015C
+    139e:	8f 7e       	andi	r24, 0xEF	; 239
+    13a0:	80 93 5c 01 	sts	0x015C, r24
+    13a4:	08 95       	ret
+
+000013a6 <__vector_13>:
+ISR (UART0_RECEIVE_INTERRUPT)	
+/*************************************************************************
+Function: UART Receive Complete interrupt
+Purpose:  called when the UART has received a character
+**************************************************************************/
+{
+    13a6:	1f 92       	push	r1
+    13a8:	0f 92       	push	r0
+    13aa:	0f b6       	in	r0, 0x3f	; 63
+    13ac:	0f 92       	push	r0
+    13ae:	11 24       	eor	r1, r1
+    13b0:	2f 93       	push	r18
+    13b2:	8f 93       	push	r24
+    13b4:	9f 93       	push	r25
+    13b6:	ef 93       	push	r30
+    13b8:	ff 93       	push	r31
+    unsigned char usr;
+    unsigned char lastRxError;
+ 
+ 
+    /* read UART status register and UART data register */
+    usr  = UART0_STATUS;
+    13ba:	8b b1       	in	r24, 0x0b	; 11
+    data = UART0_DATA;
+    13bc:	2c b1       	in	r18, 0x0c	; 12
+    
+    /* get FEn (Frame Error) DORn (Data OverRun) UPEn (USART Parity Error) bits */
+#if defined(FE) && defined(DOR) && defined(UPE)
+    lastRxError = usr & (_BV(FE)|_BV(DOR)|_BV(UPE) );
+    13be:	8c 71       	andi	r24, 0x1C	; 28
+#elif defined(FE) && defined(DOR)
+    lastRxError = usr & (_BV(FE)|_BV(DOR) );
+#endif
+
+    /* calculate buffer index */ 
+    tmphead = ( UART_RxHead + 1) & UART_RX_BUFFER_MASK;
+    13c0:	e0 91 d9 00 	lds	r30, 0x00D9
+    13c4:	ef 5f       	subi	r30, 0xFF	; 255
+    13c6:	ef 71       	andi	r30, 0x1F	; 31
+    
+    if ( tmphead == UART_RxTail ) {
+    13c8:	90 91 d8 00 	lds	r25, 0x00D8
+    13cc:	e9 17       	cp	r30, r25
+    13ce:	39 f0       	breq	.+14     	; 0x13de <__vector_13+0x38>
+        /* error: receive buffer overflow */
+        lastRxError = UART_BUFFER_OVERFLOW >> 8;
+    }else{
+        /* store new index */
+        UART_RxHead = tmphead;
+    13d0:	e0 93 d9 00 	sts	0x00D9, r30
+        /* store received data in buffer */
+        UART_RxBuf[tmphead] = data;
+    13d4:	f0 e0       	ldi	r31, 0x00	; 0
+    13d6:	e4 52       	subi	r30, 0x24	; 36
+    13d8:	ff 4f       	sbci	r31, 0xFF	; 255
+    13da:	20 83       	st	Z, r18
+    13dc:	01 c0       	rjmp	.+2      	; 0x13e0 <__vector_13+0x3a>
+    /* calculate buffer index */ 
+    tmphead = ( UART_RxHead + 1) & UART_RX_BUFFER_MASK;
+    
+    if ( tmphead == UART_RxTail ) {
+        /* error: receive buffer overflow */
+        lastRxError = UART_BUFFER_OVERFLOW >> 8;
+    13de:	82 e0       	ldi	r24, 0x02	; 2
+        /* store new index */
+        UART_RxHead = tmphead;
+        /* store received data in buffer */
+        UART_RxBuf[tmphead] = data;
+    }
+    UART_LastRxError |= lastRxError;   
+    13e0:	90 91 d7 00 	lds	r25, 0x00D7
+    13e4:	89 2b       	or	r24, r25
+    13e6:	80 93 d7 00 	sts	0x00D7, r24
+}
+    13ea:	ff 91       	pop	r31
+    13ec:	ef 91       	pop	r30
+    13ee:	9f 91       	pop	r25
+    13f0:	8f 91       	pop	r24
+    13f2:	2f 91       	pop	r18
+    13f4:	0f 90       	pop	r0
+    13f6:	0f be       	out	0x3f, r0	; 63
+    13f8:	0f 90       	pop	r0
+    13fa:	1f 90       	pop	r1
+    13fc:	18 95       	reti
+
+000013fe <__vector_14>:
+ISR (UART0_TRANSMIT_INTERRUPT)
+/*************************************************************************
+Function: UART Data Register Empty interrupt
+Purpose:  called when the UART is ready to transmit the next byte
+**************************************************************************/
+{
+    13fe:	1f 92       	push	r1
+    1400:	0f 92       	push	r0
+    1402:	0f b6       	in	r0, 0x3f	; 63
+    1404:	0f 92       	push	r0
+    1406:	11 24       	eor	r1, r1
+    1408:	8f 93       	push	r24
+    140a:	9f 93       	push	r25
+    140c:	ef 93       	push	r30
+    140e:	ff 93       	push	r31
+    unsigned char tmptail;
+
+    
+    if ( UART_TxHead != UART_TxTail) {
+    1410:	90 91 db 00 	lds	r25, 0x00DB
+    1414:	80 91 da 00 	lds	r24, 0x00DA
+    1418:	98 17       	cp	r25, r24
+    141a:	61 f0       	breq	.+24     	; 0x1434 <__vector_14+0x36>
+        /* calculate and store new buffer index */
+        tmptail = (UART_TxTail + 1) & UART_TX_BUFFER_MASK;
+    141c:	e0 91 da 00 	lds	r30, 0x00DA
+    1420:	ef 5f       	subi	r30, 0xFF	; 255
+    1422:	ef 71       	andi	r30, 0x1F	; 31
+        UART_TxTail = tmptail;
+    1424:	e0 93 da 00 	sts	0x00DA, r30
+        /* get one byte from buffer and write it to UART */
+        UART0_DATA = UART_TxBuf[tmptail];  /* start transmission */
+    1428:	f0 e0       	ldi	r31, 0x00	; 0
+    142a:	e4 50       	subi	r30, 0x04	; 4
+    142c:	ff 4f       	sbci	r31, 0xFF	; 255
+    142e:	80 81       	ld	r24, Z
+    1430:	8c b9       	out	0x0c, r24	; 12
+    1432:	01 c0       	rjmp	.+2      	; 0x1436 <__vector_14+0x38>
+    }else{
+        /* tx buffer empty, disable UDRE interrupt */
+        UART0_CONTROL &= ~_BV(UART0_UDRIE);
+    1434:	55 98       	cbi	0x0a, 5	; 10
+    }
+}
+    1436:	ff 91       	pop	r31
+    1438:	ef 91       	pop	r30
+    143a:	9f 91       	pop	r25
+    143c:	8f 91       	pop	r24
+    143e:	0f 90       	pop	r0
+    1440:	0f be       	out	0x3f, r0	; 63
+    1442:	0f 90       	pop	r0
+    1444:	1f 90       	pop	r1
+    1446:	18 95       	reti
+
+00001448 <uart_init>:
+Input:    baudrate using macro UART_BAUD_SELECT()
+Returns:  none
+**************************************************************************/
+void uart_init(unsigned int baudrate)
+{
+    UART_TxHead = 0;
+    1448:	10 92 db 00 	sts	0x00DB, r1
+    UART_TxTail = 0;
+    144c:	10 92 da 00 	sts	0x00DA, r1
+    UART_RxHead = 0;
+    1450:	10 92 d9 00 	sts	0x00D9, r1
+    UART_RxTail = 0;
+    1454:	10 92 d8 00 	sts	0x00D8, r1
+#endif
+#endif
+#endif
+
+    /* Set baud rate */
+    if ( baudrate & 0x8000 )
+    1458:	99 23       	and	r25, r25
+    145a:	14 f4       	brge	.+4      	; 0x1460 <uart_init+0x18>
+    {
+        #if UART0_BIT_U2X
+        UART0_STATUS = (1<<UART0_BIT_U2X);  //Enable 2x speed 
+    145c:	22 e0       	ldi	r18, 0x02	; 2
+    145e:	2b b9       	out	0x0b, r18	; 11
+        #endif
+    } 
+    #if defined(UART0_UBRRH)
+    UART0_UBRRH = (unsigned char)((baudrate>>8)&0x80) ;
+    1460:	90 78       	andi	r25, 0x80	; 128
+    1462:	90 bd       	out	0x20, r25	; 32
+    #endif    
+    UART0_UBRRL = (unsigned char) (baudrate&0x00FF);
+    1464:	89 b9       	out	0x09, r24	; 9
+      
+    /* Enable USART receiver and transmitter and receive complete interrupt */
+    UART0_CONTROL = _BV(UART0_BIT_RXCIE)|(1<<UART0_BIT_RXEN)|(1<<UART0_BIT_TXEN);
+    1466:	88 e9       	ldi	r24, 0x98	; 152
+    1468:	8a b9       	out	0x0a, r24	; 10
+    
+    /* Set frame format: asynchronous, 8data, no parity, 1stop bit */
+    #ifdef UART0_CONTROLC
+    #ifdef UART0_BIT_URSEL
+    UART0_CONTROLC = (1<<UART0_BIT_URSEL)|(1<<UART0_BIT_UCSZ1)|(1<<UART0_BIT_UCSZ0);
+    146a:	86 e8       	ldi	r24, 0x86	; 134
+    146c:	80 bd       	out	0x20, r24	; 32
+    146e:	08 95       	ret
+
+00001470 <uart_getc>:
+    unsigned char tmptail;
+    unsigned char data;
+    unsigned char lastRxError;
+
+
+    if ( UART_RxHead == UART_RxTail ) {
+    1470:	90 91 d9 00 	lds	r25, 0x00D9
+    1474:	80 91 d8 00 	lds	r24, 0x00D8
+    1478:	98 17       	cp	r25, r24
+    147a:	a9 f0       	breq	.+42     	; 0x14a6 <uart_getc+0x36>
+        return UART_NO_DATA;   /* no data available */
+    }
+    
+    /* calculate buffer index */
+    tmptail = (UART_RxTail + 1) & UART_RX_BUFFER_MASK;
+    147c:	90 91 d8 00 	lds	r25, 0x00D8
+    1480:	9f 5f       	subi	r25, 0xFF	; 255
+    1482:	9f 71       	andi	r25, 0x1F	; 31
+    
+    /* get data from receive buffer */
+    data = UART_RxBuf[tmptail];
+    1484:	e9 2f       	mov	r30, r25
+    1486:	f0 e0       	ldi	r31, 0x00	; 0
+    1488:	e4 52       	subi	r30, 0x24	; 36
+    148a:	ff 4f       	sbci	r31, 0xFF	; 255
+    148c:	20 81       	ld	r18, Z
+    lastRxError = UART_LastRxError;
+    148e:	80 91 d7 00 	lds	r24, 0x00D7
+    
+    /* store buffer index */
+    UART_RxTail = tmptail; 
+    1492:	90 93 d8 00 	sts	0x00D8, r25
+    
+    UART_LastRxError = 0;
+    1496:	10 92 d7 00 	sts	0x00D7, r1
+    return (lastRxError << 8) + data;
+    149a:	90 e0       	ldi	r25, 0x00	; 0
+    149c:	98 2f       	mov	r25, r24
+    149e:	88 27       	eor	r24, r24
+    14a0:	82 0f       	add	r24, r18
+    14a2:	91 1d       	adc	r25, r1
+    14a4:	08 95       	ret
+    unsigned char data;
+    unsigned char lastRxError;
+
+
+    if ( UART_RxHead == UART_RxTail ) {
+        return UART_NO_DATA;   /* no data available */
+    14a6:	80 e0       	ldi	r24, 0x00	; 0
+    14a8:	91 e0       	ldi	r25, 0x01	; 1
+    UART_RxTail = tmptail; 
+    
+    UART_LastRxError = 0;
+    return (lastRxError << 8) + data;
+
+}/* uart_getc */
+    14aa:	08 95       	ret
+
+000014ac <uart_putc>:
+void uart_putc(unsigned char data)
+{
+    unsigned char tmphead;
+
+    
+    tmphead  = (UART_TxHead + 1) & UART_TX_BUFFER_MASK;
+    14ac:	20 91 db 00 	lds	r18, 0x00DB
+    14b0:	2f 5f       	subi	r18, 0xFF	; 255
+    14b2:	2f 71       	andi	r18, 0x1F	; 31
+    
+    while ( tmphead == UART_TxTail ){
+    14b4:	90 91 da 00 	lds	r25, 0x00DA
+    14b8:	29 17       	cp	r18, r25
+    14ba:	e1 f3       	breq	.-8      	; 0x14b4 <uart_putc+0x8>
+        ;/* wait for free space in buffer */
+    }
+    
+    UART_TxBuf[tmphead] = data;
+    14bc:	e2 2f       	mov	r30, r18
+    14be:	f0 e0       	ldi	r31, 0x00	; 0
+    14c0:	e4 50       	subi	r30, 0x04	; 4
+    14c2:	ff 4f       	sbci	r31, 0xFF	; 255
+    14c4:	80 83       	st	Z, r24
+    UART_TxHead = tmphead;
+    14c6:	20 93 db 00 	sts	0x00DB, r18
+
+    /* enable UDRE interrupt */
+    UART0_CONTROL    |= _BV(UART0_UDRIE);
+    14ca:	55 9a       	sbi	0x0a, 5	; 10
+    14cc:	08 95       	ret
+
+000014ce <uart_puts>:
+Purpose:  transmit string to UART
+Input:    string to be transmitted
+Returns:  none          
+**************************************************************************/
+void uart_puts(const char *s )
+{
+    14ce:	cf 93       	push	r28
+    14d0:	df 93       	push	r29
+    14d2:	ec 01       	movw	r28, r24
+    while (*s) 
+    14d4:	88 81       	ld	r24, Y
+    14d6:	88 23       	and	r24, r24
+    14d8:	31 f0       	breq	.+12     	; 0x14e6 <uart_puts+0x18>
+    14da:	21 96       	adiw	r28, 0x01	; 1
+      uart_putc(*s++);
+    14dc:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+Input:    string to be transmitted
+Returns:  none          
+**************************************************************************/
+void uart_puts(const char *s )
+{
+    while (*s) 
+    14e0:	89 91       	ld	r24, Y+
+    14e2:	81 11       	cpse	r24, r1
+    14e4:	fb cf       	rjmp	.-10     	; 0x14dc <uart_puts+0xe>
+      uart_putc(*s++);
+
+}/* uart_puts */
+    14e6:	df 91       	pop	r29
+    14e8:	cf 91       	pop	r28
+    14ea:	08 95       	ret
+
+000014ec <uart_puts_p>:
+Purpose:  transmit string from program memory to UART
+Input:    program memory string to be transmitted
+Returns:  none
+**************************************************************************/
+void uart_puts_p(const char *progmem_s )
+{
+    14ec:	cf 93       	push	r28
+    14ee:	df 93       	push	r29
+    register char c;
+    
+    while ( (c = pgm_read_byte(progmem_s++)) ) 
+    14f0:	ec 01       	movw	r28, r24
+    14f2:	21 96       	adiw	r28, 0x01	; 1
+    14f4:	fc 01       	movw	r30, r24
+    14f6:	84 91       	lpm	r24, Z
+    14f8:	88 23       	and	r24, r24
+    14fa:	39 f0       	breq	.+14     	; 0x150a <uart_puts_p+0x1e>
+      uart_putc(c);
+    14fc:	0e 94 56 0a 	call	0x14ac	; 0x14ac <uart_putc>
+**************************************************************************/
+void uart_puts_p(const char *progmem_s )
+{
+    register char c;
+    
+    while ( (c = pgm_read_byte(progmem_s++)) ) 
+    1500:	fe 01       	movw	r30, r28
+    1502:	84 91       	lpm	r24, Z
+    1504:	21 96       	adiw	r28, 0x01	; 1
+    1506:	81 11       	cpse	r24, r1
+    1508:	f9 cf       	rjmp	.-14     	; 0x14fc <uart_puts_p+0x10>
+      uart_putc(c);
+
+}/* uart_puts_p */
+    150a:	df 91       	pop	r29
+    150c:	cf 91       	pop	r28
+    150e:	08 95       	ret
+
+00001510 <__tablejump2__>:
+    1510:	ee 0f       	add	r30, r30
+    1512:	ff 1f       	adc	r31, r31
+
+00001514 <__tablejump__>:
+    1514:	05 90       	lpm	r0, Z+
+    1516:	f4 91       	lpm	r31, Z
+    1518:	e0 2d       	mov	r30, r0
+    151a:	09 94       	ijmp
+
+0000151c <_exit>:
+    151c:	f8 94       	cli
+
+0000151e <__stop_program>:
+    151e:	ff cf       	rjmp	.-2      	; 0x151e <__stop_program>
