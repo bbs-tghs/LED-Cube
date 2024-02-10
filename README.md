@@ -6,3 +6,7 @@ Zunächst haben wir es mit dem ebenfalls hier beschriebenen Übungssystem versuc
 - Der Multiplexer
 
 Diese Platine hat dann problemlos funktoniert.
+
+So sieht das Ganze da fertig aus. Eine Acrylglashaube schützt vor Staub.
+
+![LED-Cube](./20180601_201815.jpg)
