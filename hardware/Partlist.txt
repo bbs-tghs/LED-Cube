@@ -1,0 +1,191 @@
+Partlist
+
+Exported from LEDCube_Par.sch at 02.12.2017 18:35:41
+
+EAGLE Version 5.9.0 Copyright (c) 1988-2010 CadSoft
+
+Part     Value          Device          Package         Library          Sheet
+
+C1       22p            C-EU050-025X075 C050-025X075    bbstghs          1
+C2       22p            C-EU050-025X075 C050-025X075    bbstghs          1
+C3       100n           C-EU050-025X075 C050-025X075    bbstghs          1
+C4       100n           C-EU050-025X075 C050-025X075    bbstghs          1
+C5       4u7            CPOL-EUE2-5     E2-5            bbstghs          1
+C6       4u7            CPOL-EUE2-5     E2-5            bbstghs          1
+C7       100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C8       100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C9       100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C10      100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C11      100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C12      100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C13      100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C14      100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C15      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C16      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C17      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C18      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C19      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C20      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C21      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C22      470p           C-EU050-025X075 C050-025X075    bbstghs          1
+C23      100n           C-EU050-025X075 C050-025X075    bbstghs          1
+C25      47µ/25V        CPOL-EUE2-5     E2-5            bbstghs          1
+C26      330n           C-EU050-030X075 C050-030X075    bbstghs          1
+C27      100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C28      10n            C-EU050-030X075 C050-030X075    bbstghs          1
+C29      100n           C-EU050-030X075 C050-030X075    bbstghs          1
+C30      USB_SHIELED    USB_SHIELED     USB-MB-H-SHIELD con-usb          1
+D1       SB320          SB320           DO201-15        bbstghs          1
+IC1      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC2      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC3      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC4      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC5      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC6      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC7      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC8      UDN2803        ULN2803A        DIL18           uln-udn          1
+IC9      74AC573N       74AC573N        DIL20           74xx-eu          1
+IC10     74AC573N       74AC573N        DIL20           74xx-eu          1
+IC11     74AC573N       74AC573N        DIL20           74xx-eu          1
+IC12     74AC573N       74AC573N        DIL20           74xx-eu          1
+IC13     74AC573N       74AC573N        DIL20           74xx-eu          1
+IC14     74AC573N       74AC573N        DIL20           74xx-eu          1
+IC15     74AC573N       74AC573N        DIL20           74xx-eu          1
+IC16     74AC573N       74AC573N        DIL20           74xx-eu          1
+IC17     MEGA32-P       MEGA32-P        DIL40           atmel            1
+IC18                    ULN2803A        DIL18           uln-udn          1
+JP1                     JP1E            JP1             bbstghs          1
+JP2                     JP1E            JP1             bbstghs          1
+LED1                    LED3MM          LED3MM          bbstghs          1
+LED2                    LED3MM          LED3MM          bbstghs          1
+LED3                    LED3MM          LED3MM          bbstghs          1
+LED4                    LED3MM          LED3MM          bbstghs          1
+LSP1     LSP10          LSP10           LSP10           solpad           1
+LSP2     LSP10          LSP10           LSP10           solpad           1
+LSP3     LSP10          LSP10           LSP10           solpad           1
+LSP4     LSP11          LSP11           LSP11           solpad           1
+Q1       16MHz          CRYSTALHC49U-V  HC49U-V         bbstghs          1
+Q2       BD140          BD140           TO126AV         transistor-power 1
+Q3       BD140          BD140           TO126AV         transistor-power 1
+Q4       BD140          BD140           TO126AV         transistor-power 1
+Q5       BD140          BD140           TO126AV         transistor-power 1
+Q6       BD140          BD140           TO126AV         transistor-power 1
+Q7       BD140          BD140           TO126AV         transistor-power 1
+Q8       BD140          BD140           TO126AV         transistor-power 1
+Q9       BD140          BD140           TO126AV         transistor-power 1
+R1       100R           R-EU_0204/2V    0204V           bbstghs          1
+R2       100R           R-EU_0204/2V    0204V           bbstghs          1
+R3       100R           R-EU_0204/2V    0204V           bbstghs          1
+R4       100R           R-EU_0204/2V    0204V           bbstghs          1
+R5       100R           R-EU_0204/2V    0204V           bbstghs          1
+R6       100R           R-EU_0204/2V    0204V           bbstghs          1
+R7       100R           R-EU_0204/2V    0204V           bbstghs          1
+R8       100R           R-EU_0204/2V    0204V           bbstghs          1
+R9       100R           R-EU_0204/2V    0204V           bbstghs          1
+R10      100R           R-EU_0204/2V    0204V           bbstghs          1
+R11      100R           R-EU_0204/2V    0204V           bbstghs          1
+R12      100R           R-EU_0204/2V    0204V           bbstghs          1
+R13      100R           R-EU_0204/2V    0204V           bbstghs          1
+R14      100R           R-EU_0204/2V    0204V           bbstghs          1
+R15      100R           R-EU_0204/2V    0204V           bbstghs          1
+R16      100R           R-EU_0204/2V    0204V           bbstghs          1
+R17      100R           R-EU_0204/2V    0204V           bbstghs          1
+R18      100R           R-EU_0204/2V    0204V           bbstghs          1
+R19      100R           R-EU_0204/2V    0204V           bbstghs          1
+R20      100R           R-EU_0204/2V    0204V           bbstghs          1
+R21      100R           R-EU_0204/2V    0204V           bbstghs          1
+R22      100R           R-EU_0204/2V    0204V           bbstghs          1
+R23      100R           R-EU_0204/2V    0204V           bbstghs          1
+R24      100R           R-EU_0204/2V    0204V           bbstghs          1
+R25      100R           R-EU_0204/2V    0204V           bbstghs          1
+R26      100R           R-EU_0204/2V    0204V           bbstghs          1
+R27      100R           R-EU_0204/2V    0204V           bbstghs          1
+R28      100R           R-EU_0204/2V    0204V           bbstghs          1
+R29      100R           R-EU_0204/2V    0204V           bbstghs          1
+R30      100R           R-EU_0204/2V    0204V           bbstghs          1
+R31      100R           R-EU_0204/2V    0204V           bbstghs          1
+R32      100R           R-EU_0204/2V    0204V           bbstghs          1
+R33      100R           R-EU_0204/2V    0204V           bbstghs          1
+R34      100R           R-EU_0204/2V    0204V           bbstghs          1
+R35      100R           R-EU_0204/2V    0204V           bbstghs          1
+R36      100R           R-EU_0204/2V    0204V           bbstghs          1
+R37      100R           R-EU_0204/2V    0204V           bbstghs          1
+R38      100R           R-EU_0204/2V    0204V           bbstghs          1
+R39      100R           R-EU_0204/2V    0204V           bbstghs          1
+R40      100R           R-EU_0204/2V    0204V           bbstghs          1
+R41      100R           R-EU_0204/2V    0204V           bbstghs          1
+R42      100R           R-EU_0204/2V    0204V           bbstghs          1
+R43      100R           R-EU_0204/2V    0204V           bbstghs          1
+R44      100R           R-EU_0204/2V    0204V           bbstghs          1
+R45      100R           R-EU_0204/2V    0204V           bbstghs          1
+R46      100R           R-EU_0204/2V    0204V           bbstghs          1
+R47      100R           R-EU_0204/2V    0204V           bbstghs          1
+R48      100R           R-EU_0204/2V    0204V           bbstghs          1
+R49      100R           R-EU_0204/2V    0204V           bbstghs          1
+R50      100R           R-EU_0204/2V    0204V           bbstghs          1
+R51      100R           R-EU_0204/2V    0204V           bbstghs          1
+R52      100R           R-EU_0204/2V    0204V           bbstghs          1
+R53      100R           R-EU_0204/2V    0204V           bbstghs          1
+R54      100R           R-EU_0204/2V    0204V           bbstghs          1
+R55      100R           R-EU_0204/2V    0204V           bbstghs          1
+R56      100R           R-EU_0204/2V    0204V           bbstghs          1
+R57      100R           R-EU_0204/2V    0204V           bbstghs          1
+R58      100R           R-EU_0204/2V    0204V           bbstghs          1
+R59      100R           R-EU_0204/2V    0204V           bbstghs          1
+R60      100R           R-EU_0204/2V    0204V           bbstghs          1
+R61      100R           R-EU_0204/2V    0204V           bbstghs          1
+R62      100R           R-EU_0204/2V    0204V           bbstghs          1
+R63      100R           R-EU_0204/2V    0204V           bbstghs          1
+R64      100R           R-EU_0204/2V    0204V           bbstghs          1
+R65      10k            R-EU_0207/10    0207/10         bbstghs          1
+R66      100k           R-EU_0207/10    0207/10         bbstghs          1
+R67      10R            R-EU_0207/10    0207/10         bbstghs          1
+R68      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R69      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R70      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R71      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R72      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R73      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R74      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R75      100R           R-EU_0207/2V    0207/2V         bbstghs          1
+R76      10M            R-EU_0207/10    0207/10         bbstghs          1
+R77      1k8            R-EU_0207/2V    0207/2V         bbstghs          1
+R78      1k8            R-EU_0207/2V    0207/2V         bbstghs          1
+R79      1k8            R-EU_0207/2V    0207/2V         bbstghs          1
+R80      1k8            R-EU_0207/2V    0207/2V         bbstghs          1
+R81      10k            R-EU_0207/2V    0207/2V         bbstghs          1
+R82      10k            R-EU_0207/2V    0207/2V         bbstghs          1
+R83      4k7            R-EU_0207/10    0207/10         bbstghs          1
+R84      2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R86      4k7            R-EU_0207/10    0207/10         bbstghs          1
+R87      2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R89      4k7            R-EU_0207/10    0207/10         bbstghs          1
+R90      2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R92      4k7            R-EU_0207/10    0207/10         bbstghs          1
+R93      2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R95      4k7            R-EU_0207/10    0207/10         bbstghs          1
+R96      2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R98      4k7            R-EU_0207/10    0207/10         bbstghs          1
+R99      2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R101     4k7            R-EU_0207/10    0207/10         bbstghs          1
+R102     2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R104     4k7            R-EU_0207/10    0207/10         bbstghs          1
+R105     2k2            R-EU_0207/2V    0207/2V         bbstghs          1
+R107     10k            R-EU_0207/10    0207/10         bbstghs          1
+S1                      10-XX           B3F-10XX        switch-omron     1
+SV1                     MA08-1          MA08-1          con-lstb         1
+SV2                     MA08-1          MA08-1          con-lstb         1
+SV3                     MA08-1          MA08-1          con-lstb         1
+SV4                     MA08-1          MA08-1          con-lstb         1
+SV5                     MA08-1          MA08-1          con-lstb         1
+SV6                     MA08-1          MA08-1          con-lstb         1
+SV7                     MA08-1          MA08-1          con-lstb         1
+SV8                     MA08-1          MA08-1          con-lstb         1
+SV9                     MA08-1          MA08-1          con-lstb         1
+SV10                    ML6             ML6             bbstghs          1
+SV11                    MA08-1          MA08-1          con-lstb         1
+U2       MCP2221        MCP2221         DIL14           bbstghs          1
+V1       74238N         74238N          DIL16           74ttl-din        1
+X1                      AK500/2         AK500/2         bbstghs          1
+X2                      AK500/2         AK500/2         bbstghs          1
+X3                      AK500/10        AK500/10        con-ptr500       1
