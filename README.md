@@ -7,6 +7,6 @@ Zunächst haben wir es mit dem ebenfalls hier beschriebenen Übungssystem versuc
 
 Diese Platine hat dann problemlos funktoniert.
 
-So sieht das Ganze da fertig aus. Eine Acrylglashaube schützt vor Staub.
+So sieht das Ganze dann fertig aus. Eine Acrylglashaube schützt vor Staub. (Ein schöneres Bild brauchen wir aber noch)
 
 ![LED-Cube](./20180601_201815.jpg)
